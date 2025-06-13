@@ -1,0 +1,3883 @@
+
+
+
+
+
+<head>
+<title>Neet 2018 AA with Answer</title>
+<style>
+body {
+background-color: Darkblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px White solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid white;
+padding: 5px;
+height: 250px;
+background: beige;
+background-image: url("Tom-Jerry-tv-06.jpg");
+color: white;
+}
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+</style>
+<style>
+h1 {
+    text-shadow: 2px 2px red;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<div ng-app="myApp" ng-controller="datCtrl">
+
+<font color="Limegreen"><center><p>Date : {{ today | date : "dd.MM.y" }}</p>
+
+</div>
+<script>
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+  </script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('datCtrl', function($scope) {
+    $scope.today = new Date();
+});
+</script>
+
+<p align="center"><canvas id="canvas" width="145" height="125" align="left"
+style="background-color:#00008B">
+</canvas>
+</head>
+<body>
+<body onload="myFunction()">
+<script>
+function myFunction() {
+    
+    setTimeout(function(){ alert("1 minutes  over");}, 60000);
+	setTimeout(function(){ alert("5 minute over balance 2 hour and 55 minutes"); }, 300000);
+	setTimeout(function(){ alert("10 minute over balance 2hour and 50 minutes"); }, 600000);
+	setTimeout(function(){ alert("15 minute over balance 2 hour and 45 minutes"); }, 900000);
+    setTimeout(function(){ alert("20 minute over 2 hour and 40 minutes in hand"); }, 1200000);
+	setTimeout(function(){ alert("25 minute over 2 hour's and 35 minutes only  in hand"); }, 1500000);
+    
+	setTimeout(function(){ alert("30 minute over "); }, 1800000);
+	setTimeout(function(){ alert("45 minute over "); }, 2700000);
+	setTimeout(function(){ alert("60 minute over "); }, 3600000);
+	setTimeout(function(){ alert("1 hour and 15 minute over "); }, 4500000);
+	setTimeout(function(){ alert("1 hour and 30 minute over "); }, 5400000);
+	setTimeout(function(){ alert("1 hour and 45 minute over "); }, 6300000);
+	setTimeout(function(){ alert("2 hour  over "); }, 7200000);
+	setTimeout(function(){ alert("2 hour and 15 minutes over  "); }, 8100000);
+	setTimeout(function(){ alert("2 hour and 30 minutes over "); }, 9000000);
+	setTimeout(function(){ alert("2 hour and 45 minutes over "); }, 9900000);
+	setTimeout(function(){ alert("3 hour over so  time over for this Exam"); }, 10800000);
+	
+}
+</script>
+
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown(17000);
+    });
+    $("#stop").click(function(){
+        $("#panel").stop();
+    });
+});
+</script>
+ <script>
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You are the  " + localStorage.clickcount + " num visitor's to this page";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+
+</script>
+
+<style> 
+#panel, #flip {
+    padding: 5px;
+    font-size: 15px;
+    text-align: justify;
+    background-color: #00008B;
+    color: white;
+    border: solid 1px #00008B;
+    border-radius: 3px;
+}
+
+#panel {
+    padding:25px;
+    display: none;
+}
+</style>
+<style>
+ h4:hover {
+    background-color: Green;
+}
+</style>
+<style>
+div.a {
+    text-align: justify;
+}
+</style>
+<style>
+
+p {
+     
+   color:Gold;
+   font-size: 25px;
+   text-shadow: 2px 2px Brown;
+}
+h1 {
+    
+   
+    color:red;	
+	font-size: 25px;
+    text-shadow: 2px 2px gold;
+}
+
+h2 {
+    color:red;	
+	font-size: 25px;
+    text-shadow: 2px 2px Gray;
+}
+
+h3 {
+    color:blue;		
+	font-size: 15px;
+    }
+h4 {
+    color:blue;		 
+	font-size: 15px;
+    
+}
+
+
+h5 {
+    color:blue;	
+	font-size: 25px;
+	
+	}
+h6 {
+    color:White; 
+	
+}
+
+p1 {
+  color:White;
+  }
+</style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+</head>
+<body>
+
+<div id="flip"><center><button onclick="clickCounter()" type="button">For Quiz<br> click here</button></div>
+
+
+
+<div id="panel">
+
+<div id="main">
+<div id="header">
+
+
+
+
+<center><h1>Neet 2018 AA online Test</h1>
+</div>
+<form id="form1">
+
+<fieldset>
+
+<p align="left">
+<font color="yellow">
+<p>The test is of 3 hours duration and consists of 180 questions.</p>
+<p> Each question carries 4 marks.</p>
+ <p>For each correct response the candidate will get 4 marks.</p>
+<p> Foreach incorrect response, one mark will be (-1)deducted.</p> 
+<p>The maximum marks are 720.</p><br>
+<font color="White">
+<p align="left"><h2>1)The volume (V) of a monatomic gas varies with its<br>
+ temperature (T),as shown in the graph. <br>
+ The ratio of work done by the gas,<br>
+      to the heat absorbed by it, when it<br>
+ undergoes a change frorr state A to state B, is ?<br>
+<img src="/Photos/2018/2018 Neet DD Q23 Diagram.png " alt = "2018 Neet DD Q23 Diagram " height="175" width="275"> </h2>
+<h3><label for="ans1">A<input type="radio" name="ans1" value="-1" id="ans1" />$$ 1\over3$$  </label></h3>
+<h3><label for="ans0101">B<input type="radio" name="ans1" value="-1" id="ans0101" />$$ 2\over 3 $$	</label></h3>
+<h4><label for="ans0102">C<input type="radio" name="ans1" value="4" id="ans0102" />$$ 2\over5$$  </label></h4>
+<h3><label for="ans0103">D<input type="radio" name="ans1" value="-1" id="ans0103"/>$$ 2\over7$$    </label></h3>
+<h3><label for="ans0104">E<input type="radio" name="ans1" value="0" id="ans0104" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+  
+
+<h2>2) The fundamental frequency in an open organ pipe <br>
+is equal to the third harmonic of a closed organ pipe.<br>
+ If the length of the closed organ pipe is 20 cm,<br>
+ the length of the open organ pipe is   ? <h2>
+ <h3><label for="ans2">A<input type="radio" name="ans2" value="-1" id="ans2"/>12-5 cm  </label></h3>
+<h3><label for="ans0201">B<input type="radio" name="ans2" value="-1" id="ans0201"/>8cm   </label></h3>
+<h4><label for="ans0202">C<input type="radio" name="ans2" value="4" id="ans0202" />13-2 cm   </label></h4>
+<h3><label for="ans0203">D<input type="radio" name="ans2" value="-1" id="ans0203" />16 cm  </label></h3>
+<h3><label for="ans0204">E<input type="radio" name="ans2" value="0" id="ans0204" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+<h2>3)At what temperature will the rms speed of oxygen molecules become just<br>
+ sufficient for escaping from the Earth's atmosphere ? <br>
+
+ (Given : Mass of oxygen molecule (m) = 2.76 x 10<sup>-26</sup> kg<br>
+ Boltzmann's constant kg = 1.38 x 10<sup>-23</sup> J K<sup>-1</sup>) ?<h2>
+  <h3><label for="ans3">A<input type="radio" name="ans3" value="-1" id="ans3" />5.016 x 10<sup>4</sup>K </label></h3>
+<h4><label for="ans0301">B<input type="radio" name="ans3" value="4" id="ans0301" />8.360 x 10<sup>4</sup>K   </label></h4>
+<h3><label for="ans0302">C<input type="radio" name="ans3" value="-1" id="ans0302" />2.508 x 10<sup>4</sup>K   </label></h3>
+<h3><label for="ans0303">D<input type="radio" name="ans3" value="-1" id="ans0303" />1.254 x 10<sup>4</sup>K </label></h3>
+<h3><label for="ans0304">E<input type="radio" name="ans3" value="0" id="ans0304" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<h2>4)The efficiency of an ideal heat engine working between<br>
+       the freezing  point and boiling point of water, is?    <h2>
+  <h3><label for="ans4">A<input type="radio" name="ans4" value="-1" id="ans4" /> 6.25%   </label></h3>
+<h3><label for="ans0401">B<input type="radio" name="ans4" value="-1" id="ans0401" />20% </label></h3>
+<h4><label for="ans0402">C<input type="radio" name="ans4" value="4" id="ans0402" />26.8%     </label></h3>
+<h3><label for="ans0403">D<input type="radio" name="ans4"  value="-1" id="ans0403" />12.5%   </label></h3>
+<h3><label for="ans0404">E<input type="radio" name="ans4" value="0" id="ans0404" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+<h2>5) A carbon resistor of $$(47 \pm 4.7)$$ Kᾩ is to be marked 4.<br>
+ with rings of different colors for its identification.
+<br> The color code sequence will be ?
+<h3><label for="ans5">A<input type="radio" name="ans5" value="-1" id="ans5" />Yellow - Green - Violet - Gold </label></h3>
+<h4><label for="ans0501">B<input type="radio" name="ans5" value="4" id="ans0501" />Yellow - Violet - Orange - Silver  </label></h4>
+<h3><label for="ans0502">C<input type="radio" name="ans5" value="-1" id="ans0502" />Violet - Yellow - Orange – Silver   </label></h3>
+<h3><label for="ans0503">D<input type="radio" name="ans5" value="-1" id="ans0503"/>Green - Orange - Violet – Gold </label></h3>
+<h3><label for="ans0504">E<input type="radio" name="ans5" value="0" id="ans0504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+<h2>6)A set of 'n' equal resistors, of value R each,<br> 
+are connected in series to .a battery of emf  “E” and <br>
+internal resistance ‘R’.The  current drawn is I Now,<br>
+the n' resistors are connected  in parallel to the same battery.<br> 
+Then the current drawn from    battery becomes 10.<br>I The value of ‘n’ is</h2>
+
+<h3><label for="ans6">A<input type="radio" name="ans6" value="-1" id="ans6"/>20 </label></h3>
+<h3><label for="ans0601">B<input type="radio" name="ans6" value="-1" id="ans0601"/>11 </label></h3>
+<h4><label for="ans0602">C<input type="radio" name="ans6" value="4" id="ans0602" />10 </label></h4>
+<h3><label for="ans0603">D<input type="radio" name="ans6" value="-1" id="ans0603" />  9</label></h3>
+<h3><label for="ans0604">E<input type="radio" name="ans6" value="0" id="ans0604" />Not Attend</label></h3>
+
+
+
+
+
+
+<h2>7)A battery consists of a variable number ‘n' of identical<br> 
+cells  having internal resistance 'r' each which are<br>
+ connected in series  'The terminals of the battery <br>
+ are short-circuited and the current I is measured.<br>
+ Which of the grapha shows the correct relationship<br>
+ between I and n?</h2>
+<h4><label for="ans7">A<input type="radio" name="ans7" value="4" id="ans7"/><img src="/Photos/2018//2018 Neet DD Q2 Ans C.png " alt = "2018 Neet DD Q2 Ans C" height="125" width="225"> </label></h4>
+<h3><label for="ans0701">B<input type="radio" name="ans7" value="-1" id="ans0701"/><img src="/Photos/2018/2018 Neet DD Q2 Ans D.png " alt = "2018 Neet DD Q2 Ans D" height="125" width="225">  </label></h3>
+<h3><label for="ans0702">C<input type="radio" name="ans7" value="-1" id="ans0702" /><img src="/Photos/2018/2018 Neet DD Q2 Ans B.png " alt = "2018 Neet DD Q2 Ans B" height="125" width="225"> .</label></h3>
+
+<h3><label for="ans0703">D<input type="radio" name="ans7" value="-1" id="ans0703" /><img src="images/2018 Neet Q2 Ans A.png " alt = "2018 Neet Q2 Ans A" height="125" width="225">  </label></h3>
+<h3><label for="ans0704">E<input type="radio" name="ans7" value="0" id="ans0704" />Not Attend</label>
+
+
+
+
+
+
+
+
+
+
+<h2>8)Unpolarised light is incident from air on a plane surface<br>
+ of a material of refractive index 'p'- At a particular angle<br>
+ of incidence 'U',it is found that the reflected and refracted<br>
+ rays are perpendicular to each other. Which of the following<br>
+ options is correct for this situation ?  ?<h2>
+ <h3><label for="ans8">A<input type="radio" name="ans8" value="-1" id="ans8"/>$$i {= sin^-1{1\over μ}} $$  </label></h4>
+<h4><label for="ans0801">B<input type="radio" name="ans8" value="4" id="ans0801"/>Reflected light is polarised with its electric <br> vector perpendicular to the plane of incidence    </label></h4>
+<h3><label for="ans0802">C<input type="radio" name="ans8" value="-1" id="ans0802" />Reflected light is polarised with its electric vector <br>parallel to the plane of incidence ' </label></h3>
+<h3><label for="ans0803">D<input type="radio" name="ans8" value="-1" id="ans0803" />$$i {= tan^-1{1\over μ}} $$ </label></h3>
+<h3><label for="ans0804">E<input type="radio" name="ans8" value="0" id="ans0804" />Not Attend</label></h3>
+ 
+ 
+ 
+  
+ 
+
+
+
+
+
+<h2>9) In Young's double slit experiment the separation d<br>
+ between the slits is 2 mm, the wavelength λ of the<br>
+ light used is 5896 A and  distance D between the screen<br>
+ and slits is 100 cm. It is found that the angular width<br>
+ of the fringes is 0.20".To increase the fringe angular<br>
+ width to 0.21" (with same λ and D) the separation between<br>
+ the slits needs to be changed to  ?<h2>
+ <br>
+ <h3><label for="ans9">A<input type="radio" name="ans9" value="-1" id="ans9"/>2'1</label></h3>
+<h4><label for="ans0901">B<input type="radio" name="ans9" value="4" id="ans0901"/>l'9 </label></h>
+<h3><label for="ans0902">C<input type="radio" name="ans9" value="-1" id="ans0902" />1'8 </label></h3>
+<h3><label for="ans0903">D<input type="radio" name="ans9" value="-1" id="ans0903" />1'7 </label></h3>
+<h3><label for="ans0904">E<input type="radio" name="ans9" value="0" id="ans0904" />Not Attend</label></h3>
+ 
+
+
+
+
+
+
+
+<h2>10) An astronomical refracting telescope will   have<br>
+ large  angular magnification and high angular resolution,<br>
+ when it has an objective lens of  ?<h2>
+
+<h4><label for="ans10">A<input type="radio" name="ans10" value="4" id="ans10"/>large focal length and large diameter   </label></h4>
+<h3><label for="ans1001">B<input type="radio" name="ans10" value="-1" id="ans1001"/> large focal length and small diameter   </label></h3>
+<h3><label for="ans1002">C<input type="radio" name="ans10" value="-1" id="ans1002" />small focal length  and large diameter</label></h3>
+<h3><label for="ans1003">D<input type="radio" name="ans10" value="-1" id="ans1003" />small focal length and small 'diameter </label></h3>
+<h3><label for="ans1004">E<input type="radio" name="ans10" value="0" id="ans1004" />Not Attend</label></h3>
+
+
+ 
+   
+
+
+
+
+
+ 
+
+<h2>11)The ratio of kinetic energy  to the total energy of an <br>
+electron in a Bohr orbit of the hydrogen atom, is ?<h2>
+<h3><label for="ans11">A<input type="radio" name="ans11" value="-1" id="ans11"/>2:-1 </label></h3>
+<h4><label for="ans1101">B<input type="radio" name="ans11" value="4" id="ans1101"/>1:-1 </label></h4>
+<h3><label for="ans1102">C<input type="radio" name="ans11" value="-1" id="ans1102" />1:1</label></h3>
+<h3><label for="ans1103">D<input type="radio" name="ans11" value="-1" id="ans1103" />1:-2</label></h3>
+<h3><label for="ans1104">E<input type="radio" name="ans11" value="0" id="ans1104" />Not Attend</label></h3>
+
+
+
+
+
+<h2>12)An electron of mass m with an initial velocity<br>
+   
+  <sup> →</sup>V =V<sub>0</sub>î(V<sub>0</sub>>0)<br>
+  enters an electric field<br>
+  <sup> →</sup>E =−E<sub>0</sub>î(E<sub>0</sub>=constant >0) at t=0.<br>
+  If λ is its de-Broglie wavelength initially,.<br>
+  then its de-Broglie wavelength at time t is</h2>
+  
+
+<h3><label for="ans12">A<input type="radio" name="ans12" value="-1" id="ans12"/><img src="/Photos/2018/neet 2018 DD 8th Ans image C.png " alt = "neet 2018 DD 8th Ans image C.png" height="75" width="125"> </label></h3>
+<h3><label for="ans1201">B<input type="radio" name="ans12" value="-1" id="ans1201"/><img src="/Photos/2018/neet 2018 DD 8th Ans B.png " alt = "neet 2018 DD 8th Ans B" height="125" width="225"></label></h3>
+<h4><label for="ans1202">C<input type="radio" name="ans12" value="4" id="ans1202" /><img src="/Photos/2018/2018 NEET DD 8th Ans image for a.png" alt = "2018 NEET DD 8th Ans image for a" height="125" width="225"></label></h4>
+<h3><label for="ans1203">D<input type="radio" name="ans12" value="-1" id="ans1203" /><img src="/Photos/2018/neet 2018 DD 8th Ans image D.png" alt = "neet 2018 DD 8th Ans image D " height="125" width="225"></label></h3>
+<h3><label for="ans1204">E<input type="radio" name="ans12" value="0" id="ans1204" />Not Attend</label></h3>
+
+
+ 
+
+
+<h2>13)For a radioactive material, half-life 10 minutes.<br>
+If initially there are 600 number of nuclei,<br>
+the time taken (in minutes) -for the <br>
+disintegration of 450 nuclei is ?<h2>
+<h3><label for="ans13">A<input type="radio" name="ans13" value="-1" id="ans13"/>30 </label></h3>
+<h3><label for="ans1301">B<input type="radio" name="ans13" value="-1" id="ans1301"/>10  </label></label></h3>
+<h4><label for="ans1302">C<input type="radio" name="ans13" value="4" id="ans1302" />20 </label></label></h4>
+<h3><label for="ans1303">D<input type="radio" name="ans13" value="-1" id="ans1303" />15 </label></label></h3>
+<h3><label for="ans1304">E<input type="radio" name="ans13" value="0" id="ans01304" />Not Attend</label></h3>
+
+
+
+
+
+<h2>14)When the light of frequency 2v<sub>0</sub> (where v<sub>0</sub> is threshold<br>
+ frequency), is incident on a metal plate, the  maximum<br>
+ velocity of electrons  emitted from the same plate is<br>
+ v<sub>1</sub>. When the frequency of the incident radiation is <br>
+ increased to 5v<sub>0</sub>, the maximum velocity  of electrons<br>
+ emitted from the same plate is v2 .<br>
+ The ratio of v<sub>1</sub> to v<sub>2</sub> is  ? <h2>
+<h3><label for="ans14">A<input type="radio" name="ans14" value="-1" id="ans14"/> 4:1  </label></h3>
+<h3><label for="ans1401">B<input type="radio" name="ans14" value="-1" id="ans1401"/>1:4  </label></h3>
+<h4><label for="ans1402">C<input type="radio" name="ans14" value="4" id="ans1402" />1:2 </label></h4>
+<h3><label for="ans1403">D<input type="radio" name="ans14" value="-1" id="ans1403" />2:1 </label></h3>
+<h3><label for="ans1404">E<input type="radio" name="ans14" value="0" id="ans1404" />Not Attend</label></h3>
+
+
+
+<h2>15)In the circuit shown in the figure,<br>
+ the input voltage V<sub>i</sub> is 20 V, V<sub>BE</sub> = 0 and V<sub>CE</sub> = 0.<br>
+ The values of I<sub>B</sub> I<sub>C</sub> and β are given by  ?<h2>
+ 
+ <img src="/Photos/2018/2018 Neet DD 12th Q Diagram Electronics1-pp21-5-18.jpg" alt="2018 Neet DD 12th Q Diagram Electronics1-pp21-5-18" height="275" width="275">
+<h3><label for="ans15">A<input type="radio" name="ans15" value="-1" id="ans15"/>I<sub>B</sub> = 40 µA, I<sub>C<sub> = 10 mA,β = 250  </label></h3>
+<h3><label for="ans1501">B<input type="radio" name="ans15" value="-1" id="ans1501"/>I<sub>B</sub> =25  µA, I<sub>C</Sub> =5 mA, β = 200 </label></h3>
+<h3><label for="ans1502">C<input type="radio" name="ans15" value="-1" id="ans1502" />I<sub>B</sub> = 20 µA, I<sub>C</sub> =5 mA, β = 250  </label></h3>
+<h4><label for="ans1503">D<input type="radio" name="ans15" value="4" id="ans1503" />I<sub>B</sub> = 40 µA, I<Sub>C</sub> = 5 mA, β = 125 </label></h4>
+<h3><label for="ans1504">E<input type="radio" name="ans15" value="0" id="ans1504" />Not Attend</label></h3>
+ 
+
+
+
+
+
+
+
+ 
+
+
+ <h2>16)In a p-n junction diode, change in temperature  due to heating   ?<h2>
+
+ <h3><label for="ans16">A<input type="radio" name="ans16" value="-1" id="ans16" />does not affect resistance of p-n junction   </label></h4>
+<h3><label for="ans1601">B<input type="radio" name="ans16" value="-1" id="ans1601" />affects only forward resistance  </sub></label></h3>
+<h3><label for="ans1602">C<input type="radio" name="ans16" value="-1" id="ans1602" />affects only reverse resistance   </label></h3>
+<h4><label for="ans1603">D<input type="radio" name="ans16" value="4" id="ans1603"/>affects the overall V - I characteristics of p-n junction </label></h4>
+<h3><label for="ans1604">E<input type="radio" name="ans16" value="0" id="ans1704" />Not Attend</label></h3> 
+ 
+ 
+
+
+<h2>17)In the combination of the following gates the output<br> 
+Y can be  written in terms of inputs A and B as ?   <h2>
+<img src="/Photos/2018/neet 2018 DD 13th Q Diagram.png" alt ="neet 2018 DD 13th Q Diagram" height="325" width="425"> 
+<h3><label for="ans17">A<input type="radio" name="ans17" value="-1" id="ans17"/><img src="/Photos/2018/neet 2018 DD 13th Q Ans for C.png " alt = "neet 2018 DD 13th Q Ans for C" height="75" width="125"> </label></h3>
+<h4><label for="ans1701">B<input type="radio" name="ans17" value="4" id="ans1701"/><img src="/Photos/2018/neet 2018 DD 13th Q Ans for B.png " alt = "neet 2018 DD 13th Q Ans for B" height="75" width="125">  </label></h4>
+<h3><label for="ans1702">C<input type="radio" name="ans17" value="-1" id="ans1702" /><img src="/Photos/2018/neet 2018 DD 13th Q Ans for A.png " alt = "neet 2018 DD 13th Q Ans for A" height="75" width="125"> </label></h3>
+<h3><label for="ans1703">D<input type="radio" name="ans17" value="-1" id="ans1703" /><img src="/Photos/2018/neet 2018 DD 13th Q Ans for D.png " alt = "neet 2018 DD 13th Q Ans for A" height="75" width="125"> </label></h3>
+<h3><label for="ans1704">E<input type="radio" name="ans17" value="0" id="ans1704" />Not Attend</label></h3>
+ 
+
+<h2>18) An em wave is propagating in a medium with a velocity<br>
+  -> V = vectorVî. The instantaneous oscillating electric field of this<br>
+ em wave is along +y axis. Then the direction of oscillating<br>
+ magnetic field of the em wave will be along?<h2>
+
+ 	
+<h3><label for="ans18">A<input type="radio" name="ans18" value="-1" id="ans18" /> -y direction </label></h3>
+<h4><label for="ans1801">B<input type="radio" name="ans18" value="4" id="ans1801" />+ z direction</label></h4>
+<h3><label for="ans1802">C<input type="radio" name="ans18" value="-1" id="ans1802" />-  z direction  </label></h3>
+<h3><label for="ans1803">D<input type="radio" name="ans18" value="-1" id="ans1803" />–x direction  </label></h3>
+<h3><label for="ans1804">E<input type="radio" name="ans18" value="0" id="ans1804" />Not Attend</label></h3>
+
+
+
+
+
+
+  <h2>19) The refractive index of the material of a prism is<br>$$√ 2.$$<br>
+and the angle ofthe prism is 30<sup>0</sup> .One ofthe two<br>
+ refracting surfaces of tlie prism is made a mirror<br>
+ inwards, by silver coating. A beam of monochromatic<br>
+ light entering. the prism from the other face will<br>
+ retrace its path(after reflection from the silvered surface )<br>
+ if its angle of incidence on the prism is?</h2>
+ 
+ <h3><label for="ans19">A<input type="radio" name="ans19" value="-1" id="ans19" />30<sup>0</sup>  </label></h3>
+<h4><label for="ans1901">B<input type="radio" name="ans19" value="4" id="ans1901" />45<sup>0</sup> </label></h4>
+<h3><label for="ans1902">C<input type="radio" name="ans19" value="-1" id="ans1902" /> 60<sup>0</sup>   </label></h3>
+<h3><label for="ans1903">D<input type="radio" name="ans19"  value="-1" id="ans1903" />Zero  </label></h3>
+<h3><label for="ans1904">E<input type="radio" name="ans19" value="0" id="ans1904" />Not Attend</label></h3>
+ 
+
+
+
+<h2>20)An object is placed at a distance of 40 cm from a <br>
+concave mirror of focal length 15 cm. If the object is<br>
+ displaced through a distance of 20 cm towards the mirror,<br>
+ the displacement of the image will be   ?</h2>
+ 
+ <h3><label for="ans20">A<input type="radio" name="ans20" value="-1" id="ans20" />30 cm towards the mirror    </label></h3>
+<h4><label for="ans2001">B<input type="radio" name="ans20" value="4" id="ans2001" /> 36 cm away from the mirror   </label></h4>
+<h3><label for="ans2002">C<input type="radio" name="ans20" value="-1" id="ans2002" />30 cm away from the mirror   </label></h3>
+<h3><label for="ans2003">D<input type="radio" name="ans20" value="-1" id="ans2003"/>36 cm towards the mirror </label></h3>
+<h3><label for="ans2004">E<input type="radio" name="ans20" value="0" id="ans2004" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+<h2>21)The magnetic potential energy stored in a certain<br>
+ inductor is 25 mJ,when the current in the inductor is <br>
+ 60 mA.This inductor is of inductance?</h2>
+  <h3><label for="ans21">A<input type="radio" name="ans21" value="-1" id="ans21"/>1.389 H  </label></h3>
+<h3><label for="ans2101">B<input type="radio" name="ans21" value="-1" id="ans2101"/>138.88 H  </label></h3>
+<h3><label for="ans2102">C<input type="radio" name="ans21" value="-1" id="ans2102" />0.138 H  </label></h3>
+<h4><label for="ans2103">D<input type="radio" name="ans21" value="4" id="ans2103" />13.89 H   </label></h4>
+<h3><label for="ans2104">E<input type="radio" name="ans21" value="0" id="ans2104" />Not Attend</label></h3>
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+<h2>22)An electron falls from rest through a vertical <br>
+distance h in a uniform and vertically upward directed<br>
+ electric field E The direction of electric field is now <br>
+ reversed, keeping its magnitude the same.<br>
+ A proton is allowed to fall from rest in it through <br> 
+ same vertical distance h  The time of fall of the  electron,<br>
+ in comparison to the time of fall of the Proton is     ?</h2>
+  
+<h3><label for="ans22">A<input type="radio" name="ans22" value="-1" id="ans22"/>10 times greater    </label></h3>
+<h3><label for="ans2201">B<input type="radio" name="ans22" value="-1" id="ans2201"/>5 times greater </label></h3>
+<h4><label for="ans2202">C<input type="radio" name="ans22" value="4" id="ans2202" />smaller </label></h4>
+<h3><label for="ans2203">D<input type="radio" name="ans22" value="-1" id="ans2203" />equal </label></h3>
+<h3><label for="ans2204">E<input type="radio" name="ans22" value="0" id="ans2204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>23)The electrostatic force between the metal plates<br>
+ of an isolated parallel plate capacitor <br>
+ C having a charge  Q and area A is   ? </h2>
+ <h3><label for="ans23">A<input type="radio" name="ans23" value="-1" id="ans23"/>proportional to the square root of the distance  between the  Plates </label></h4>
+<h3><label for="ans2301">B<input type="radio" name="ans23" value="-1" id="ans2301"/>linearly proportional to the distance between the Plates' </label></h3>
+<h4><label for="ans2302">C<input type="radio" name="ans23" value="4" id="ans2302" />independent of the distance between the plates. </label></h4>
+<h3><label for="ans2303">D<input type="radio" name="ans23" value="-1" id="ans2303" />inversely proportional to the distance between the Plates   </label></h3>
+<h3><label for="ans2304">E<input type="radio" name="ans23" value="0" id="ans2304" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+<h2>24)A tuning fork is used to produce resonance in a<br>
+ glass tube. The length of the air column in this <br>
+ lube can be adjusted by a  variable piston At room<br>
+ temperature of 27<sup>0</sup>C two successive  resonances <br>
+ are produced at 20 cm and 73 cm  of column length.<br>
+ If the frequency of  the  tuning fork is 320 Hz,<br>
+ the velocity of sound in air at 27<sup>0</sup>C is ?</h2>
+ <h3><label for="ans24">A<input type="radio" name="ans24" value="-1" id="ans24"/>35O m/s    </label></h3>
+ <h4><label for="ans2401">B<input type="radio" name="ans24" value="4" id="ans2401"/>339 m/s   </label></h4>
+ <h3><label for="ans2402">C<input type="radio" name="ans24" value="-1" id="ans2402" />330 m/s </label></h3>
+ <h3><label for="ans2403">D<input type="radio" name="ans24" value="-1" id="ans2403" />300 m/s  </label></h3>
+ <h3><label for="ans2404">E<input type="radio" name="ans24" value="0" id="ans2404" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+<h2>25)A pendulum is hung from the roof of a sufficiently high<br>
+ building and is moving freely to and fro like a simple harmonic<br> 
+ oscillator' The acceleration of the bob of the <br>
+ pendulum is 2O m/s<sup>2</sup> at a distance of 5 m from<br>
+ the mean position. The time period of oscillation is  ?   </h2>
+ <br>
+ <br>
+<h3><label for="ans25">A<input type="radio" name="ans25" value="-1" id="ans25"/>$$2 s$$  </label></h3>
+ <h4><label for="ans2501">B<input type="radio" name="ans25" value="4" id="ans2501"/>$$π s$$  </label></h4>
+ <h3><label for="ans2502">C<input type="radio" name="ans25" value="-1" id="ans2502" />$$2π s$$ </label></h3>
+ <h3><label for="ans2503">D<input type="radio" name="ans25" value="-1" id="ans2503" />$$1 s$$  </label></h3>
+ <h3><label for="ans2504">E<input type="radio" name="ans25" value="0" id="ans2504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>26) A metallic rod of mass per unit length 0.5kg m<sup>-1</sup><br>
+ is lying horizontally on.a smooth inclined plane which<br>
+ makes an angle of 30<sup>0</sup> with the horizontal.The rod is<br>
+ not allowed to slide down by flowing a current<br>
+ through it when a magnetic field of induction<br>
+ 0.25 T is acting on it in the vertical direction.<br>
+ The current flowing in the rod to keep it stationary is?</h2>
+   <h3><label for="ans26">A<input type="radio" name="ans26" value="-1" id="ans26"/>14.76 A </label></h3>
+ <h3><label for="ans2601">B<input type="radio" name="ans26" value="-1" id="ans2601"/>5.98 A </label></h3>
+ <h3><label for="ans2602">C<input type="radio" name="ans26" value="-1" id="ans2602" />7.14 A </label></h3>
+ <h4><label for="ans2603">D<input type="radio" name="ans26" value="4" id="ans2603" />11.32 A  </label></h4>
+ <h3><label for="ans2604">E<input type="radio" name="ans26" value="0" id="ans2604" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+<h2>27)A thin  diamagnetic rod is placed vertically<br>
+ between the poles of an electromagnet. When the<br>
+ current in the electromagnet is switched on, then<br>
+the diamagnetic rod is pushed up,out of the<br>
+ horizontal magnetic field.Hence the rod <br>
+ gains gravitational potential energy.<br>
+ the work required to do this  comes from  ? </h2>
+ <h3><label for="ans27">A<input type="radio" name="ans27" value="-1" id="ans27"/>the lattice structure of the material of the rod   </label></h3>
+ <h3><label for="ans2701">B<input type="radio" name="ans27" value="4" id="ans2701"/>the magnetic field    </label></h3>
+ <h3><label for="ans2702">C<input type="radio" name="ans27" value="-1" id="ans2702" />the current source   </label> </h3>
+ <h4><label for="ans2703">D<input type="radio" name="ans27" value="4" id="ans2703" />the induced electric field due to the changing magnetic field  </label></h4>
+ <h3><label for="ans2704">E<input type="radio" name="ans27" value="0" id="ans2704" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+
+
+<h2>28) An inductor 20 mH a capacitor 100 µF and a <br>
+resistor 50 ^ are connected in series across a.source<br>
+of emf,V = 10 sin 314 t.The power loss in the circuit is?</h2>
+ <h3><label for="ans28">A<input type="radio" name="ans28" value="-1" id="ans28"/> 2.74W  </label></h3>
+ <h3><label for="ans2801">B<input type="radio" name="ans28" value="-1" id="ans2801"/>0.43W  </label></h3>
+ <h4><label for="ans2802">C<input type="radio" name="ans28" value="4" id="ans2802" />0.79W  </label></h4>
+ <h3><label for="ans2803">D<input type="radio" name="ans28" value="-1" id="ans2803" />1.13W  </label></h3>
+ <h3><label for="ans2804">E<input type="radio" name="ans28" value="0" id="ans2804" />Not Attend</label></h3>
+
+ 
+ 
+ 
+ 
+<h2>29) current sensitivity of a moving coil galvanometer<br>
+ is 5 div/mA and its voltage sensitivity<br>
+(angular deflection per unit voltage applied) is 20 div/V. <br>
+  The resistance  of the galvanometer is ?</h2>
+  
+  <h4><label for="ans29">A<input type="radio" name="ans29" value="4" id="ans29"/>$$ 250      ῼ $$  </label></h4>
+ <h3><label for="ans2901">B<input type="radio" name="ans29" value="-1" id="ans2901"/>$$ 25      ῼ $$  </label></h3>
+ <h3><label for="ans2902">C<input type="radio" name="ans29" value="-1" id="ans2902" />$$ 40          ῼ $$   </label></h3>
+ <h3><label for="ans2903">D<input type="radio" name="ans29" value="-1" id="ans2903" /> $$ 500    ῼ $$ </label></h3>
+ <h3><label for="ans2904">E<input type="radio" name="ans29" value="0" id="ans2904" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+ 
+
+<h2>30)A body initially at rest and sliding along a frictionless<br>
+ track from a height h (as shown in the figure) just completes<br>
+ a vertical circle of diameter AB = D.The height h is equal to?<h2>
+ 
+ 
+ <img src="/Photos/2018/Neet 2018 DD 15th Q Diagram.png " alt = "Neet 2018 DD 15th Q Diagram" height="175" width="275">
+ <h3><label for="ans30">A<input type="radio" name="ans30" value="-1" id="ans30"/>$$ {7 \over 5}D.$$    </label></h3>
+ <h3><label for="ans3001">B<input type="radio" name="ans30" value="-1" id="ans3001"/>$$ {3 \over 2}D.$$  </label></h3>
+ <h3><label for="ans3002">C<input type="radio" name="ans30" value="-1" id="ans3002"/>$$ {5 \over 4}D.$$  </label></h3>
+ <h4><label for="ans3003">D<input type="radio" name="ans30" value="4" id="ans3003"/>$$D $$ </label></h4>
+ <h3><label for="ans3004">E<input type="radio" name="ans30" value="0" id="ans3004" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>31)Three objects,A:(a solid sphere),B:(a thin circular disk)<br>
+ and C:(a circular ring),each have the same mass M and<br>
+ radius R. They all spin with the same angular speed<br>
+ w about their own symmetry axes.The amounts of work (W)<br>
+ required to bring them to rest,would satisfy the relation?</h2>
+ 
+ <h3><label for="ans31">A<input type="radio" name="ans31" value="-1" id="ans31" />W<sub>B</sub>>W<sub>A</sub>>W<sub>C</sub>   </label></h3>
+ <h3><label for="ans3101">B<input type="radio" name="ans31" value="-1" id="ans3101" />W<sub>A</sub>>W<sub>B</sub>>W<sub>C</sub> </label></h3>
+ <h4><label for="ans3102">C<input type="radio" name="ans31" value="4" id="ans3102" />W<sub>C</sub>>W<sub>B</sub>>W<sub>A</sub>  </label></h4>
+ <h3><label for="ans3103">D<input type="radio" name="ans31" value="-1" id="ans3103"/>W<sub>A</sub>>W<sub>C</sub>>W<sub>B</sub> </label></h3>
+ <h3><label for="ans3104">E<input type="radio" name="ans31" value="0" id="ans3104" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+
+
+<h2>32) A moving block having mass m,<br>
+ collides with another stationary block having mass<br>
+ 4m. The lighter block comes to rest after collision.<br>
+ When the initial velocity of the lighter block is v,<br>
+ then the value of coefficient of restitution (e) will be ?</h2>
+ <h3><label for="ans32">A<input type="radio" name="ans32" value="-1" id="ans32"/>0.8  </label></h3>
+ <h4><label for="ans3201">B<input type="radio" name="ans32" value="4" id="ans3201"/>0.25   </label></h4>
+ <h3><label for="ans3202">C<input type="radio" name="ans32" value="-1" id="ans3202"/>0.5  </label></h3>
+ <h3><label for="ans3203">D<input type="radio" name="ans32" value="-1" id="ans3203"/> 0.4</label></h3>
+ <h3><label for="ans3204">E<input type="radio" name="ans32" value="0" id="ans3204"/>Not Attend</label></h3>
+
+
+
+
+
+
+<h2>33)Which one of the following statements is incorrect ?   ?</h2>
+<h3><label for="ans33">A<input type="radio" name="ans33" value="-1" id="ans33" />Frictional force opposes the relative motion   </label></h3>
+ <h3><label for="ans3301">B<input type="radio" name="ans33" value="-1" id="ans3301"/>Limiting value of static friction is directly proportional to normal reaction   </label></h3>
+ <h3><label for="ans3302">C<input type="radio" name="ans33" value="-1" id="ans3302"/>Rolling friction is smaller than sliding friction  </label></h3>
+ <h4><label for="ans3303">D<input type="radio" name="ans33" value="4" id="ans3303"/>Coefficient of sliding friction has dimensions of length </label></h4>
+ <h3><label for="ans3304">E<input type="radio" name="ans33" value="0" id="ans3304"/>Not Attend</label></h3>
+
+
+
+
+
+
+
+<h2>34)A toy car with charge q moves on a frictionle <br>
+horizontal  plane surface under the influence <br>
+of uniform electric field E . Due to the <br>
+force q vector E its velocity increases from <br>
+0 to 6 m/s in one second duration. At that<br>
+ instant the direction the field is reversed.<br>
+ The car continues to move for two more seconds<br>
+ under the influence of the  field. <br>
+ The average velocity and the average<br>
+ speed of the toy car between 0 to 3 seconds<br>
+ are respectively ?</h2>
+<h3><label for="ans34">A<input type="radio" name="ans34" value="-1" id="ans34"/>1 m/s, 3.5 m/s   </label></h3>
+ <h4><label for="ans3401">B<input type="radio" name="ans34" value="4" id="ans3401"/>1m/s,3m/s   </label></h4>
+ <h3><label for="ans3402">C<input type="radio" name="ans34" value="-1" id="ans3402"/>2m/s, 4m/s  </label></h3>
+ <h3><label for="ans3403">D<input type="radio" name="ans34"  value="-1" id="ans3403"/>l.5 m/s, 3 m/s</label></h3>
+ <h3><label for="ans3404">E<input type="radio" name="ans34" value="0" id="ans3404" />Not Attend</label></h3>
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+<h2>35)A block of mass m is placed on a smooth inclined<br>
+ wedge ABC of inclination 0 as shown in the figure.<br>
+ The wedge is given an acceleration ‘a' towards the right.<br>
+ The relation between a and θ for the block to<br>
+ remain stationary on the wedge is </h2>
+ <img src="/Photos/2018/2018 Neet DD Q22 Diagram.png " alt = "2018 Neet DD Q22 Diagram" height="175" width="275"> 
+<h3><label for="ans35">A<input type="radio" name="ans35" value="-1" id="ans35"/>$$ a= g cos 0 $$  </label></h3>
+ <h3><label for="ans3501">B<input type="radio" name="ans35" value="-1" id="ans3501" />$$a = {g \ \over sin 0}$$  </label></h3>
+ <h3><label for="ans3502">C<input type="radio" name="ans35" value="-1" id="ans3502" />$$a = {g \ \over cosec 0}$$  </label></h3>
+ <h4><label for="ans3503">D<input type="radio" name="ans35" value="4" id="ans3503"/>$$ a= g tan 0 $$ </label></h4>
+ <h3><label for="ans3504">E<input type="radio" name="ans35" value="0" id="ans3504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>36)The moment of the force The moment of the force, vector ->F = 4î + 5ĵ - 6k̂  $$  at (2, 0, - 3), about the point (2, –2, –2), is given by:?</h2>
+
+
+  <h3><label for="ans36">A<input type="radio" name="ans36" value="-1" id="ans36"/>-7î -8ĵ-4k̂ </label></h4>
+ <h3><label for="ans3601">B<input type="radio" name="ans36" value="-1" id="ans3601"/>-4î-ĵ-8k̂</label></h3>
+ <h3><label for="ans3602">C<input type="radio" name="ans36" value="-1" id="ans3602" />-8î-4ĵ-7k̂</label></h3>
+ <h4><label for="ans3603">D<input type="radio" name="ans36" value="4" id="ans3603" />-7î -4ĵ-8k̂ </label></h4>
+ <h3><label for="ans3604">E<input type="radio" name="ans36" value="0" id="ans3604" />Not Attend</label></h3>
+
+  
+
+
+
+
+<h2>37)A student measured the diameter of a small steel<br>
+ ball using a screw gauge of least count 0.001cm.<br>
+ The main scale reading is 5mm and zero of circular<br>
+ scale division coincides with 25 divisions above the<br>
+ reference level. If screw gauge has a zero error<br>
+ of – 0.004cm,the correct diameter of the ball is :-?</h2>
+  <h3><label for="ans37">A<input type="radio" name="ans37" value="-1" id="ans37"/>0.053cm    </label></h3>
+ <h3><label for="ans3701">B<input type="radio" name="ans37" value="-1" id="ans3701"/>0.525cm   </label></h3>
+ <h3><label for="ans3702">C<input type="radio" name="ans37" value="-1" id="ans3702" />0.521cm  </label></h3>
+ <h4><label for="ans3703">D<input type="radio" name="ans37" value="4" id="ans3703" />0.529cm    </label></h4>
+ <h3><label for="ans3704">E<input type="radio" name="ans37" value="0" id="ans3704" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+<h2>38) A solid sphere is rotating freely about<br>
+ its symmetry axis in free space.The radius of <br>
+ the sphere is increased keeping its mass same.<br>
+ Which of the following physical quantities would<br>
+ remain constant for the sphere? <h2>
+ <h3><label for="ans38">A<input type="radio" name="ans38" value="-1" id="ans38"/>Rotational kinetic energy   </label></h3>
+ <h3><label for="ans3801">B<input type="radio" name="ans38" value="-1" id="ans3801"/> Moment of inertia</label></h3>
+ <h3><label for="ans3802">C<input type="radio" name="ans38" value="-1" id="ans3802"/>Angular velocity  </label></h3>
+ <h4><label for="ans3803">D<input type="radio" name="ans38" value="4" id="ans3803"/>Angular momentum </label></h4>
+ <h3><label for="ans3804">E<input type="radio" name="ans38" value="0" id="ans3804" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+<h2>39) The kinetic energies of a planet in an<br>
+ elliptical orbit about the Sun,at positions A B<br>
+ and C are K<sub>A</sub>, K<sub>B</sub> K<sub>c</sub> It, respectively.AC is the<br>
+ major axis and SB is perpendicular to AC at the<br>
+ position of the Sun<br>
+ S as shown in the figure. Then  ?   <h2>
+ 
+ <img src="/Photos/2018/2018 Neet 43rd Q Diagram.png " alt = " " height="175" width="275"> 
+ <h3><label for="ans39">A<input type="radio" name="ans39" value="-1" id="ans39"/><img src="/Photos/2018/2018 Neet 43rd Q  Ans C.png " alt = "2018 Neet 43rd Q  Ans C" height="25" width="75">   </label></h3>
+ <h4><label for="ans3901">B<input type="radio" name="ans39" value="4" id="ans3901"/><img src="/Photos/2018/2018 Neet 43rd Q Ans B.png " alt = "2018 Neet 43rd Q Ans B  " height="25" width="75">   </label></h4>
+ <h3><label for="ans3902">C<input type="radio" name="ans39" value="-1" id="ans3902" /><img src="/Photos/2018/2018 Neet 43rd Q Ans A.png " alt = "2018 Neet 43rd Q Ans A  " height="25" width="75">   </label></h3>
+ <h3><label for="ans3903">D<input type="radio" name="ans39" value="-1" id="ans3903" /><img src="/Photos/2018/2018 Neet 43rd Q  Ans D.png " alt = "2018 Neet 43rd Q  Ans D" height="25" width="75"></label></h3>
+ <h3><label for="ans3904">E<input type="radio" name="ans39" value="0" id="ans3904" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+<h2>40) If the mass of the Sun were ten times<br>
+ smaller and the universal gravitational constant<br>
+ were ten times larger in magnitude.<br>
+ which of the following is not correct?<h2>
+ <h3><label for="ans40">A<input type="radio" name="ans40" value="-1" id="ans40"/>Time period of a simple pendulum on the Earth would decrease  </label></h3>
+ <h3><label for="ans4001">B<input type="radio" name="ans40" value="-1" id="ans4001"/>Walking on the ground  would become more difficult    </label></h3>
+ <h3><label for="ans4002">C<input type="radio" name="ans40" value="-1" id="ans4002" />Raindrops will fall faster  </label></h3>
+ <h4><label for="ans4003">D<input type="radio" name="ans40" value="4" id="ans4003" />‘g’ on the Earth will not change   </label></h4>
+ <h3><label for="ans4004">E<input type="radio" name="ans40" value="0" id="ans4004" />Not Attend</label></h3>
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+<h2>41) A solid sphere is in rolling motion.<br>
+ In rolling motion a body  possesses translational<br>
+ kinetic energy (K<sub>t</sub>)as well as rotational kinetic<br>
+ energy  (K<sub>r</sub>) simultaneously.The ratio<br>
+ K<sub>t</sub> :K<sub>t</sub> + K<sub>r</sub>) for the sphere is   ?<h2>
+  <h3><label for="ans41">A<input type="radio" name="ans41" value="-1" id="ans41"/>10:7 </label></h3>
+ <h4><label for="ans4101">B<input type="radio" name="ans41" value="4" id="ans4101"/>5:7</label></h4>
+ <h3><label for="ans4102">C<input type="radio" name="ans41" value="-1" id="ans4102" />7:10</label></h3>
+ <h3><label for="ans4103">D<input type="radio" name="ans41" value="-1" id="ans4103" /> 2:5 </label></h3>
+ <h3><label for="ans4104">E<input type="radio" name="ans41" value="0" id="ans4104" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+<h2>42)A small sphere of radius 'r' falls from <br>
+rest in a viscous liquid.As a result,heat is <br>
+produced due to viscous force.The rate of<br>
+ production of heat when the sphere attains <br>
+ its terminal velocity,is.proportional to?</h2>
+   <h4><label for="ans42">A<input type="radio" name="ans42" value="4" id="ans42"/>r<sup>5</sup>  </label> </h4>
+ <h3><label for="ans4201">B<input type="radio" name="ans42" value="-1" id="ans4201"/>r<sup>2</sup>  </label></h3>
+ <h3><label for="ans4202">C<input type="radio" name="ans42" value="-1" id="ans4202" />r<sup>3</sup> </label></h3>
+ <h3><label for="ans4203">D<input type="radio" name="ans42" value="-1" id="ans4203" />r<sup>4</sup> </label></h3>
+ <h3><label for="ans4204">E<input type="radio" name="ans42" value="0" id="ans4204" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+
+<h2>43)The power radiated by a black body is<br>
+ P and it radiates maximum energy at wavelength,<br>
+ λ<sub>0</sub> If the temperature of the black body is now<br>
+ changed so that it radiates maximum energy at <br>
+ wavelength $${3\over 4}λ$$ power radiated by it becomes nP.<br>
+ The value of n is ? <h2>
+<h4><label for="ans43">A<input type="radio" name="ans43" value="4" id="ans43"/>$$256\over 81$$   </label></h4>
+ <h3><label for="ans4301">B<input type="radio" name="ans43" value="-1" id="ans4301"/>$$4\over 3$$  </label></h3>
+ <h3><label for="ans4302">C<input type="radio" name="ans43" value="-1" id="ans4302" />$$3\over 4$$  </label></h3>
+ <h3><label for="ans4303">D<input type="radio" name="ans43" value="-1" id="ans4303" />$$81\over256 $$ </label></h3>
+ <h3><label for="ans4304">E<input type="radio" name="ans43" value="0" id="ans4304" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<h2>44)Two wires are made of the same material and<br>
+ have the same volume. However wire 1 has cross–section<br>
+ area A and wire 2 has cross–sectional area 3A.<br>
+ If the length of wire 1 increases by ∆x on applying force F,<br>
+ how much force is needed to stretch wire 2 by the same amount ?
+ 
+ 
+ <h3><label for="ans44">A<input type="radio" name="ans44" value="-1" id="ans44"/>4 F  </label></h3>
+ <h3><label for="ans4401">B<input type="radio" name="ans44" value="-1" id="ans4401"/>6 F</label></h3>
+ <h4><label for="ans4402">C<input type="radio" name="ans44" value="4" id="ans4402" /> 9 F</label></h4>
+ <h3><label for="ans4403">D<input type="radio" name="ans44" value="-1" id="ans4403" /> F</label></h3>
+ <h3><label for="ans4404">E<input type="radio" name="ans44" value="0" id="ans4404" />Not Attend</label></h3>
+ 
+ 
+ 
+
+ 
+ 
+ 
+ <h2>45) A sample of 0.1 g of water at 100<sup>0</sup> and<br>
+ normal pressure (1.013 x 10<sup>5</sup> Nm<sup>-2</sup>) requires 54 cal<br>
+ of heat energy to convert to steam at 100<sup>0</sup>.<br>
+ If the volume of the steam produced is 167.1 cc,<br>
+ the change in internal energy of the sample, is ?<h2>
+ <h3><label for="ans45">A<input type="radio" name="ans45" value="-1" id="ans45"/>42.2 J  </label></h3>
+ <h4><label for="ans4501">B<input type="radio" name="ans45" value="4" id="ans4501"/> 208.7 J   </label></h4>
+ <h3><label for="ans4502">C<input type="radio" name="ans45" value="-1" id="ans4502" />104.3 J</label></h3>
+ <h3><label for="ans4503">D<input type="radio" name="ans45" value="-1" id="ans4503" />84.5 J   </label></h3>
+ <h3><label for="ans4504">E<input type="radio" name="ans45" value="0" id="ans4504" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+
+
+<h2>46)The correct order of N-compounds in its .<br>
+ decreasing order of oxidation states is?</h2>
+<h3><label for="ans46">A<input type="radio" name="ans46" value="-1" id="ans46" />HNO<sub>3</sub>, NH<sub>4</sub>CI, NO, N<sub>2</sub>  </label></h3>
+ <h3><label for="ans4601">B<input type="radio" name="ans46" value="-1" id="ans4601" />HNO<sub>3</sub>, NO, NH<sub>4</sub>CI, N<sub>2</sub> </label></h3>
+ <h4><label for="ans4602">C<input type="radio" name="ans46" value="4" id="ans4602" />HNO<sub>3</sub>, NO, N<sub>2</sub>, NH<sub>4</sub>CI </label></h4>
+ <h3><label for="ans4603">D<input type="radio" name="ans46" value="-1" id="ans4603"/> NH<sub>4</sub>CI, N<sub>2</sub>, NO, HNO<sub>3</sub> </label></h3>
+ <h3><label for="ans4604">E<input type="radio" name="ans46" value="0" id="ans4604" />Not Attend</label></h3>
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+<h2>47) Which one of the following elements is unable to form MF<sup>3-</sup><sub>6</sub>ion ?</h2>
+
+
+<h4><label for="ans47">A<input type="radio" name="ans47" value="4" id="ans47"/>B </label></h4>
+ <h3><label for="ans4701">B<input type="radio" name="ans47" value="-1" id="ans4701"/>Al </label></h3>
+ <h3><label for="ans4702">C<input type="radio" name="ans47" value="-1" id="ans4702" />Ga   </label></h3>
+ <h3><label for="ans4703">D<input type="radio" name="ans47" value="-1" id="ans4703" />In </label></h3>
+ <h3><label for="ans4704">E<input type="radio" name="ans47" value="0" id="ans4704" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+ 
+ <h2>48) Considering Ellingham diagram, <br>
+which of the following metals can be used to reduce alumina ?</h2>
+
+
+<h4><label for="ans48">A<input type="radio" name="ans48" value="4" id="ans48" />Mg  </label></h4>
+ <h3><label for="ans4801">B<input type="radio" name="ans48" value="-1" id="ans4801" />Zn  </label></h3>
+ <h3><label for="ans4802">C<input type="radio" name="ans48" value="-1" id="ans4802" />Fe </label></h3>
+ <h3><label for="ans4803">D<input type="radio" name="ans48" value="-1" id="ans4803" /> cu   </label></h3>
+ <h3><label for="ans4804">E<input type="radio" name="ans48" value="0" id="ans4804" />Not Attend</label></h3>
+
+
+
+
+ 
+ 
+ 
+
+<h2>49) The correct order of atomic radii in group 13 elements is ?</h2>
+<h3><label for="ans49">A<input type="radio" name="ans49" value="-1" id="ans49" /> $$ B < Ga < Al < Tl < In $$</label></h3>
+ <h3><label for="ans4901">B<input type="radio" name="ans49" value="-1" id="ans4901" /> $$ B < Ga < Al < In < TI $$ </label></h3>
+ <h3><label for="ans4902">C<input type="radio" name="ans49" value="-1" id="ans4902" />$$B < AI < In < Ga < Tl $$   </label></h3>
+ <h4><label for="ans4903">D<input type="radio" name="ans49"  value="4" id="ans4903" />$$ B < Al < Ga < In < Tl $$   </label></h4>
+ <h3><label for="ans4904">E<input type="radio" name="ans49" value="0" id="ans4904" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+<h2>50)Which of the following statements is not ture for halogens?
+<h3><label for="ans50">A<input type="radio" name="ans50" value="-1" id="ans50" />All but fluorine  show positive oxidation states  </label></h3>
+ <h3><label for="ans5001">B<input type="radio" name="ans50" value="-1" id="ans5001" />All are oxidizings agents </label></h3>
+ <h4><label for="ans5002">C<input type="radio" name="ans50" value="4" id="ans5002" />All form monobasic oxyacids  </label></h4>
+ <h3><label for="ans5003">D<input type="radio" name="ans50" value="-1" id="ans5003"/>Chlorine has the highest electron gain enthalpy </label></h3>
+ <h3><label for="ans5004">E<input type="radio" name="ans50" value="0" id="ans5004" />Not Attend</label> </h3>
+
+
+
+
+
+
+
+<h2>51) In the structure of ClF<sub>3</sub>,the number of 
+lone pairs  of electrons on central atom Cl is  ?</h2>
+<h3><label for="ans51">A<input type="radio" name="ans51" value="-1" id="ans51"/>four  </label></h3>
+<h4><label for="ans5101">B<input type="radio" name="ans51" value="4" id="ans5101"/>two </label></h4>
+<h3><label for="ans5102">C<input type="radio" name="ans51" value="-1" id="ans5102" />one  </label></h3>
+<h3><label for="ans5103">D<input type="radio" name="ans51" value="-1" id="ans5103" />three </label></h3>
+<h3><label for="ans5104">E<input type="radio" name="ans51" value="0" id="ans5104" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+<h2>52)Identify the major products P, Q 'and R in the <br>
+following sequence of reactions :<br>
+ 
+<img src="/Photos/2018/2018 Neet DD Q 155 Diagram.png" alt ="2018 Neet DD Q 155 Diagram" height="175" width="250">
+
+ ?</h2>
+ 
+ <h3><label for="ans52">A<input type="radio" name="ans52" value="-1" id="ans52"/><img src="/Photos/2018/2018 Neet DD Q155  Ans C.png" alt ="2018 Neet DD Q155  Ans C " height="175" width="250">   </label></h3>
+<h3><label for="ans5201">B<input type="radio" name="ans52" value="-1" id="ans5201"/><img src="/Photos/2018/2018 Neet DD Q155 Ans B.png" alt ="2018 Neet DD Q155 Ans B " height="175" width="250">    </label></h3>
+<h3><label for="ans5202">C<input type="radio" name="ans52" value="-1" id="ans5202"><img src="/Photos/2018/2018 Neet DD Q155  Ans A.png" alt ="2018 Neet DD Q155  Ans A " height="175" width="250"> </label></h3>
+<h4><label for="ans5203">D<input type="radio" name="ans52" value="4" id="ans5203" /><img src="/Photos/2018/2018 Neet DD Q 155 Diagram D Ans.png" alt ="2018 Neet DD Q 155 Diagram D Ans " height="175" width="250"> </label></h4>
+<h3><label for="ans5204">E<input type="radio" name="ans52" value="0" id="ans5204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+<h2>53) Which of the following compounds can form a zwitterion ?    ?</h2>
+<h3><label for="ans53">A<input type="radio" name="ans53" value="-1" id="ans53"/>Benzoic acid  </label></h3>
+<h3><label for="ans5301">B<input type="radio" name="ans53" value="-1" id="ans5301"/>Acetanilide   </label></h3>
+<h3><label for="ans5302">C<input type="radio" name="ans53" value="-1" id="ans5302" />Aniline    </label></h3>
+<h4><label for="ans5303">D<input type="radio" name="ans53" value="4" id="ans5303" />Glycine  </label></h4>
+<h3><label for="ans5304">E<input type="radio" name="ans53" value="0" id="ans5304" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+<h2>54)Regarding cross-linked or network polymers<br>
+ which of the following statements is incorrect ?</h2>
+<h3><label for="ans54">A<input type="radio" name="ans54" value="-1" id="ans54"/>Examples are bakelite  and melamine  </label></h3>
+<h3><label for="ans5401">B<input type="radio" name="ans54" value="-1" id="ans5401"/>They are formed from bi- and tri-functional monomers  </label></h3>
+<h3><label for="ans5402">C<input type="radio" name="ans54" value="-1" id="ans5402" /> They contain covalent bonds between various linear Polymer chains. </label></h3>
+<h4><label for="ans5403">D<input type="radio" name="ans54" value="4" id="ans5403" />They contain strong covalent bonds in their polymer chains</label></h4>
+<h3><label for="ans5404">E<input type="radio" name="ans54" value="0" id="ans5404" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+<h2>55)  Nitration of aniline in strong acidic medium also gives m-nitroaniline because  ?</h2>
+<h3><label for="ans55">A<input type="radio" name="ans55" value="-1" id="ans55"/>In absence of substituents nitro group always goes to m-Position.   </label></h3>
+<h3><label for="ans5501">B<input type="radio" name="ans55" value="-1" id="ans5501"/>In  electrophilic substitution reactions amino group  is  meta directive.  </label></h3>
+<h3><label for="ans5502">C<input type="radio" name="ans55" value="-1" id="ans5502" />In spite of substituents nitro group always goes to only m-Position   </label></h3>
+<h4><label for="ans5503">D<input type="radio" name="ans55" value="4" id="ans5503" />In acidic (strong) medium aniline is present as anilinium ion. </label></h4>
+<h3><label for="ans5504">E<input type="radio" name="ans55" value="0" id="ans5504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+<h2>56) The difference between amylose and amylopectin is  ?</h2>
+  <h3><label for="ans56">A<input type="radio" name="ans56" value="-1" id="ans56"/>Amylopectin have 1 → 4 ᾳ -Iinkage and 1 → 6  β-linkage  </label></h3>
+<h3><label for="ans5601">B<input type="radio" name="ans56" value="-1" id="ans5601"/>Amylose have 1 → 4 ᾳ -Iinkage and 1 → 6  β-linkage </label></h3>
+<h4><label for="ans5602">C<input type="radio" name="ans56" value="4" id="ans5602" />Amylopectin have 1→r 4 ᾳ-linkage and 1 → 6 ᾳ -Iinkage </label></h4>
+<h3><label for="ans5603">D<input type="radio" name="ans56" value="-1" id="ans5603" />  Amylose is made up of glucose and galcatose  </label></h3>
+<h3><label for="ans5604">E<input type="radio" name="ans56" value="0" id="ans5604" />Not Attend</label></h3>
+
+
+  
+
+
+
+
+
+
+
+
+
+<h2>57)A mixture of 2-3 g formic acid and 4-5 g oxalic acid<br>
+ is treated with conc.'H<sub>2</sub>SO<sub>4</sub>. The evolved gaseous mixture is<br>
+ passed through KOH pellets' Weight (in g ) of the remaining<br>
+ Product at STP will be ?</h2>
+  <h4><label for="ans57">A<input type="radio" name="ans57" value="4" id="ans57"/>2-8  </label></h4>
+<h3><label for="ans5701">B<input type="radio" name="ans57" value="-1" id="ans5701"/>3-0 </label></h3>
+<h3><label for="ans5702">C<input type="radio" name="ans57" value="-1" id="ans5702" /> 1-4 </label></h3>
+<h3><label for="ans5703">D<input type="radio" name="ans57" value="-1" id="ans5703" />4-4  </label></h3>
+<h3><label for="ans5704">E<input type="radio" name="ans57" value="0" id="ans5704" />Not Attend</label></h3>
+
+
+
+
+
+
+
+ 
+
+
+                    
+<h2>58)Which of the following oxides is most acidic in nature?</h2>
+ <h3><label for="ans58">A<input type="radio" name="ans58" value="-1" id="ans58"/>BaO  </label></h3>
+<h4><label for="ans5801">B<input type="radio" name="ans58" value="4" id="ans5801"/>BeO  </label></h4>
+<h3><label for="ans5802">C<input type="radio" name="ans58" value="-1" id="ans5802" />MgO</label></h3>         
+<h3><label for="ans5803">D<input type="radio" name="ans58" value="-1" id="ans5803" />CaO  </label></h3>                    
+<h3><label for="ans5804">E<input type="radio" name="ans58" value="0" id="ans5804" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+
+
+
+
+<h2>59)  Which oxide of nitrogen is not a common pollutant<br> 
+introduced into the atmosphere both due to<br>
+ natural and human activity ?</h2>
+ <h3><label for="ans59">A<input type="radio" name="ans59" value="-1" id="ans59"/> N<sub>2</sub>O  </label></h3>
+<h3><label for="ans5901">B<input type="radio" name="ans59" value="-1" id="ans5901"/>NO<sub>2</sub>  </label></h3>
+<h4><label for="ans5902">C<input type="radio" name="ans59" value="4" id="ans5902" />N<sub>2</sub>O<sub>5</sub> . </label></h4>
+<h3><label for="ans5903">D<input type="radio" name="ans59" value="-1" id="ans5903" /> NO .</label></h3>
+<h3><label for="ans5904">E<input type="radio" name="ans59" value="0" id="ans5904" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+
+
+<h2>60)The compound A on treatment with Na gives B,<br>
+ and with PCl<sub>5</sub> gives C. B and C react <br>
+ together to give diethyl ether. A,B and C are in the order?</h2>
+ 
+ <h3><label for="ans60">A<input type="radio" name="ans60" value="-1" id="ans60"/>C<sub>2</sub>H<sub>5</sub>Cl, C<sub>2</sub>H<sub>6</sub>,C<sub>2</sub>H<sub>5</sub>OH </label></h3>
+<h3><label for="ans6001">B<input type="radio" name="ans60" value="-1" id="ans6001"/>C<sub>2</sub>H<sub>5</sub>oH, C<sub>2</sub>H<sub>5</sub>Cl, C<sub>2</sub>H<sub>5</sub>ONa  </label></h3>
+<h3><label for="ans6002">C<input type="radio" name="ans60" value="-1" id="ans6002" />C<sub>2</sub>H<sub>5</sub>OH, C<sub>2</sub>H<sub>6</sub>, C<sub>2</sub>H<sub>5</sub>C1  </label></h3>
+<h4><label for="ans6003">D<input type="radio" name="ans60" value="4" id="ans6003" />C<sub>2</sub>H<sub>6</sub>OH, C<sub>2</sub>H<sub>5</sub>ONa, C<sub>2</sub>H<sub>5</sub>Cl  </label></h4>
+<h3><label for="ans6004">E<input type="radio" name="ans60" value="0" id="ans6004" />Not Attend</label></h3>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+<h2>61)The compound C<sub>7</sub>H<sub>8</sub>, undergoes the following  reactions ,</h2><br>
+<img src="/Photos/2018/2018 Neet DD Q144 Diagram.png" alt = "2018 Neet DD Q144 Diagram" height="105" width ="305" <br>
+<h3><label for="ans61">A<input type="radio" name="ans61" value="-1" id="ans61" />3-bromo-2,4,6-trichlorotoluene  </label></h3>
+<h3><label for="ans6101">B<input type="radio" name="ans61" value="-1" id="ans6101" />o-brumotoluene  </label></h3>
+<h4><label for="ans6102">C<input type="radio" name="ans61" value="4" id="ans6102" />m-bromotolue </label></h4>
+<h3><label for="ans6103">D<input type="radio" name="ans61" value="-1" id="ans6103"/>p-bromotoluene</label></h3>
+<h3><label for="ans6104">E<input type="radio" name="ans61" value="0" id="ans6104" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+<h2>62)Hydrocarbon (A) reacts with - bromine by substitution to<br>
+ form an alkyl bromide which by Wurtz reaction is converted to gaseous <br>
+ hydrocarbon containing less than four carbon atoms. (A) is  ?</h2>
+<h3><label for="ans62">A<input type="radio" name="ans62" value="-1" id="ans62"/>CH<sub>3</sub>=CH<sub>3</sub>  </label></h3>
+<h3><label for="ans6201">B<input type="radio" name="ans62" value="-1" id="ans6201"/>CH<sub>2</sub>=CH<sub>2</sub> </label></h3>
+<h3><label for="ans6202">C<input type="radio" name="ans62" value="-1" id="ans6202" />CH=CH  </label></h3>
+<h4><label for="ans6203">D<input type="radio" name="ans62" value="4" id="ans6203" /> CH<sub>4</sub></label></h4>
+<h3><label for="ans6204">E<input type="radio" name="ans62" value="0" id="ans6204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+<h2>63)Which of the following molecules represents the <br>
+order of hybridization  SP<sup>2</sup> ,Sp<sup>2</sup> ,Sp,Sp<br>
+ From left to right atoms?</h2>
+ 
+ <h3><label for="ans63">A<input type="radio" name="ans63" value="-1" id="ans63" />CH<sub>2</sub> = CH - CH = CH<sub>2</sub>   </label></h3>
+<h4><label for="ans6301">B<input type="radio" name="ans63" value="4" id="ans6301" />CH<sub>2</sub>=CH-C=CH    </label></h4>
+<h3><label for="ans6302">C<input type="radio" name="ans63" value="-1" id="ans6302" />HC=C-C=CH   </label></h3>
+<h3><label for="ans6303">D<input type="radio" name="ans63" value="-1" id="ans6303" /> CH<sub>3</sub> - CH = CH - CH<sub>3</sub> </label></h3>
+<h3><label for="ans6304">E<input type="radio" name="ans63" value="0" id="ans6304" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+
+
+
+
+
+<h2>64) Which of the following carbocations is expected to be most stable ?</h2>
+
+<h4><label for="ans64">A<input type="radio" name="ans64" value="4" id="ans64" /><img src="/Photos/2018/2018 Neet DD Q158  Ans C.png" alt ="2018 Neet DD Q158 Ans C" height="175" width="205"> </label></h4>
+<h3><label for="ans6401">B<input type="radio" name="ans64" value="-1" id="ans6401" /><img src="/Photos/2018/2018 Neet DD Q158  Ans B.png" alt ="2018 Neet DD Q158 Ans B" height="175" width="205">  </label></h3>
+<h3><label for="ans6402">C<input type="radio" name="ans64" value="-1" id="ans6402" /><img src="/Photos/2018/2018 Neet DD Q158 Ans A.png" alt ="2018 Neet DD Q158 Ans A" height="175" width="205">  </label></h3>
+<h3><label for="ans6403">D<input type="radio" name="ans64"  value="-1" id="ans6403" /><img src="/Photos/2018/2018 Neet DD Q158 Ans D.png" alt ="2018 Neet DD Q158 Ans D" height="175" width="205"> </label></h3>
+<h3><label for="ans6404">E<input type="radio" name="ans64" value="0" id="ans6404" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>65)Which of the following is correct with<br>
+ respect to _ I effect of the substituents ? (R = alkyl)?</h2>
+ 
+ 
+ <h3><label for="ans65">A<input type="radio" name="ans65" value="-1" id="ans65" />-NH<sub>2</sub><-OR<-F   </label></h3>
+<h3><label for="ans6501">B<input type="radio" name="ans65" value="-1" id="ans6501" />-NR<sub>2</sub><-oR<-F   </label></h3>
+<h4><label for="ans6502">C<input type="radio" name="ans65" value="4" id="ans6502" />-NH<sub>2</sub>>-OR>-F   </label></h4>
+<h3><label for="ans6503">D<input type="radio" name="ans65" value="-1" id="ans6503"/> -NR<sub>2</sub>>-OR>-F</label></h3>
+<h3><label for="ans6504">E<input type="radio" name="ans65" value="0" id="ans6504" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+ 
+
+<h2>66)In the reaction
+<img src="/Photos/2018/2018 Neet DD Q164 Diagram.png" alt ="2018 Neet DD Q164 Diagram " height="105" width="205">
+the electrophile involved is
+
+ ?</h2>
+<h3><label for="ans66">A<input type="radio" name="ans66" value="-1" id="ans66"/>dichloromethyl anion(CHCI2) </label></h3>
+<h3><label for="ans6601">B<input type="radio" name="ans66" value="-1" id="ans6601"/>formyl cation ( +CHO )  </label></h3>
+<h3><label for="ans6602">C<input type="radio" name="ans66" value="-1" id="ans6602" />dichloromethyl cation  (+CHCI2) </label></h3>
+<h4><label for="ans6603">D<input type="radio" name="ans66" value="4" id="ans6603" />dichlorocarbene (:CCl)   </label></h4>
+<h3><label for="ans6604">E<input type="radio" name="ans66" value="0" id="ans6604" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+ 
+
+
+<h2>67)Carboxylic acids have higher boiling points than aldehydes,<br>
+ketones and even alcohols of comparable molecular mass. It is due to their    ?</h2>
+<h3><label for="ans67">A<input type="radio" name="ans67" value="-1" id="ans67"/>more extensive association of carboxylic<br> acid via van der Waals force of attraction  </label></h3>
+<h3><label for="ans6701">B<input type="radio" name="ans67" value="-1" id="ans6701"/>formation of carboxylate ion   </label></h3>
+<h3><label for="ans6702">C<input type="radio" name="ans67" value="-1" id="ans6702" />formation of intramolecular H-bonding  </label></h3>
+<h4><label for="ans6703">D<input type="radio" name="ans67" value="4" id="ans6703" />formation of intermolecular H-bonding</label></h4>
+<h3><label for="ans6704">E<input type="radio" name="ans67" value="0" id="ans6704" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<h2>68)Compound A, C<sub>8</sub>H<sub>lo</sub>O, is found to react with NaOI (produced by reacting y with NaOH) and
+Yields a yellow precipitate with characteristic smell
+A and Y are respectively ?</h2>
+
+<h4><label for="ans68">A<input type="radio" name="ans68" value="4" id="ans68"/><img src="/Photos/2018/2018 Neet DD Q166  Ans C.png" alt ="2018 Neet DD Q166  Ans C" height="105" width="205"></label></h5></label></h4>
+<h3><label for="ans6801">B<input type="radio" name="ans68" value="-1" id="ans6801"/><img src="/Photos/2018/2018 Neet DD Q166 Ans D.png" alt ="2018 Neet DD Q166 Ans D" height="105" width="205"></label></h5> </label></h3>
+<h3><label for="ans6802">C<input type="radio" name="ans68" value="-1" id="ans6802" /><img src="/Photos/2018/2018 Neet DD Q166 Ans B.png" alt ="2018 Neet DD Q166 Ans B" height="105" width="205"></label></h3>
+<h3><label for="ans6803">D<input type="radio" name="ans68" value="-1" id="ans6803" /><img src="/Photos/2018/2018 Neet DD Q166 Ans A.png" alt ="2018 Neet DD Q166 Ans A" height="105" width="205"></label></h3>
+<h3><label for="ans6804">E<input type="radio" name="ans68" value="0" id="ans6804" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+<h2>69)  Match the metal ions given in Column I with the spin magnetic moments<br> of the ions given in Column II and assign the correct code :
+                              <h5>Column I<font color="White">-----------------------------</font>Column II</h5><br>
+                             <h5>a)Co3+<font color="White">-----------------------------</font>$$i {\sqrt{8 B M} }.$$</h5><br>
+                             <h5> b) Cr3+<font color="White">-----------------------------</font>$$ii {\sqrt{35 B M} }.$$</h5><br>
+			    				<h5>c) Fe3+<font color="White">-----------------------------</font>$$iii {\sqrt{3 B M} }.$$</h5><br>
+				    			<h5>d) Ni2+<font color="White">-----------------------------</font>$$iv {\sqrt{24 B M} }.$$</h5><br>
+					    		<font color="White">---------------------------------------</font>$$i {\sqrt{15 B M} }.$$</h5><br>				
+							
+
+   ?<h2>
+   
+   <h3><label for="ans69">A<input type="radio" name="ans69" value="-1" id="ans69"/>iV<font color="White">-------------</font>v<font color="White">-------------</font>ii<font color="White">-------------</font>i</label></h3>
+<h3><label for="ans6901">B<input type="radio" name="ans69" value="-1" id="ans6901"/>I<font color="White">-------------</font>ii<font color="White">-------------</font>iii<font color="White">-------------</font>iv </label></h3>
+<h4><label for="ans6902">C<input type="radio" name="ans69" value="4" id="ans6902" />iv<font color="White">-------------</font>I<font color="White">-------------</font>ii<font color="White">-------------</font>iii </label></h4>
+<h3><label for="ans6903">D<input type="radio" name="ans69" value="-1" id="ans6903" />iii<font color="White">-------------</font>v<font color="White">-------------</font>I<font color="White">-------------</font>ii</label></h3>
+<h3><label for="ans6904">E<input type="radio" name="ans69" value="0" id="ans6904" />Not Attend</label></h3>
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+<h2>70) Which one of . the following ione exhibits d-d transition and paramagnetism as well ? </h2>
+<h3><label for="ans70">A<input type="radio" name="ans70" value="-1" id="ans70"/>MnO<sup>-</sup><sub>4</sub>  </label> </h3>
+<h3><label for="ans7001">B<input type="radio" name="ans70" value="-1" id="ans7001"/>Cr<sub>2</sub>O<sup>2<sup>-</sup></sup><sub>7</sub>  </label></h3>
+<h3><label for="ans7002">C<input type="radio" name="ans70" value="-1" id="ans7002" />CrO<sup>2<sup>-</sup></sup><sub>4</sub>   </label></h3>
+<h4><label for="ans7003">D<input type="radio" name="ans70" value="4" id="ans7003" />MnO<sup>2-</sup><sub>4</sub> </label></h4>
+<h3><label for="ans7004">E<input type="radio" name="ans70" value="0" id="ans7004" />Not Attend</label></h3>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+<h2>71) Iron carbonyl, Fe(CO)<sub>5</sub>is	?</h2>
+<h3><label for="ans71">A<input type="radio" name="ans71" value="-1" id="ans71"/> trinuclear </label></h3>
+<h4><label for="ans7101">B<input type="radio" name="ans71" value="4" id="ans7101"/>mononuclear  </label></h4>
+<h3><label for="ans7102">C<input type="radio" name="ans71" value="-1" id="ans7102" />tetranuclear   </label></h3>
+<h3><label for="ans7103">D<input type="radio" name="ans71" value="-1" id="ans7103" />dinuclear  </label></h3>
+<h3><label for="ans7104">E<input type="radio" name="ans71" value="0" id="ans7104" />Not Attend</label></h3>
+
+ 
+
+  
+
+
+
+
+
+
+
+
+<h2>72)The type of isomerism shown by the complex [CoCl<sub>2</sub>(en)<sub>2</sub>| is   ?</h2>
+
+<h3><label for="ans72">A<input type="radio" name="ans72" value="-1" id="ans72"/> lonization isomerism </label></h3>
+<h3><label for="ans7201">B<input type="radio" name="ans72" value="-1" id="ans7201"/>Coordination isomerism    </label></h3>
+<h4><label for="ans7202">C<input type="radio" name="ans72" value="4" id="ans7202" />Geometrical isomerism    </label></h4>
+<h3><label for="ans7203">D<input type="radio" name="ans72" value="-1" id="ans7203" />Linkage isomerism   </label></h3>
+<h3><label for="ans7204">E<input type="radio" name="ans72" value="0" id="ans7204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+ 
+
+<h2>73)  The geometry and magnetic behaviour of the complex [Ni(CO)<sub>4</sub>] are  ?</h2>
+
+<h3><label for="ans73">A<input type="radio" name="ans73" value="-1" id="ans73"/>square planar geometry and paramagnetic  </label></h3>
+<h4><label for="ans7301">B<input type="radio" name="ans73" value="4" id="ans7301"/>tetrahedral geometry and diamagnetic   </label></h4>
+<h3><label for="ans7302">C<input type="radio" name="ans73" value="-1" id="ans7302" />square planar geometry and diamagnetic  </label></h3>
+<h3><label for="ans7303">D<input type="radio" name="ans73" value="-1" id="ans7303" />tetrahedral geometry and paramagnetic  </label></h3>
+<h3><label for="ans7304">E<input type="radio" name="ans73" value="0" id="ans7304" />Not Attend</label></h3>
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+
+<h2>74) Following solutions were prepared by mixing different volumes<br>
+ of NaOH and HCI of different concentrations<br>
+ $$a. 60mL{M \over 10} HCI+4omL {M \over10} NaOH  .$$  
+  
+ $$b.55 mL {M\over10 }  HCI +45  mL {M\over10} NaOH$$
+
+ $$c.	75  mL  {M\over5}  HCI + 25 {mL M\over5} NaOH$$
+ $$d.	1oo mL 4 HCI + 1oo mL {M\over10}  NaoH$$<br>
+ pH ofwhich one of them will be equal to 1 ?</h3>
+
+ <h5><label for="ans74">A<input type="radio" name="ans74" value="-1" id="ans74"/> d </label></h5>
+<h5><label for="ans7401">B<input type="radio" name="ans74" value="-1" id="ans7401"/>a  </label></h5>
+<h5><label for="ans7402">C<input type="radio" name="ans74" value="-1" id="ans7402" /> b  </label></h5>
+<h4><label for="ans7403">D<input type="radio" name="ans74" value="4" id="ans7403" />c </label></h4>
+<h5><label for="ans7404">E<input type="radio" name="ans74" value="0" id="ans7404" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+<h2>75)On which of the following properties <br>
+does the coagulating power of an ion depend ?</h2>
+
+<h4><label for="ans75">A<input type="radio" name="ans75" value="4" id="ans75"/>Both magnitude and sign of the charge on the ion  </label></h4>
+<h3><label for="ans7501">B<input type="radio" name="ans75" value="-1" id="ans7501"/>size of the ion alone  </label></h3>
+<h3><label for="ans7502">C<input type="radio" name="ans75" value="-1" id="ans7502" />The magnitude of the charge on the ion alone   </label></h3>
+<h3><label for="ans7503">D<input type="radio" name="ans75" value="-1" id="ans7503" />The sign of the charge ion alone </label></h3>
+<h3><label for="ans7504">E<input type="radio" name="ans75" value="0" id="ans7504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>76)Given van der Waals constant for NH<sub>3</sub>,<br>
+ H<sub>2</sub>, 0<sub>2</sub> and CO<sub>2</sub> are respectively<br>
+ 4.17, 0.244, 1.36 and 3.59, Which one of the following<br>
+ gases is most easily liquefied ? <h2>
+<h3><label for="ans76">A<input type="radio" name="ans76" value="-1" id="ans76"/> O<sub>2</sub></label></h3>
+<h3><label for="ans7601">B<input type="radio" name="ans76" value="-1" id="ans7601"/>H<sub>2</sub>  </label></h3>
+<h4><label for="ans7602">C<input type="radio" name="ans76" value="4" id="ans7602" />NH<sub>3</sub>   </label></h4>
+<h3><label for="ans7603">D<input type="radio" name="ans76" value="-1" id="ans7603" />CO<sub>2</sub> </label></h3>
+<h3><label for="ans7604">E<input type="radio" name="ans76" value="0" id="ans7604" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>77)The solubility of BaSOa4 In water is <br>
+ 2.42x10<sup>-3</sup>  gL.<sup>-l</sup> at 298 K The value <br>
+of its solubility product (K<sub>ap</sub>) will be<br>
+ (Given molar mass of BaSO<sub>4</sub> = 233 g mol<sup>-l</sup>)? </h2>
+ 
+ 
+ <h3><label for="ans77">A<input type="radio" name="ans77" value="-1" id="ans77"/>1-08X10<sup>-14</sup> mol<sup>2 L<sup>-2</sup></label></h3>
+<h3><label for="ans7701">B<input type="radio" name="ans77" value="-1" id="ans7701"/>1-08X10<sup>-12</sup> mol<sup>2 L<sup>-2</sup> </label></h3>
+<h4><label for="ans7702">C<input type="radio" name="ans77" value="4" id="ans7702" />1-08X10<sup>-10</sup> mol<sup>2</sup> L<sup>-2</sup></label></h4>
+<h3><label for="ans7703">D<input type="radio" name="ans77" value="-1" id="ans7703" />1-08X10<sup>-18</sup> mol<sup>2 L<sup>-2</sup></label></h3>
+<h3><label for="ans7704">E<input type="radio" name="ans77" value="0" id="ans7704" />Not Attend</label></h3>
+
+ 
+	
+
+
+
+
+ 
+
+
+
+<h2>78)  In which case is the number of molecules of water maximum ? <h2>
+ <h3><label for="ans78">A<input type="radio" name="ans78" value="-1" id="ans78"/>0-00224 L of water vapours at I atm and 273 K  .</label></h3>
+<h3><label for="ans7801">B<input type="radio" name="ans78" value="-1" id="ans7801"/>0-18 g of water  </label></h3>
+<h4><label for="ans7802">C<input type="radio" name="ans78" value="4" id="ans7802" />18 mL of water </label></h4>
+<h3><label for="ans7803">D<input type="radio" name="ans78" value="-1" id="ans7803" />10<sup>-3</sup> mol of water</label></h3>
+<h3><label for="ans7804">E<input type="radio" name="ans78" value="0" id="ans7804" />Not Attend</label></h3>
+
+
+ 
+<h2>79) The correct difference between first- and second-order reactions is that ? </h2>
+<h3><label for="ans79">A<input type="radio" name="ans79" value="-1" id="ans79"/> a first-order reaction can be catalyzed; a second-order reaction cannot be catalyzed </label></h3>
+<h4><label for="ans7901">B<input type="radio" name="ans79" value="4" id="ans7901"/>the half-life of a first-order reaction does not  depend on [A]<sub>o</sub>.the half-life of a second-order reaction does depend on [A]<sub>o</sub></label></h4>
+<h3><label for="ans7902">C<input type="radio" name="ans79" value="-1" id="ans7902" />the rate of a first-order reaction does not depend on reactant concentrations;<br> the rate of a second-order reaction does depend on reactant concentrations   </label></h3>
+<h3><label for="ans7903">D<input type="radio" name="ans79" value="-1" id="ans7903" /> the rate of a first-order reaction does depend on reactant concentrations;<br> the rate of a second-order reaction does not depend on reactant concentrations</label></h3>
+<h3><label for="ans7904">E<input type="radio" name="ans79" value="0" id="ans7904" />Not Attend</label></h3>
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+<h2>80)Among CaH<sub>2</sub>, BeH<sub>2</sub>, BaH<sub>2</sub>, the order of ionic character is ? </h2>
+
+<h3><label for="ans80">A<input type="radio" name="ans80" value="-1" id="ans80"/> BeH<sub>2</sub> < BaH<sub>2</sub> < CaH<sub>2</sub>  </label></h3>
+<h3><label for="ans8001">B<input type="radio" name="ans80" value="-1" id="ans8001"/>CaH<sub>2</sub> < BeH<sub>2</sub> < BaH<sub>2</sub> </label></h3>
+<h4><label for="ans8002">C<input type="radio" name="ans80" value="4" id="ans8002" />BeH<sub>2</sub> < BeH<sub>2</sub> < BaH<sub>2</sub>   </label></h4>
+<h3><label for="ans8003">D<input type="radio" name="ans80" value="-1" id="ans8003" />BaH<sub>2</sub> < BeH<sub>2</sub> < CaH<sub>2</sub> </label></h3>
+<h3><label for="ans8004">E<input type="radio" name="ans80" value="0" id="ans8004" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+
+
+ 
+
+<h2>81)Consider the change in oxidation state of<br>
+ Bromine corresponding to different emf values as<br>
+ shown in the diagram below :  <br>
+ <img src="/Photos/2018/2018 Neet DD 169 Q Diagram.png" alt ="2018 Neet DD 169 Q Diagram" height="175" width="250">? <h2>
+<h3><label for="ans81">A<input type="radio" name="ans81" value="-1" id="ans81" />Br<sub>2</sub>   </label></h3>
+<h3><label for="ans8101">B<input type="radio" name="ans81" value="-1" id="ans8101" />BrO<sup>-</sup><sub>4</sub>  </label></h3>
+<h3><label for="ans8102">C<input type="radio" name="ans81" value="-1" id="ans8102" />BrO<sup>-</sup><sub>3</sub>  </label></h3>
+<h4><label for="ans8103">D<input type="radio" name="ans81" value="4" id="ans8103"/> HBrO<sup>-</sup><sub>4</sub> </label></h4>
+<h3><label for="ans8104">E<input type="radio" name="ans81" value="0" id="ans8104" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+<h2>82) For the redox reaction
+ MnO<sup>-</sup><sub>4</sub> + C<sub>2</sub>O<sup>2-</sup><sub>4</sub> + H<sup>+</sup>--><br>Mn<sup>2+</sup>+CO<sub>2</sub>+H<sub>2</sub>O
+ the correct coefficients  of the reactants for the balanced equation are<br></h2>
+ <h5><font color="White">---</font>MnO<sup>-</sup><sub>4</sub><font color="White">--------------------------</font>C<sub>2</sub>O<sup>2-</sup><sub>3</sub><font color="White">---------</font> H+</h5>
+
+
+<h3><label for="ans82">A<input type="radio" name="ans82" value="-1" id="ans82"/>2<font color="White">---------------------------</font>16<font color="White">------------------</font> 5 </label></h3>
+<h4><label for="ans8201">B<input type="radio" name="ans82" value="4" id="ans8201"/>2  <font color="White">----------------------------</font>5 <font color="White">------------------</font>16 </label></h4>
+<h3><label for="ans8202">C<input type="radio" name="ans82" value="-1" id="ans8202" />16<font color="White">---------------------------</font> 5<font color="White">------------------</font>2 </label></h3>
+<h3><label for="ans8203">D<input type="radio" name="ans82" value="-1" id="ans8203" />5<font color="White">---------------------------</font>16<font color="White">------------------</font> 2 </label></h3>
+<h3><label for="ans8204">E<input type="radio" name="ans82" value="0" id="ans8204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>83)Which one of the following conditions will<br>
+ favour maximum formation of the product in the reaction<br>
+ A<sub>2</sub>(g) + B<sub>2</sub>(g) ⇋ X<sub>2</sub>(g) ΔrH = –XkJ? </h2>
+<h3><label for="ans83">A<input type="radio" name="ans83" value="-1" id="ans83" />High temperature and high pressure  </label></h3>
+<h3><label for="ans8301">B<input type="radio" name="ans83" value="-1" id="ans8301" />Low temperature and low pressure   </label></h3>
+<h4><label for="ans8302">C<input type="radio" name="ans83" value="4" id="ans8302" />low temperature and high pressure   </label></h4>
+<h3><label for="ans8303">D<input type="radio" name="ans83" value="-1" id="ans8303" /> High temperature and low pressure</label></h3>
+<h3><label for="ans8304">E<input type="radio" name="ans83" value="0" id="ans8304" />Not Attend</label></h3>
+ 
+
+ 
+
+
+
+
+ 
+
+
+<h2>84) When initial concentration   of the reactant is doubled, <br>
+the half-life period- of a zero order reaction</h2>
+
+ <h3><label for="ans84">A<input type="radio" name="ans84" value="-1" id="ans84" />is tripled </label></h3>
+<h4><label for="ans8401">B<input type="radio" name="ans84" value="4" id="ans8401" />is doubled  </label></h4>
+<h3><label for="ans8402">C<input type="radio" name="ans84" value="-1" id="ans8402" />is halved  </label></h3>
+<h3><label for="ans8403">D<input type="radio" name="ans84"  value="-1" id="ans8403" />remains unchanged </label></h3>
+<h3><label for="ans8404">E<input type="radio" name="ans84" value="0" id="ans8404" />Not Attend</label></h3>
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>85) The bond dissociation energies of X<sub>2</sub>,Y<sub>2</sub> and XY<br>
+ are iir the ratio.of  1 : 0-5 : 1. AH for the formation<br>
+ of XY is - 200 kJ mol<sup>-3</sup> The  bond dissociation energy ofX2 will be </h2>
+<h4><label for="ans85">A<input type="radio" name="ans85" value="4" id="ans85" />800 kJ molH<sup>-1</sup> </label></h4>
+<h3><label for="ans8501">B<input type="radio" name="ans85" value="-1" id="ans8501" />100 KJ mol<sup>-1</sup>   </label></h3>
+<h3><label for="ans8502">C<input type="radio" name="ans85" value="-1" id="ans8502" />200 KJ mol<sup>-1</sup> </label></h3>
+<h3><label for="ans8503">D<input type="radio" name="ans85" value="-1" id="ans8503"/>  400 k J molH<sup>-1</sup></label></h3>
+<h3><label for="ans8504">E<input type="radio" name="ans85" value="0" id="ans8504" />Not Attend</label></h3>
+ 
+
+
+
+
+
+
+
+
+<h2>86)The correction factor 'a' to the ideal gas equation corresponds to ?</h2>
+<h3><label for="ans86">A<input type="radio" name="ans86" value="-1" id="ans86"/>electric field present between the gas molecules</label></h3>
+<h3><label for="ans8601">B<input type="radio" name="ans86" value="-1" id="ans8601"/>volume of the gas molecules</label></h3>
+<h3><label for="ans8602">C<input type="radio" name="ans86" value="-1" id="ans8602" />density of the gas molecules</label></h3>
+<h4><label for="ans8603">D<input type="radio" name="ans86" value="4" id="ans8603" />forces of attraction between the gas molecules </label></h4>
+<h3><label for="ans8604">E<input type="radio" name="ans86" value="0" id="ans8604" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+
+
+
+<h2>87)Consider the following species :<br>CN<sup>+</sup>, CN<sup>-</sup>, No and CN 
+Which one of these will have the highest bond order ? </h2>
+<h3><label for="ans87">A<input type="radio" name="ans87" value="-1" id="ans87"/>CN<sup>+</sup>  </label></h3>
+<h4><label for="ans8701">B<input type="radio" name="ans87" value="4" id="ans8701"/>CN<sup>-</sup> </label></h4>
+<h3><label for="ans8702">C<input type="radio" name="ans87" value="-1" id="ans8702" />NO </label></h3>
+<h3><label for="ans8703">D<input type="radio" name="ans87" value="-1" id="ans8703" />CN </label></h3>
+<h3><label for="ans8704">E<input type="radio" name="ans87" value="0" id="ans8704" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+ 
+
+
+<h2>88)Magnesium reacts with an element (X) to form an<br>
+ionic compound. If the ground stat€ electronic configuration of <br>
+(X) is 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup>, the simples! formula for this compound is   ?</h2>
+<h3><label for="ans88">A<input type="radio" name="ans88" value="-1" id="ans88"/>Mg<sub>2</sub>x </label></h3>
+<h3><label for="ans8801">B<input type="radio" name="ans88" value="-1" id="ans8801"/>MgX<sub>2</sub> </label></h3>
+<h3><label for="ans8802">C<input type="radio" name="ans88" value="-1" id="ans8802" />Mg<sub>2</sub>X<sub>3</sub>  </label></h3>
+<h4><label for="ans8803">D<input type="radio" name="ans88" value="4" id="ans8803" />Mg<sub>3</sub>X<sub>2</sub> </label></h4>
+<h3><label for="ans8804">E<input type="radio" name="ans88" value="0" id="ans8804" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+<h2>89)Iron  exhibits bcc structure at room temperature<br>
+Above 900<sup>o</sup>C, it transforms to. fcc structure.<br>
+ The ratio of density of iron at room-temperature to<br>
+ 
+that at 900<sup>o</sup>C (assuming molar-mass and atomic<br>
+radii of iron remains constant with temperature) is   </h2>
+<h4><label for="ans89">A<input type="radio" name="ans89" value="4" id="ans89"/>$$3\sqrt{3} \over4\sqrt{2}.$$ </label></h4>
+<h3><label for="ans8901">B<input type="radio" name="ans89" value="-1" id="ans8901"/>$$4\sqrt{3} \over3\sqrt{2}.$$ </label></h3>
+<h3><label for="ans8902">C<input type="radio" name="ans89" value="-1" id="ans8902" />$$\sqrt{3} \over\sqrt{2}.$$ </label></h3>
+<h3><label for="ans8903">D<input type="radio" name="ans89" value="-1" id="ans8903" /> $$ 1\over2$$ </label></h3>
+<h3><label for="ans8904">E<input type="radio" name="ans89" value="0" id="ans8904" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>90)Which one is a wrong  statement ?   </h2>
+ 
+<h4><label for="ans90">A<input type="radio" name="ans90" value="4" id="ans90"/> The electronic configuration of N atom is<br>
+<img src="/Photos/2018/2018 Neet DD Q162 Diagram for third choice.png" alt ="2018 Neet DD Q162 Diagram for third choice" height="175" width="325"> </label></h4>
+<h3><label for="ans9001">B<input type="radio" name="ans90" value="-1" id="ans9001"/>An orbital is designated by three quantum numbers while an<br> electron in an atom is designated by four quantum numbers   </label></h3>
+<h3><label for="ans9002">C<input type="radio" name="ans90" value="-1" id="ans9002" />Total orbital angular momentum of electron in 's' orbital Is equal to zero. </label></h3>
+<h3><label for="ans9003">D<input type="radio" name="ans90" value="-1" id="ans9003" />The value of m for d<sub>z</sub>2 is zero.  </label></h3>
+<h3><label for="ans9004">E<input type="radio" name="ans90" value="0" id="ans9004" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>91) Oxygen is not produced during photosynthesis by   ?</h2>
+<h3><label for="ans91">A<input type="radio" name="ans91" value="-1" id="ans91"/>Cyeas  </label></h3>
+<h3><label for="ans9101">B<input type="radio" name="ans91" value="-1" id="ans9101"/>Nostoc   </label></h3>
+<h4><label for="ans9102">C<input type="radio" name="ans91" value="4" id="ans9102" />Green sulphur bacteria  </label></h4>
+<h3><label for="ans9103">D<input type="radio" name="ans91" value="-1" id="ans9103" /> Chara</label></h3>
+<h3><label for="ans9104">E<input type="radio" name="ans91" value="0" id="ans9104" />Not Attend</label></h3>
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+<h2>92)  Double fertilization is ?</h2>
+<h3><label for="ans92">A<input type="radio" name="ans92" value="-1" id="ans92"/>Fusion of two male gametes with one egg    </label></h3>
+<h3><label for="ans9201">B<input type="radio" name="ans92" value="-1" id="ans9201"/> Fusion of one male gamete with two polar nuclei</label></h3>
+<h3><label for="ans9202">C<input type="radio" name="ans92" value="-1" id="ans9202" /> Fusion of two male gametes of a <br>pollen tube with two different eggs </label></h3>
+<h4><label for="ans9203">D<input type="radio" name="ans92" value="4" id="ans9203" />Syngamy and triple fusion </label></h4>
+<h3><label for="ans9204">E<input type="radio" name="ans92" value="0" id="ans9204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+ 
+
+<h2>93)  Which one of the following plants shows a <br>
+very close relationship with a species of moth, <br>
+where none of the two can complete its life<br>
+ cycle without the other ? <h2>
+ 
+ <h3><label for="ans93">A<input type="radio" name="ans93" value="-1" id="ans93"/>Banana  </label></h3>
+<h4><label for="ans9301">B<input type="radio" name="ans93" value="4" id="ans9301"/>Yucca   </label></h4>
+<h3><label for="ans9302">C<input type="radio" name="ans93" value="-1" id="ans9302" />Hydrilla  </label></h3>
+<h3><label for="ans9303">D<input type="radio" name="ans93" value="-1" id="ans9303" />Viola </label></h3>
+<h3><label for="ans9304">E<input type="radio" name="ans93" value="0" id="ans9304" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+
+
+
+<h2>94) Pollen grains can be stored for.<br>
+ several years in liquid nitrogen having a temperature of  ?<h2>
+ <h4><label for="ans94">A<input type="radio" name="ans94" value="4" id="ans94"/>-196<sup>o</sup>C   </label></h4>
+<h3><label for="ans9401">B<input type="radio" name="ans94" value="-1" id="ans9401"/>80<sup>o</sup>C  </label></h3>
+<h3><label for="ans9402">C<input type="radio" name="ans94" value="-1" id="ans9402" />- 120<sup>o</sup>C  </label></h3>
+<h3><label for="ans9403">D<input type="radio" name="ans94" value="-1" id="ans9403" />- 160<sup>o</sup>c  </label></h3>
+<h3><label for="ans9404">E<input type="radio" name="ans94" value="0" id="ans9404" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<h2>95)Which of the following elements is responsible for maintaining turgor in cells  ?</h2>
+<h4><label for="ans95">A<input type="radio" name="ans95" value="4" id="ans95"/>Potassium  </label></h4>
+<h3><label for="ans9501">B<input type="radio" name="ans95" value="-1" id="ans9501"/>Sodium  </label></h3>
+<h3><label for="ans9502">C<input type="radio" name="ans95" value="-1" id="ans9502" />Magnesium  </label></h3>
+<h3><label for="ans9503">D<input type="radio" name="ans95" value="-1" id="ans9503" />Calcium  </label></h3>
+<h3><label for="ans9504">E<input type="radio" name="ans95" value="0" id="ans9504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+ 
+
+
+<h2>96) What is the role . of NAD<sup>+</sup> in cellular   respiration ?</h2>
+<h3><label for="ans96">A<input type="radio" name="ans96" value="-1" id="ans96"/>It is a nucleotide source for ATP synthesis </label></h3>
+<h4><label for="ans9601">B<input type="radio" name="ans96" value="4" id="ans9601"/>It functions as an electron carrier.   </label></h4>
+<h3><label for="ans9602">C<input type="radio" name="ans96" value="-1" id="ans9602" />It functions as an enzyme.  </label></h3>
+<h3><label for="ans9603">D<input type="radio" name="ans96" value="-1" id="ans9603" />It is the final electron  acceptor for anaerobie  respiration </label></h3>
+<h3><label for="ans9604">E<input type="radio" name="ans96" value="0" id="ans9604" />Not Attend</label></h3>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+  <h2>97)   In which of the following forms is iron absorbed  by plants ?</h2>
+<h3><label for="ans97">A<input type="radio" name="ans97" value="-1" id="ans97"/>Flee element    </label></h3>
+<h3><label for="ans9701">B<input type="radio" name="ans97" value="-1" id="ans9701"/>Ferrous </label></h3>
+<h4><label for="ans9702">C<input type="radio" name="ans97" value="4" id="ans9702" />Ferric </label></h4>
+<h3><label for="ans9703">D<input type="radio" name="ans97" value="-1" id="ans9703" />Both ferric and ferrous </label></h3>
+<h3><label for="ans9704">E<input type="radio" name="ans97" value="0" id="ans9704" />Not Attend</label></h3>
+  
+
+
+
+
+
+  
+  
+  
+
+
+<h2>98)Which of the following is commonly used as a vector<br>
+ for introducing  a DNA fragment in human lYmPhocytes ?</h2>
+<h3><label for="ans98">A<input type="radio" name="ans98" value="-1" id="ans98"/>λ Phage  </label></h3>
+<h3><label for="ans9801">B<input type="radio" name="ans98" value="-1" id="ans9801"/>Ti plasmid   </label></h3>
+<h4><label for="ans9802">C<input type="radio" name="ans98" value="4" id="ans9802" />Retrovirus </label></h4>
+<h3><label for="ans9803">D<input type="radio" name="ans98" value="-1" id="ans9803" />  pBR-322</label></h3>
+<h3><label for="ans9804">E<input type="radio" name="ans98" value="0" id="ans9804" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+<h2>99)Use of bioresources by multinational<br>
+ companies and organisations without authorisation-<br>
+ from the  concerned country and its people is called ?</h2>
+ 
+ <h3><label for="ans99">A<input type="radio" name="ans99" value="-1" id="ans99"/>Biodegradation  </label></h3>
+<h4><label for="ans9901">B<input type="radio" name="ans99" value="4" id="ans9901"/>BioPiracy   </label></h4>
+<h3><label for="ans9902">C<input type="radio" name="ans99" value="-1" id="ans9902" />Bio-infringement  </label></h3>
+<h3><label for="ans9903">D<input type="radio" name="ans99" value="-1" id="ans9903" /> Bioexploitation</label></h3>
+<h3><label for="ans9904">E<input type="radio" name="ans99" value="0" id="ans9904" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+
+
+<h2>100)In India, the organisation responsible for assessing the safety of introducing<br> genetically modified organism for public use is  ?</h2>
+<h3><label for="ans100">A<input type="radio" name="ans100" value="-1" id="ans100"/>Research Committee  on Genetic Manipulation (RCGM) .   </label></h3>
+<h3><label for="ans10001">B<input type="radio" name="ans100" value="-1" id="ans10001"/>Council for Scientific and Industrial Research (CSIR)   </label></h3>
+<h3><label for="ans10002">C<input type="radio" name="ans100" value="-1" id="ans10002" />Indian Council of Medical Research (ICMR)   </label></h3>
+<h4><label for="ans10003">D<input type="radio" name="ans100" value="4" id="ans10003" />Genetic Engineering Appraisal Committee  (GEAC) </label></h4>
+<h3><label for="ans10004">E<input type="radio" name="ans100" value="0" id="ans10004" />Not Attend</label></h3>
+
+
+
+
+
+
+
+ 
+
+
+<h2>101)The correct order of steps in Polymerase, Chain Reaction (PCR) is?</h2>
+ <h3><label for="ans101">A<input type="radio" name="ans101" value="-1" id="ans101"/>Denaturation,Extension,Annealing   </label></h3>
+<h3><label for="ans10101">B<input type="radio" name="ans101" value="-1" id="ans10101"/>Annealing,Extension,Denaturation </label></h3>
+<h3><label for="ans10102">C<input type="radio" name="ans101" value="-1" id="ans10102"/>Extension,Denaturation,Annealing  </label></h3>
+<h4><label for="ans10103">D<input type="radio" name="ans101" value="4" id="ans10103"/>Denaturation, Annealing, Extension</label></h4>
+<h3><label for="ans10104">E<input type="radio" name="ans101" value="0" id="ans10104"/>Not Attend</label></h3>
+
+
+ 
+
+
+
+
+
+
+
+
+
+<h2>102)Select the correct match  :  ?</h2>
+<h3><label for="ans102">A<input type="radio" name="ans102" value="-1" id="ans102"/> T.H. Morgan - Transduction  </label></h3>
+<h3><label for="ans10201">B<input type="radio" name="ans102" value="-1" id="ans10201"/>F<sub>2</sub> x Recessive parent – Dihybrid cross  </label></h3>
+<h4><label for="ans10202">C<input type="radio" name="ans102" value="4" id="ans10202" />Ribozyme – Nucleic acid  </label></h4>
+<h3><label for="ans10203">D<input type="radio" name="ans102" value="-1" id="ans10203" />G. Mendel – Transformation </label></h3>
+<h3><label for="ans10204">E<input type="radio" name="ans102" value="0" id="ans10204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+<h2>103)A' new' variety of rice was patented by a foreign company,<br>
+ though.such-varieties.have been present in India for a long time.<br>
+ This is related to  ?</h2>
+<h3><label for="ans103">A<input type="radio" name="ans103" value="-1" id="ans103" />Irerma Rojo </label></h3>
+<h3><label for="ans10301">B<input type="radio" name="ans103" value="-1" id="ans10301" />Sharbati Sonora </label></h3>
+<h3><label for="ans10302">C<input type="radio" name="ans103" value="-1" id="ans10302" />Co-667 </label></h3>
+<h4><label for="ans10303">D<input type="radio" name="ans103" value="4" id="ans10303" />Basmati</label></h4>
+<h3><label for="ans10304">E<input type="radio" name="ans103" value="0" id="ans10304" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>104)Which of the following pairs is wrongly matched ?</h2>
+
+<h3><label for="ans104">A<input type="radio" name="ans104" value="-1" id="ans104" />XO type sex  Determination : Grasshopper  </label></h3>
+<h3><label for="ans10401">B<input type="radio" name="ans104" value="-1" id="ans10401" />ABO blood grouping        : Co-dominance  </label></h3>
+<h4><label for="ans10402">C<input type="radio" name="ans104" value="4" id="ans10402" />Starch synthesis in pea   : Multiple alleles   </label></h4>
+<h3><label for="ans10403">D<input type="radio" name="ans104"  value="-1" id="ans10403" />   T.H. Morgan              : Linkage          </label></h3>
+<h3><label for="ans10404">E<input type="radio" name="ans104" value="0" id="ans10404" />Not Attend</label></h3>
+
+ 
+ 
+
+
+
+
+ 
+
+
+
+
+<h2>105)Select the correct, statement :  ?</h2>
+
+<h3><label for="ans105">A<input type="radio" name="ans105" value="-1" id="ans105" />Spliceosomes take part in translation   </label></h3>
+<h4><label for="ans10501">B<input type="radio" name="ans105" value="4" id="ans10501" />Punnett square was developed by a British  scientist </label></h4>
+<h3><label for="ans10502">C<input type="radio" name="ans105" value="-1" id="ans10502" />Franklin Stahl coined the term "linkage" </label></h3>
+<h3><label for="ans10503">D<input type="radio" name="ans105" value="-1" id="ans10503"/> Transduction was discovered by S. Altman </label></h3>
+<h3><label for="ans10504">E<input type="radio" name="ans105" value="0" id="ans10504" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+<h2>106)The experimental proof for semi<br>
+ conservative repIication of-DNA was first shown in a?</h2>
+<h3><label for="ans106">A<input type="radio" name="ans106" value="-1" id="ans106"/>Plant  </label></h3>
+<h4><label for="ans10601">B<input type="radio" name="ans106" value="4" id="ans10601"/>Bacterium  </label></h4>
+<h3><label for="ans10602">C<input type="radio" name="ans106" value="-1" id="ans10602" />Fungus   </label></h3>
+<h3><label for="ans10603">D<input type="radio" name="ans106" value="-1" id="ans10603" />Virus  </label></h3>
+<h3><label for="ans10604">E<input type="radio" name="ans106" value="0" id="ans10604" />Not Attend</label></h3>
+
+
+
+
+
+
+
+ 
+
+
+<h2>107)Which of the following flowers only once in its life-time?</h2>
+<h3><label for="ans107">A<input type="radio" name="ans107" value="-1" id="ans107"/>Mango   </label></h3>
+<h3><label for="ans10701">B<input type="radio" name="ans107" value="-1" id="ans10701"/>Jackfruit </label></h3>
+<h4><label for="ans10702">C<input type="radio" name="ans107" value="4" id="ans10702" /> Bamboo species  </label></h4>
+<h3><label for="ans10703">D<input type="radio" name="ans107" value="-1" id="ans10703" />Papaya  </label></h3>
+<h3><label for="ans10704">E<input type="radio" name="ans107" value="0" id="ans10704" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>108)Offsets are produced by ?</h2>
+
+<h3><label for="ans108">A<input type="radio" name="ans108" value="-1" id="ans108"/>Parthenocarpy   </label></h3>
+<h4><label for="ans10801">B<input type="radio" name="ans108" value="4" id="ans10801"/>Mitotic divisions </label></h4>
+<h3><label for="ans10802">C<input type="radio" name="ans108" value="-1" id="ans10802" />Meiotic divisions  </label></h3>
+<h3><label for="ans10803">D<input type="radio" name="ans108" value="-1" id="ans10803" /> Parthenogenesis  </label></h3>
+<h3><label for="ans10804">E<input type="radio" name="ans108" value="0" id="ans10804" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+ 
+
+
+<h2>109)  Select the correct match : ?</h2>
+<h3><label for="ans109">A<input type="radio" name="ans109" value="-1" id="ans109"/>Matthew Meselson and F. Stahl<font color="White">---------------</font>pisum sativum  </label></h3>
+<h3><label for="ans10901">B<input type="radio" name="ans109" value="-1" id="ans10901"/>Alfred Hershey and  Martha Chase<font color="White">-------------</font>TMv   </label></h3>
+<h3><label for="ans10902">C<input type="radio" name="ans109" value="-1" id="ans10902" />Alec Jeffreye<font color="White">----------------------------</font>Streptoccus pneumoniae </label></h5> </label></h3>
+<h4><label for="ans10903">D<input type="radio" name="ans109" value="4" id="ans10903" />Francois Jacob and   Jacques Monod<font color="White">-----------</font>Lac oPeron </label></h4>
+<h3><label for="ans10904">E<input type="radio" name="ans109" value="0" id="ans10904" />Not Attend</label></h3>
+
+
+  
+
+
+
+
+
+
+<font color="RED">For Q 110 Select ::A</font>
+
+<h2>110)Which of the following has proved helpful in Preserving pollen as fossils?</h2>
+
+<h3><label for="ans110">A<input type="radio" name="ans110" value="-1" id="ans110"/>Matthew Meselson and F. Stahl<font color="White">---------------</font>pisum sativum  </label></h3>
+<h3><label for="ans1101">B<input type="radio" name="ans110" value="-1" id="ans11001"/>Alfred Hershey and  Martha Chase<font color="White">-------------</font>TMv   </label></h3>
+<h3><label for="ans1102">C<input type="radio" name="ans110" value="-1" id="ans11002" />Alec Jeffreye<font color="White">----------------------------</font>Streptoccus pneumoniae  </label></h3>
+<h4><label for="ans1103">D<input type="radio" name="ans110" value="4" id="ans11003" />Francois Jacob and   Jacques Monod<font color="White">-----------</font>Lac oPeron </label></h4>
+<h3><label for="ans1104">E<input type="radio" name="ans110" value="0" id="ans11004" />Not Attend</label></h3>
+
+
+<!--
+ <h3><label for="ans110">A<input type="radio" name="ans110" value="-1" id="ans110"/>Oil content  </label></h3>
+<h3><label for="ans1101">B<input type="radio" name="ans110" value="-1" id="ans11001"/>Cellulosic intine   </label></h3>
+<h3><label for="ans1102">C<input type="radio" name="ans110" value="-1" id="ans11002" />Pollenkitt </label></h3>
+<h4><label for="ans1103">D<input type="radio" name="ans110" value="4" id="ans11003" />SporoPollenin </label></h4>
+<h3><label for="ans1104">E<input type="radio" name="ans110" value="0" id="ans11004" />Not Attend</label></h3>-->
+
+ 
+
+
+
+
+
+ 
+
+
+
+<h2>111)Natality refers to ?</h2>
+<h3><label for="ans111">A<input type="radio" name="ans111" value="-1" id="ans111"/>Number of individuals leaving the habitat  </label></h3>
+<h4><label for="ans11101">B<input type="radio" name="ans111" value="4" id="ans11101"/>Birth rate  </label></h4>
+<h3><label for="ans11102">C<input type="radio" name="ans111" value="-1" id="ans11102" />Death rate  </label></h3>
+<h3><label for="ans11103">D<input type="radio" name="ans111" value="-1" id="ans11103" /> Number of individuals entering a habitat          </label></h3>
+<h3><label for="ans11104">E<input type="radio" name="ans111" value="0" id="ans11104" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>112) World Ozone Day is celebrated on  ? </h2>
+ <h4><label for="ans112">A<input type="radio" name="ans112" value="4" id="ans112"/>16<sup>th</sup> September  </label></h4>
+<h3><label for="ans11201">B<input type="radio" name="ans112" value="-1" id="ans11201"/>21<sup>st</sup> April   </label></h3>
+<h3><label for="ans11202">C<input type="radio" name="ans112" value="-1" id="ans11202" />5<sup>th</sup> June  </label></h3>
+<h3><label for="ans11203">D<input type="radio" name="ans112" value="-1" id="ans11203" />22<sup>nd</sup> April  </label></h3>
+<h3><label for="ans11204">E<input type="radio" name="ans112" value="0" id="ans11204" />Not Attend</label></h3>
+
+ 
+ 
+
+
+
+
+
+
+<font color="RED">For Q 113 Select ::Not Attend</font>
+<h2>113)Which of the following is a secondary pollutant?<h2>
+<h3><label for="ans113">A<input type="radio" name="ans113" value="-1" id="ans113"/>SO <sub>2</sub>  </label></h3>
+<h3><label for="ans11301">B<input type="radio" name="ans113" value="-1" id="ans11301"/> CO <sub>2</sub>  </label></h3>
+<h3><label for="ans11302">C<input type="radio" name="ans113" value="-1" id="ans11302" />CO    </label></h3>
+<h4><label for="ans11303">D<input type="radio" name="ans113" value="4" id="ans11303" />O <sub>3</sub> </label></h4>
+<h3><label for="ans11304">E<input type="radio" name="ans113" value="0" id="ans11304" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>114) Niche is   ?</h2>
+<h3><label for="ans114">A<input type="radio" name="ans114" value="-1" id="ans114"/>the range of temperature that the organism needs to live </label></h3>
+<h3><label for="ans11401">B<input type="radio" name="ans114" value="-1" id="ans11401"/>the physical space where an organism lives </label></h3>
+<h3><label for="ans11402">C<input type="radio" name="ans114" value="-1" id="ans11402" />all the biological factors in the organism's environment  </label></h3>
+<h4><label for="ans11403">D<input type="radio" name="ans114" value="4" id="ans11403" /> the functional role played by the organism where it lives </label></h4>
+<h3><label for="ans11404">E<input type="radio" name="ans114" value="0" id="ans11404" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+<h2>115)
+What type of ecological Pyramid would be<br>
+  obtained with the following data ?<br>
+Secondary consumer : 120<sub> g</sub> <br>
+Primary consumer : 60<sub> g</sub><br>
+ Primary producer : 10<sub> g</sub><br>
+ ?</h2>
+ 
+ 
+ <h3><label for="ans115">A<input type="radio" name="ans115" value="-1" id="ans115"/>Upright pyramid of numbers  </label></h3>
+<h3><label for="ans11501">B<input type="radio" name="ans115" value="-1" id="ans11501"/>pyramid of energry </label></h3>
+<h4><label for="ans11502">C<input type="radio" name="ans115" value="4" id="ans11502" />Inverted pyramid of biomass  </label></h4>
+<h3><label for="ans11503">D<input type="radio" name="ans115" value="-1" id="ans11503" />Upright pyramid of biomass </label></h3>
+<h3><label for="ans11504">E<input type="radio" name="ans115" value="0" id="ans11504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+ 
+
+
+<h2>116)In stratosphere, which of the following <br>
+elements acts as a catalyst in degradation of ozone <br>
+and release of molecular oxygen ?</h2>
+
+<h3><label for="ans116">A<input type="radio" name="ans116" value="-1" id="ans116"/>Fe </label></h3>
+<h4><label for="ans11601">B<input type="radio" name="ans116" value="4" id="ans11601"/>Cl  </label></h4>
+<h3><label for="ans11602">C<input type="radio" name="ans116" value="-1" id="ans11602" />Carbon  </label></h3>
+<h3><label for="ans11603">D<input type="radio" name="ans116" value="-1" id="ans11603" />Oxygen  </label></h3>
+<h3><label for="ans11604">E<input type="radio" name="ans116" value="0" id="ans11604" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>117)The two functional  groups characteristic of sugars are ?
+<h3><label for="ans117">A<input type="radio" name="ans117" value="-1" id="ans117"/>carbonyl and phosphate </label></h3>
+<h3><label for="ans11701">B<input type="radio" name="ans117" value="-1" id="ans11701"/>carbonyl and methyl  </label></h3>
+<h3><label for="ans11702">C<input type="radio" name="ans117" value="-1" id="ans11702" />hydroxyl and methyl  </label></h3>
+<h4><label for="ans11703">D<input type="radio" name="ans117" value="4" id="ans11703" />carbonyl and hydroxyl </label></h4>
+<h3><label for="ans11704">E<input type="radio" name="ans117" value="0" id="ans11704" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+ 
+
+<h2>118)Which among the following is not a prokaryote? ?</h2>
+
+<h3><label for="ans118">A<input type="radio" name="ans118" value="-1" id="ans118"/>Nostoc </label></h3>
+<h3><label for="ans11801">B<input type="radio" name="ans118" value="-1" id="ans11801"/>Mycobacterium  </label></h3>
+<h4><label for="ans11802">C<input type="radio" name="ans118" value="4" id="ans11802" />Saccharomyces  </label></h4>
+<h3><label for="ans11803">D<input type="radio" name="ans118" value="-1" id="ans11803" />Oscillatoria </label></h3>
+<h3><label for="ans11804">E<input type="radio" name="ans118" value="0" id="ans11804" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>119)The Golgi complex participates in ?</h2>
+
+<h3><label for="ans119">A<input type="radio" name="ans119" value="-1" id="ans119"/>Respiration in bacteria  </label></h3>
+<h4><label for="ans11901">B<input type="radio" name="ans119" value="4" id="ans11901"/>Formation of secretory vesicles  </label></h4>
+<h3><label for="ans11902">C<input type="radio" name="ans119" value="-1" id="ans11902" />Fatty acid breakdown  </label></h3>
+<h3><label for="ans11903">D<input type="radio" name="ans119" value="-1" id="ans11903" /> Activation of amino acid </label></h3>
+<h3><label for="ans11904">E<input type="radio" name="ans119" value="0" id="ans11904" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+<h2>120) Which of the following is not a product of light reaction of photosynthesis?</h2>
+
+<h3><label for="ans120">A<input type="radio" name="ans120" value="-1" id="ans120"/>NADPH  </label></h3>
+<h4><label for="ans12001">B<input type="radio" name="ans120" value="4" id="ans12001"/>NADH  </label></h4>
+<h3><label for="ans12002">C<input type="radio" name="ans120" value="-1" id="ans12002" />ATP  </label></h3>
+<h3><label for="ans12003">D<input type="radio" name="ans120" value="-1" id="ans12003" />Oxygen </label></h3>
+<h3><label for="ans12004">E<input type="radio" name="ans120" value="0" id="ans12004" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+
+
+
+
+
+<h2>121)Which of the following is true for nucleolus ? </h2>
+
+<h3><label for="ans121">A<input type="radio" name="ans121" value="-1" id="ans121" />It takes part in spindle formation   </label></h3>
+<h3><label for="ans12101">B<input type="radio" name="ans121" value="-1" id="ans12101" />It is a membrane_bound structure </label></h3>
+<h3><label for="ans12102">C<input type="radio" name="ans121" value="-1" id="ans12102" />Larger nucleoli are present in dividing cells </label></h3>
+<h4><label for="ans12103">D<input type="radio" name="ans121" value="4" id="ans12103"/>lt is a site for active ribosomal RNA synthesis  </label></h4>
+<h3><label for="ans12104">E<input type="radio" name="ans121" value="0" id="ans12104" />Not Attend</label></h3>
+
+
+ 
+
+
+
+ 
+
+
+<h2>122) Stomatal movement is not affected by?</h2>
+<h4><label for="ans122">A<input type="radio" name="ans122" value="4" id="ans122"/>O<sub>2</sub> concentration  </label></h4>
+<h3><label for="ans12201">B<input type="radio" name="ans122" value="-1" id="ans12201"/>Light  </label></h3>
+<h3><label for="ans12202">C<input type="radio" name="ans122" value="-1" id="ans12202" />Temperature </label></h3>
+<h3><label for="ans12203">D<input type="radio" name="ans122" value="-1" id="ans12203" />CO<sub>2</sub> concentration  </label></h3>
+<h3><label for="ans12204">E<input type="radio" name="ans122" value="0" id="ans12204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+<h2>123) the stage during which separation of paired homologous chromosomes begins is?</h2>
+
+<h3><label for="ans123">A<input type="radio" name="ans123" value="-1" id="ans123" />Diakinesis </label></h3>
+<h4><label for="ans12301">B<input type="radio" name="ans123" value="4" id="ans12301" />Diplotene  </label></h4>
+<h3><label for="ans12302">C<input type="radio" name="ans123" value="-1" id="ans12302" />Pachytene </label></h3>
+<h3><label for="ans12303">D<input type="radio" name="ans123" value="-1" id="ans12303" />Zygotene </label></h3>
+<h3><label for="ans12304">E<input type="radio" name="ans123" value="0" id="ans12304" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>124)The two functional  groups characteristic of sugars are ?<h2>
+
+<h3><label for="ans124">A<input type="radio" name="ans124" value="-1" id="ans124" />hydroxyl and methyl </label></h3>
+<h3><label for="ans12401">B<input type="radio" name="ans124" value="-1" id="ans12401" />carbonyl and methyl </label></h3>
+<h4><label for="ans12402">C<input type="radio" name="ans124" value="4" id="ans12402" />carbonyl and phosphate  </label></h4>
+<h3><label for="ans12403">D<input type="radio" name="ans124"  value="-1" id="ans12403" /> carbonyl and hydroxyl </label></h3>
+<h3><label for="ans12404">E<input type="radio" name="ans124" value="0" id="ans12404" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>125)Secondary xylem and phloem in dicot stem are produced by  ?</h2>
+
+<h3><label for="ans125">A<input type="radio" name="ans125" value="-1" id="ans125" />Phellogen </label></h3>
+<h4><label for="ans12501">B<input type="radio" name="ans125" value="4" id="ans12501" />Vascular cambium  </label></h4>
+<h3><label for="ans12502">C<input type="radio" name="ans125" value="-1" id="ans12502" />Apical meristems  </label></h3>
+<h3><label for="ans12503">D<input type="radio" name="ans125" value="-1" id="ans12503"/> Axillary meristems</label></h3>
+<h3><label for="ans12504">E<input type="radio" name="ans125" value="0" id="ans12504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+ 
+<h2>126)Pneumatophores occur in?</h2>
+
+<h3><label for="ans126">A<input type="radio" name="ans126" value="-1" id="ans126"/>Carnivorous plants  </label></h3>
+<h3><label for="ans12601">B<input type="radio" name="ans126" value="-1" id="ans12601"/>Free-floating hydrophytes </label></h3>
+<h4><label for="ans12602">C<input type="radio" name="ans126" value="4" id="ans12602" />Halophytes </label></h4>
+<h3><label for="ans12603">D<input type="radio" name="ans126" value="-1" id="ans12603" />Submerged hydrophytes  </label></h3>
+<h3><label for="ans12604">E<input type="radio" name="ans126" value="0" id="ans12604" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+<h2>127)Casparian strips occur in?</h2>
+ <h5><label for="ans127">A<input type="radio" name="ans127" value="-1" id="ans127"/> Cortex  	</label></h5>
+<h5><label for="ans12701">B<input type="radio" name="ans127" value="-1" id="ans12701"/>Pericycle  </label></h5>
+<h5><label for="ans12702">C<input type="radio" name="ans127" value="-1" id="ans12702" />Epidermis </label></h5>
+<h4><label for="ans12703">D<input type="radio" name="ans127" value="4" id="ans12703" /> Endodermis </label></h4>
+<h5><label for="ans12704">E<input type="radio" name="ans127" value="0" id="ans12704" />Not Attend</label></h5>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>128) Plants having little or no secondary Growth are ?</h2>
+<h3><label for="ans128">A<input type="radio" name="ans128" value="-1" id="ans128"/>Conifers   </label></h3>
+<h3><label for="ans12801">B<input type="radio" name="ans128" value="-1" id="ans12801"/>Deciduous angiosperms   </label></h3>
+<h4><label for="ans12802">C<input type="radio" name="ans128" value="4" id="ans12802" />Grasses </label></h4>
+<h3><label for="ans12803">D<input type="radio" name="ans128" value="-1" id="ans12803" /> Cycads</label></h3>
+<h3><label for="ans12804">E<input type="radio" name="ans128" value="0" id="ans12804" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+<h2>129) Sweet potato is a modified? ?</h2>
+ 
+ <h3><label for="ans129">A<input type="radio" name="ans129" value="-1" id="ans129"/> Tap root  </label></h3>
+<h4><label for="ans12901">B<input type="radio" name="ans129" value="4" id="ans12901"/>Adventitious root  </label></h4>
+<h3><label for="ans12902">C<input type="radio" name="ans129" value="-1" id="ans12902" />Stem </label></h3>
+<h3><label for="ans12903">D<input type="radio" name="ans129" value="-1" id="ans12903" />Rhizome </label></h3>
+<h3><label for="ans12904">E<input type="radio" name="ans129" value="0" id="ans12904" />Not Attend</label></h3>
+ 
+ 
+ 
+
+
+
+<h2>130)Which of the following statements is correct ? </h2>
+<h3><label for="ans130">A<input type="radio" name="ans130" value="-1" id="ans130"/>Horsetails are gymnosperurs  </label></h3>
+<h3><label for="ans13001">B<input type="radio" name="ans130" value="-1" id="ans13001"/>Selaginella is heterosporous, while Salvinia is homosporous </label></h3>
+<h4><label for="ans13002">C<input type="radio" name="ans130" value="4" id="ans13002" />Ovules are not enclosed by ovary wall in gymnosperms </label></h4>
+<h3><label for="ans13003">D<input type="radio" name="ans130" value="-1" id="ans13003" />Mitochondria are the powerhouse of the cell in all kingdoms except Monera  </label></h3>
+<h3><label for="ans13004">E<input type="radio" name="ans130" value="0" id="ans13004" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+
+<h2>131) Select the Wrong statement:  ?</h2>
+<h4><label for="ans131">A<input type="radio" name="ans131" value="4" id="ans131"/>Pseudopodia are locomiotory- and feeding structures in Sporozoans </label></h4>
+<h3><label for="ans13101">B<input type="radio" name="ans131" value="-1" id="ans13101"/>Mushrooms belong to Basidiomycetes  </label></h3>
+<h3><label for="ans13102">C<input type="radio" name="ans131" value="-1" id="ans13102" />Cell wall is present in members of Fungi and Plantae  </label></h3>
+<h3><label for="ans13103">D<input type="radio" name="ans131" value="-1" id="ans13103" />Mitochondria are the powerhouse of the cell in all kingdoms except Monera  </label></h3>
+<h3><label for="ans13104">E<input type="radio" name="ans131" value="0" id="ans13104" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>132)After karyogamy followed by meiosis, spores are produced exogenously ln ?</h2>
+<h4><label for="ans132">A<input type="radio" name="ans132" value="4" id="ans132"/>Agaricus </label></h4>
+<h3><label for="ans13201">B<input type="radio" name="ans132" value="-1" id="ans13201"/>Alternaria </label></h3>
+<h3><label for="ans13202">C<input type="radio" name="ans132" value="-1" id="ans13202" />Neurospora   </label></h3>
+<h3><label for="ans13203">D<input type="radio" name="ans132" value="-1" id="ans13203" />Saccharomyces</label></h3>
+<h3><label for="ans13204">E<input type="radio" name="ans132" value="0" id="ans11204" />Not Attend</label></h3>
+
+
+
+
+
+
+<h2>133) Match the items given in Column I with those in Column II and select the. correct option given below : ?
+<h5>Column I<font color="White">-----------------------------</font>  Column II </h5>
+<h5>a. Herbarium  <font color="White">-------------------</font>i. It is a place having a collection of<br> 
+<font color="White">----------------------------------------</font>preserved plants and animals</h5>
+<h5>b. Key<font color="White">-----------------------------</font> ii) A list that enumerates methodically all the<br>
+<font color="White">-----------------------------------------</font>species found in an area with brief <br>
+<font color="White">-----------------------------------------</font>description aiding identification.</h5>  											 
+
+<h5>C.Museum <font color="White">--------------------------</font>iii) Is a place where dried and pressed plant <br>
+<font color="White">-----------------------------------------</font>specimens mounted on sheets are kept</h5>
+<h5>D.  Catalogue <font color="White">----------------------</font>iv ) A booklet containing a list of characters<br>
+
+
+<font color="White">--------------------------------------------</font>and their alternates which are helpful<br>
+<font color="White">-------------------------------------------</font> identification of various taxa</h5> 											 
+
+<h3><label for="ans133">A<input type="radio" name="ans133" value="-1" id="ans133"/>ii<font color="White">--------</font>iv<font color="White">--------</font>iii<font color="White">--------</font>i  </label></h3>
+<h3><label for="ans13301">B<input type="radio" name="ans133" value="-1" id="ans13301"/> iii<font color="White">--------</font>ii<font color="White">--------</font>I<font color="White">----------</font>iv   </label></h3>
+<h3><label for="ans13302">C<input type="radio" name="ans133" value="-1" id="ans13302" />i<font color="White">--------</font>iv<font color="White">--------</font>iii<font color="White">--------</font>ii  </label></h3>
+<h4><label for="ans13303">D<input type="radio" name="ans133" value="4" id="ans13303" /> iii<font color="White">--------</font>iv<font color="White">--------</font>I<font color="White">----------</font>ii</label></h4>
+<h3><label for="ans13304">E<input type="radio" name="ans133" value="0" id="ans13304" />Not Attend</label></h3>
+
+
+
+
+
+
+<h2>134)Winged pollen grains are present in ?</h2>
+ <h3><label for="ans134">A<input type="radio" name="ans134" value="-1" id="ans134"/>Mango .</label></h3>
+<h3><label for="ans13401">B<input type="radio" name="ans134" value="-1" id="ans13401"/>Cycas </label></h3>
+<h3><label for="ans13402">C<input type="radio" name="ans134" value="-1" id="ans13402" />Mustard </label></h3>
+<h4><label for="ans13403">D<input type="radio" name="ans134" value="4" id="ans13403" /> Pinus </label></h4>
+<h3><label for="ans13404">E<input type="radio" name="ans134" value="0" id="ans13404" />Not Attend</label></h3>
+
+ 
+ 
+
+
+
+
+
+<h2>135)Which one is wrongly matched?</h2>
+
+<h3><label for="ans135">A<input type="radio" name="ans135" value="-1" id="ans135"/>Gemma cups – Marchantia  </label></h3>
+<h3><label for="ans13501">B<input type="radio" name="ans135" value="-1" id="ans13501"/>Biflagellate zoospores - Brown algae   </label></h3>
+<h4><label for="ans13502">C<input type="radio" name="ans135" value="4" id="ans13502" />Uniflagellate gametes - Polysiphonia   </label></h4>
+<h3><label for="ans13503">D<input type="radio" name="ans135" value="-1" id="ans13503" />Unicellular organism – Chlorella  </label></h3>
+<h3><label for="ans13504">E<input type="radio" name="ans135" value="0" id="ans13504" />Not Attend</label></h3>
+
+
+ 
+
+
+
+<h2>136)Which of the- following options correctly represents<br>
+ the lung conditions in asthma and emphysema, respectively?</h2>
+ 
+ <h3><label for="ans136">A<input type="radio" name="ans136" value="-1" id="ans136"/>Increased respiratory surface; Inflammation of bronchioles  .</label></h3>
+<h3><label for="ans13601">B<input type="radio" name="ans136" value="-1" id="ans13601"/>Increased number of bronchioles: Increased respiratory surface  </label></h3>
+<h4><label for="ans13602">C<input type="radio" name="ans136" value="4" id="ans13602" />Inflammation of bronchioles; Decreased  respiratory surface   </label></h4>
+<h3><label for="ans13603">D<input type="radio" name="ans136" value="-1" id="ans13603" /> Decreased respiratory surface; Inflammation of bronchioles </label></h3>
+<h3><label for="ans13604">E<input type="radio" name="ans136" value="0" id="ans11604" />Not Attend</label></h3>
+ 
+  
+ 
+
+
+
+
+
+<h2>137)Match the items given in Colum l with  those in Column II and select the correct option given below : ?<br>
+                       <h5>Column I<font color="White">----------------------------------</font>Column II</h5><br>
+ <h5>a. Tricuspid valve<font color="White">---------</font>i)Between left atrium and left ventricle</h5><br>               
+ <h5>b. Bicuspid valve<font color="White">-</font>ii)Between right ventricle and pulmonary.artery</h5><br>                   
+<h5>c. Smilunar valve<font color="White">--------</font>iii)Between right atrium and right ventricle</h5><br>
+
+					           <font color="White">--------</font>a<font color="White">----------------</font>b<font color="White">-------------</font>c</h2>
+<h3><label for="ans137">A<input type="radio" name="ans137" value="-1" id="ans137"/> i<font color="White">------------</font>ii<font color="White">------------</font>iii	   </label></h3>
+<h3><label for="ans13701">B<input type="radio" name="ans137" value="-1" id="ans13701"/>i<font color="White">------------</font>iii<font color="White">------------</font>ii </label></h3>
+<h4><label for="ans13702">C<input type="radio" name="ans137" value="4" id="ans13702" />iii<font color="White">------------</font>i<font color="White">-------------</font>ii </label></h4>
+<h3><label for="ans13703">D<input type="radio" name="ans137" value="-1" id="ans13703" />ii<font color="White">------------</font>i<font color="White">------------</font>iii </label></h3>
+<h3><label for="ans13704">E<input type="radio" name="ans137" value="0" id="ans13704" />Not Attend</label></h3>
+
+
+
+
+
+
+<h2>138)Match the items given in Column I with those in Column 11<br>
+ and select the correct option given below : ?<br>
+                <h5>Column I<font color="White">----------------------------------------------</font>Column II</h5><br>
+              <h5>a) Tidal volume<font color="White">--------------------------------------</font>i. 2500 - 3OOO mL </h5><br>
+              <h5>b) Inspiratory Reserve volume<font color="White">---------------------</font>ii. 1100 - 1200 mL</h5><br>
+               <h5>c)  Expiratory Reserve Volume<font color="White">--------------------</font>iii. 500 - 550 mL</h5><br>
+               <h5>d) Residual volume<font color="White">---------------------------------</font> iv. 1000 - 1100 mL</h5><bR>
+                             <font color="White">--------</font>a<font color="White">---------</font>b<font color="White">-------------</font>c<font color="White">-------------</font>d</h2>
+
+							 
+<h3><label for="ans138">A<input type="radio" name="ans138" value="-1" id="ans138"/> i<font color="White">--------</font>iv<font color="White">----------</font>ii<font color="White">-----------</font>iii							 </label></h3>
+<h4><label for="ans13801">B<input type="radio" name="ans138" value="4" id="ans13801"/>iii<font color="White">--------</font>i<font color="White">-----------</font>iv<font color="White">-----------</font>ii </label></h4>
+<h3><label for="ans13802">C<input type="radio" name="ans138" value="-1" id="ans13802" />iii<font color="White">-------</font>ii<font color="White">-----------</font>i<font color="White">-----------</font>iv  </label></h3>
+<h3><label for="ans13803">D<input type="radio" name="ans138" value="-1" id="ans13803" /> iv<font color="White">--------</font>iii<font color="White">--------</font>ii<font color="White">-----------</font>i </label></h3>
+<h3><label for="ans13804">E<input type="radio" name="ans138" value="0" id="ans13804" />Not Attend</label></h3>
+
+
+
+
+
+
+<h2>139) The transparent lens in the human eye is held in,its place by?</h2>
+ 
+ 
+ <h3><label for="ans139">A<input type="radio" name="ans139" value="-1" id="ans139"/> smooth muscles attached to the iris'  </label></h3>
+<h3><label for="ans13901">B<input type="radio" name="ans139" value="-1" id="ans13901"/>ligaments attached to the iris </label></h3>
+<h4><label for="ans13902">C<input type="radio" name="ans139" value="4" id="ans13902" />ligaments attached to the ciliary body    </label></h4>
+<h3><label for="ans13903">D<input type="radio" name="ans139" value="-1" id="ans13903" />smooth muscles attached to the ciliary body  </label></h3>
+<h3><label for="ans13904">E<input type="radio" name="ans139" value="0" id="ans13904" />Not Attend</label></h3>
+
+   
+ 
+ 
+ 
+
+
+
+
+<h2>140) Which of the following is an amino acid derived hormone   ?</h2>
+ 
+ <h3><label for="ans140">A<input type="radio" name="ans140" value="-1" id="ans140"/>Estradiol </label></h4>
+<h3><label for="ans14001">B<input type="radio" name="ans140" value="-1" id="ans14001"/>Ecdysone  </label></h3>
+<h4><label for="ans14002">C<input type="radio" name="ans140" value="4" id="ans14002" />Epinephrine   </sub></label></h4>
+<h3><label for="ans14003">D<input type="radio" name="ans140" value="-1" id="ans14003" /> Estriol  </label></h3>
+<h3><label for="ans14004">E<input type="radio" name="ans140" value="0" id="ans14004" />Not Attend</label></h3>
+ 
+  
+ 
+
+
+
+<h2>141)Which of the following hormones can play <br>
+a significant role in osteoporosis?</h2>
+<h4><label for="ans141">A<input type="radio" name="ans141" value="4" id="ans141" />Estrogen   and Parathyroid hormone     </label></h4>
+<h3><label for="ans14101">B<input type="radio" name="ans141" value="-1" id="ans14101" />progesterone and Aldosterone  </label></h3>
+<h3><label for="ans14102">C<input type="radio" name="ans141" value="-1" id="ans14102" />Aldosterone and Prolactin  </label></h3>
+<h3><label for="ans14103">D<input type="radio" name="ans141" value="-1" id="ans142103"/>Parathyroid hormone and Prolactin </label></h3>
+<h3><label for="ans14104">E<input type="radio" name="ans141" value="0" id="ans14104" />Not Attend</label></h3>
+
+
+
+  
+ 
+ 
+ 
+
+<h2>142) Which of the following structures or regions is<br>
+ incorrectly paired with its function ?</h2>
+ 
+ <h3><label for="ans142">A<input type="radio" name="ans142" value="-1" id="ans142"/>Hypothalamus :<font color="White">------------</font>production of releasing hormones<br> 
+ <font color="White">----------------------------------------------</font> and regulation of temperature,<br>
+  <font color="White">---------------------------------------------</font>hunger and thirst </label></h3>
+<h4><label for="ans14201">B<input type="radio" name="ans142" value="4" id="ans14201"/>Limbic system  :<font color="White">------------</font>consists of   fiber  tracts that <br>
+<font color="White">----------------------------------------------</font> interconnect different regions of<br>
+ <font color="White">----------------------------------------------</font> brain; controls movement.  </label></h4>
+<h3><label for="ans14202">C<input type="radio" name="ans142" value="-1" id="ans14202" />Medulla oblongata :<font color="White">-------</font>controls respiration and<br>
+ <font color="White">------------------------------------------------</font>cardiovascular reflexes. </label></h3>
+<h3><label for="ans14203">D<input type="radio" name="ans142" value="-1" id="ans14203" /> Corpus callosum  : <font color="White">-------</font>band of fibers connecting left<br>  
+ <font color="White">---------------------------------------</font>and right cerebral hemispheres </label></h3>
+<h3><label for="ans14204">E<input type="radio" name="ans142" value="0" id="ans14204" />Not Attend</label></h3>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+<h2>143)The amnion of mammalian embryo is derived from   ?</h2>
+
+<h3><label for="ans143">A<input type="radio" name="ans143" value="-1" id="ans143" />mesoderm and trophoblast  </label></h3>
+<h3><label for="ans14301">B<input type="radio" name="ans143" value="-1" id="ans14301" />endoderm and mesoderm   </label></h3>
+<h4><label for="ans14302">C<input type="radio" name="ans143" value="4" id="ans14302" />ectoderm and mesoderm   </label></h4>
+<h3><label for="ans14303">D<input type="radio" name="ans143" value="-1" id="ans14303" /> ectoderm and endoderm </label></h3>
+<h3><label for="ans14304">E<input type="radio" name="ans143" value="0" id="ans14304" />Not Attend</label></h3>
+
+
+
+
+
+
+<h2>144) Hormones secreted by the placenta to maintain  pregnancy are  ?</h2>
+
+<h4><label for="ans144">A<input type="radio" name="ans144" value="4" id="ans144" />hCG, hPL, progestogens, estrogens  </label></h4>
+<h3><label for="ans14401">B<input type="radio" name="ans144" value="-1" id="ans14401" />hCG, hPL, estrogens, relaxin, oxytocin  </label></h3>
+<h3><label for="ans14402">C<input type="radio" name="ans144" value="-1" id="ans14402" />hCG, hPL, progestogens, prolactin </label></h3>
+<h3><label for="ans14403">D<input type="radio" name="ans144"  value="-1" id="ans14403" />hCG, progestogens, estrogens, glucocorticoids</label></h3>
+<h3><label for="ans14404">E<input type="radio" name="ans144" value="0" id="ans14404" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>145) The difference between spermiogenesis and spermiation  is   ?</h2>
+<h3><label for="ans145">A<input type="radio" name="ans145" value="-1" id="ans145" />IN spermiogensis spermatozoa from sertoli cells are released into the cavity of seminiferous tubules while in spermiation spermatozoa are formed  </label></h3>
+<h3><label for="ans14501">B<input type="radio" name="ans145" value="-1" id="ans14501" />In spermiogenesis spermatozoa from sertoli . cells are released into the cavity of <br>
+<font color="White">------------------</font>seminiferous tubules, while in spermiation spermatozoa are formed
+ </label></h3>
+<h3><label for="ans14502">C<input type="radio" name="ans145" value="-1" id="ans14502" />In spermiogeneeis spermatozoa are formed, while in spermiation spermatide  are ' formed
+In spermiogenesis spermatids are formed while in spermiation spermatozoa are formed.  
+  </label></h3>
+<h4><label for="ans14503">D<input type="radio" name="ans145" value="4" id="ans14503"/>In spermiogenesis spermatozoa are formed, while in spermiation spermatozoa are <br>
+<font color="White">------------------</font>released from sertoli cells in to the cavity of seminiferous tubules </label></h4>
+<h3><label for="ans14504">E<input type="radio" name="ans145" value="0" id="ans14504" />Not Attend</label></h3>
+
+
+
+
+<h2>146)The contraceptive 'SAHELI”  ?</h2>
+ <h3><label for="ans146">A<input type="radio" name="ans146" value="-1" id="ans146"/>is an IUD </label></h3>
+<h3><label for="ans14601">B<input type="radio" name="ans146" value="-1" id="ans14601"/>increases the concentration of estrogen and  prevents ovulation in females </label></h3>
+<h4><label for="ans14602">C<input type="radio" name="ans146" value="4" id="ans14602" />blocks estrogen receptors in the uterus, preventing eggs from getting implanted</label></h4>
+<h3><label for="ans14603">D<input type="radio" name="ans146" value="-1" id="ans14603" />is a post-coital contraceptive</label></h4>
+<h3><label for="ans14604">E<input type="radio" name="ans146" value="0" id="ans14604" />Not Attend</label></h3>
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+<h2>147)Ciliates differ from all other protozoans in?</h2>
+  
+  <h3><label for="ans147">A<input type="radio" name="ans147" value="-1" id="ans147"/>using pseudopodia for capturing prey   </label></h3>
+<h3><label for="ans14701">B<input type="radio" name="ans147" value="-1" id="ans14701"/>having a contractile vacuole for removing excess water   </label></h3>
+<h3><label for="ans14702">C<input type="radio" name="ans147" value="-1" id="ans14702" />using flagella for locomotion   </label></h3>
+<h4><label for="ans14703">D<input type="radio" name="ans147" value="4" id="ans14703" />having two types of nuclei  </label></h4>
+<h3><label for="ans14704">E<input type="radio" name="ans147" value="0" id="ans14704" />Not Attend</label></h3>
+  
+  
+  
+ 
+  
+ 
+ 
+
+
+<h2>148)Identify the vertebrate group of animals<br>
+ characterized by crop and gizzard in its digestive system.?</h2>
+
+ <h4><label for="ans148">A<input type="radio" name="ans148" value="4" id="ans148"/>Aves  </label></h4>
+<h3><label for="ans14801">B<input type="radio" name="ans148" value="-1" id="ans14801"/>Reptilia	 </label></h3>
+<h3><label for="ans14802">C<input type="radio" name="ans148" value="-1" id="ans14802" />Amphibia   </label></h3>
+<h3><label for="ans14803">D<input type="radio" name="ans148" value="-1" id="ans14803" />Osteichthyes  </label></h3>
+<h3><label for="ans14804">E<input type="radio" name="ans148" value="0" id="ans14804" />Not Attend</label></h3>
+ 
+ 
+
+
+
+
+
+
+<h2>149)  Which of the following features is used to identify<br>
+  a male cockroach from a female cockroach  ?<h2>
+  
+  <h3><label for="ans149">A<input type="radio" name="ans149" value="-1" id="ans149"/>Forewings with darker tegmina    </label></h3>
+<h4><label for="ans14901">B<input type="radio" name="ans149" value="4" id="ans14901"/>Presence of caudal styles   </label></h4>
+<h3><label for="ans14902">C<input type="radio" name="ans149" value="-1" id="ans14902" />Presence of a boat shaped sternum on the 9<sup>th</sup>  abdominal segment    </label></h3>
+<h3><label for="ans14903">D<input type="radio" name="ans149" value="-1" id="ans14903" />  Presence of anal cerci </label></h3>
+<h3><label for="ans14904">E<input type="radio" name="ans149" value="0" id="ans14904" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>150)Which one of these animals is not  a homeotherm ?  </h2>
+<h3><label for="ans150">A<input type="radio" name="ans150" value="-1" id="ans150"/>Camelus    </label></h3>
+<h4><label for="ans15001">B<input type="radio" name="ans150" value="4" id="ans15001"/>chelone  </label></h4>
+<h3><label for="ans15002">C<input type="radio" name="ans150" value="-1" id="ans15002" />Macropus </label></h3>
+<h3><label for="ans15003">D<input type="radio" name="ans150" value="-1" id="ans15003" />Psittacula  </label></h3>
+<h3><label for="ans15004">E<input type="radio" name="ans150" value="0" id="ans15004" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+<h2>151)Which of the following animals does not undergo metamorphosis ?<h2>
+
+<h3><label for="ans151">A<input type="radio" name="ans151" value="-1" id="ans151"/>Moth   </label></h3>
+<h3><label for="ans15101">B<input type="radio" name="ans151" value="-1" id="ans15101"/>Tunicate   </label></h3>
+<h4><label for="ans15102">C<input type="radio" name="ans151" value="4" id="ans15102" />Earthworm  </label></h4>
+<h3><label for="ans15103">D<input type="radio" name="ans151" value="-1" id="ans15103" /> Starfish</label></h3>
+<h3><label for="ans15104">E<input type="radio" name="ans151" value="0" id="ans15104" />Not Attend</label></h3>
+
+
+
+
+
+
+
+<h2>152)Which of the following organisms are known as chief producers in the oceans ?    </h2>
+<h3><label for="ans152">A<input type="radio" name="ans152" value="-1" id="ans152"/>Cyanobacteria   </label></h3>
+<h4><label for="ans15201">B<input type="radio" name="ans152" value="4" id="ans15201"/>Diatoms   </label></h4>
+<h3><label for="ans15202">C<input type="radio" name="ans152" value="-1" id="ans15202" />Dinoflagellates  </label></h3>
+<h3><label for="ans15203">D<input type="radio" name="ans152" value="-1" id="ans15203" />Euglenoids   </label></h3>
+<h3><label for="ans15204">E<input type="radio" name="ans152" value="0" id="ans15204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+<h2>153)Which one of the following population interactions<br>
+ is widely used in medical science for the production of antibiotics ?<h2>
+<h3><label for="ans153">A<input type="radio" name="ans153" value="-1" id="ans153"/>Parasitism   </label></h3>
+<h3><label for="ans15301">B<input type="radio" name="ans153" value="-1" id="ans15301"/>Mutualism   </label></h3>
+<h3><label for="ans15302">C<input type="radio" name="ans153" value="-1" id="ans15302" /> Commensalism   </label></h3>
+<h4><label for="ans15303">D<input type="radio" name="ans153" value="4" id="ans15303" />Amensalism </label></h4>
+<h3><label for="ans15304">E<input type="radio" name="ans153" value="0" id="ans15304" />Not Attend</label></h3>
+ 
+ 
+
+
+
+
+
+<h2>154) All of the following are included in 'Ex-situ conservation' except ?<h2>
+
+<h3><label for="ans154">A<input type="radio" name="ans154" value="-1" id="ans154"/>Botanical gardens  </label></h3>
+<h4><label for="ans15401">B<input type="radio" name="ans154" value="4" id="ans15401"/> Sacred groves   </label></h4>
+<h3><label for="ans15402">C<input type="radio" name="ans154" value="-1" id="ans15402" />Wildlife safari parks  </label></h3>
+<h3><label for="ans15403">D<input type="radio" name="ans154" value="-1" id="ans15403" />Seed banks </label></h3>
+<h3><label for="ans15404">E<input type="radio" name="ans154" value="0" id="ans15404" />Not Attend</label></h3>
+
+
+
+
+
+
+
+<h2>155)   Match the items given in Column I with those in Column II and select the correct option given below :<br>
+<h5>          Column I<font color="White">-----------------------------</font> Column II </h5><br>
+<h5>    a. Eutrophication<font color="White">----------------------</font>i. IJV-B radiation </h5><br>
+<h5>    b. Sanitary landfill<font color="White">------------------</font>ii. Deforestation </h5><br>
+<h5>    c. Snow blindness<font color="White">--------------------</font>iii. Nutrient enrichment</h5> <br>
+<h5>    d. Jhum cultivation<font color="White">-------------------</font>iv. Waste disposal</h5><br>
+					
+					
+<h4><label for="ans155">A<input type="radio" name="ans155" value="4" id="ans155"/>iii<font color="White">----------------------</font>ii<font color="White">-----------------------------</font>iv<font color="White">-----------------------------</font>iii					 </label></h4>
+<h3><label for="ans15501">B<input type="radio" name="ans155" value="-1" id="ans15501"/>i<font color="White">----------------------</font>iii<font color="White">-----------------------------</font>iv<font color="White">-----------------------------</font>ii</label></h3>
+<h3><label for="ans15502">C<input type="radio" name="ans155" value="-1" id="ans15502" />ii<font color="White">----------------------</font>i<font color="White">-----------------------------</font>iii<font color="White">-----------------------------</font>iv </label></h3>
+<h3><label for="ans15503">D<input type="radio" name="ans155" value="-1" id="ans15503" />ii<font color="White">----------------------</font>ii<font color="White">-----------------------------</font>iv<font color="White">-----------------------------</font>iii</label></h3>
+<h3><label for="ans15504">E<input type="radio" name="ans155" value="0" id="ans15504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+<h2>156) In a growing population  of a country,  ?<h2>
+ 
+ <h3><label for="ans156">A<input type="radio" name="ans156" value="-1" id="ans156"/>reproductive and pro-reproductive  individuals  are equal in number.   </label></h3>
+<h3><label for="ans15601">B<input type="radio" name="ans156" value="-1" id="ans15601"/>reproductive  individuals are less than the  post-reproductive  individuals.   </label></h3>
+<h4><label for="ans15602">C<input type="radio" name="ans156" value="4" id="ans15602" />In pre-reductive individuals are more than  the reproductive individuals.  </label></h4>
+<h3><label for="ans15603">D<input type="radio" name="ans156" value="-1" id="ans15603" /> pre-reproductive individuals are less than the reproductive individuals. </label></h4>
+<h3><label for="ans15604">E<input type="radio" name="ans156" value="0" id="ans15604" />Not Attend</label>
+ 
+ 
+ 
+ 
+
+
+
+
+
+<h2>157) Which part of poppy plant is used to obtain the drug "Smack" ?<h2>
+
+<h3><label for="ans157">A<input type="radio" name="ans157" value="-1" id="ans157"/>Roota</label></h3>
+<h4><label for="ans15701">B<input type="radio" name="ans157" value="4" id="ans15701"/>Latex </label></h4>
+<h3><label for="ans15702">C<input type="radio" name="ans157" value="-1" id="ans15702" />Flowers </label></h3>
+<h3><label for="ans15703">D<input type="radio" name="ans157" value="-1" id="ans15703" />Leaves </label></h3>
+<h3><label for="ans15704">E<input type="radio" name="ans157" value="0" id="ans15704" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+ <h2>158)All of the following are part of an operon €xcept ?</h2>
+
+ <h4><label for="ans158">A<input type="radio" name="ans158" value="4" id="ans158"/>an enhancer  </label></h4>
+<h3><label for="ans15801">B<input type="radio" name="ans158" value="-1" id="ans15801"/>structural genes  </label></h3>
+<h3><label for="ans15802">C<input type="radio" name="ans158" value="-1" id="ans15802" />an operator </label></h3>
+<h3><label for="ans15803">D<input type="radio" name="ans158" value="-1" id="ans15803" />a promoter  </label></h3>
+<h3><label for="ans15804">E<input type="radio" name="ans158" value="0" id="ans15804" />Not Attend</label></h3>
+ 
+ 
+
+
+
+
+
+<h2>159) A woman has an X-linked condition <br>
+        on one of her X chromosomes.<br>
+ This  chromosome can be inherited by ?</h2>
+<h3><label for="ans159">A<input type="radio" name="ans159" value="-1" id="ans159"/>Only grand Children   </label></h3>
+<h3><label for="ans15901">B<input type="radio" name="ans159" value="-1" id="ans15901 "/>Only sons  </label></h3>
+<h3><label for="ans15902">C<input type="radio" name="ans159" value="-1" id="ans15902" />Only daughters  </label></h3>
+<h4><label for="ans15903">D<input type="radio" name="ans159" value="4" id="ans15903" />Both sons and daughters</label></h4>
+<h3><label for="ans15904">E<input type="radio" name="ans159" value="0" id="ans15904" />Not Attend</label></h3>
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+<h2>160)According to Hugo de Vries, the mechanism of evolution is  ?</h2>
+<h3><label for="ans160">A<input type="radio" name="ans160" value="-1" id="ans160"/>Phenotypic variations   </label></h3>
+<h4><label for="ans16001">B<input type="radio" name="ans160" value="4" id="ans16001"/>Saltation 	 </label></h4>
+<h3><label for="ans16002">C<input type="radio" name="ans160" value="-1" id="ans16002" />Multiple step mutations    </label></h3>
+<h3><label for="ans16003">D<input type="radio" name="ans160" value="-1" id="ans16003" />minor mutations . </label></h3>
+<h3><label for="ans16004">E<input type="radio" name="ans160" value="0" id="ans16004" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>161) AGGTATCG'CAT is a sequence from the<br>
+ coding strand of a gene.What will be the<br>
+ corresponding sequence of the transcribed mRNA?</h2>
+
+ <h3><label for="ans161">A<input type="radio" name="ans161" value="-1" id="ans161" />ACCUAUCCGAU   </label></h3>
+<h3><label for="ans16101">B<input type="radio" name="ans161" value="-1" id="ans16101" />UGGTUTCGCAT </label></h3>
+<h4><label for="ans16102">C<input type="radio" name="ans161" value="4" id="ans16102" />AGGUAUCGCAU </label></h4>
+<h3><label for="ans16103">D<input type="radio" name="ans161" value="-1" id="ans162103"/> UCCAUAGCGUA </label></h3>
+<h3><label for="ans16104">E<input type="radio" name="ans161" value="0" id="ans16104" />Not Attend</label></h3>
+ 
+
+
+
+
+
+<h2>162) Match the items given in Column I with those in<br>
+ Column II and select the correct option given below :
+                      <h5>Column I<font color="White">----------------------------------------------------</font>Column II </h5>
+                     <h5>a. Proliferative Phase<font color="White">---------------</font>i. Breakdown of endometrial lining</h5>
+                     <h5>b. SecretoryPhase <font color="White">----------------------------------</font>ii. Follicular Phase</h5>                                    
+					 <h5>c. Menstruation<font color="White">------------------------- ----------</font>iii. Luteal Phase
+                     <h5><font color="White">-------</font>a<font color="White">-------</font>b<font color="White">-------</font>c<font color="White">-------</font>?</h5>
+
+					 
+<h4><label for="ans162">A<input type="radio" name="ans162" value="4" id="ans162"/>ii<font color="White">----</font>iii<font color="White">----</font>i </label></h4>
+<h3><label for="ans16201">B<input type="radio" name="ans162" value="-1" id="ans16201"/>i<font color="White">-----</font>iii<font color="White">---</font>ii </label></h3>
+<h3><label for="ans16202">C<input type="radio" name="ans162" value="-1" id="ans16202" />iii<font color="White">---</font>ii<font color="White">----</font>i </label></h3>
+<h3><label for="ans16203">D<input type="radio" name="ans162" value="-1" id="ans16203" />iii<font color="White">----</font>i<font color="White">----</font>II </label></h3>
+<h3><label for="ans16204">E<input type="radio" name="ans162" value="0" id="ans16204" />Not Attend</label></h3>					 
+					 
+					 
+
+
+
+
+  
+
+
+<h2>163)  Match the items given in Column I with those in Column II and select the correct option given below: 
+                    <h5>Column I<font color="White">-----------------------------</font>Column II </h5><br>
+               <h5>a. Glycosuria<font color="White">-----------</font>i. Accumulation of uric acid in joints<br>
+               <h5>b. Gout <font color="White">---------------</font>ii. Mass of crystallised salts within the kidney <br>
+               <h5>c. Renal calculi<font color="White">-----------</font>iii- Inflammation in glomeruli<br>   
+               <h5>d. Glomerular nephritis<font color="White">--------</font>iv. presence of glucose in urine<br>
+
+   ?<br>
+           <font color="White">--------------</font>a<font color="White">--------------</font>b<font color="White">--------------</font>c<font color="White">--------------</font>d<font color="White">--------------</font></h2>
+
+
+		   
+<h3><label for="ans163">A<input type="radio" name="ans163" value="-1" id="ans163" />ii<font color="White">-----------</font>iii<font color="White">-----------</font>i<font color="White">-----------</font>iv </label></h3>
+<h3><label for="ans16301">B<input type="radio" name="ans163" value="-1" id="ans16301" />i<font color="White">-----------</font>ii<font color="White">-----------</font>iii<font color="White">-----------</font>iv </label></h3>
+<h3><label for="ans16302">C<input type="radio" name="ans163" value="-1" id="ans16302" />iii<font color="White">-----------</font>ii<font color="White">-----------</font>iv<font color="White">--------</font>i  </label></h3>
+<h4><label for="ans16303">D<input type="radio" name="ans163" value="4" id="ans16303" />iv<font color="White">-----------</font>i<font color="White">-----------</font>ii<font color="White">-----------</font>iii </label></h4>
+<h3><label for="ans16304">E<input type="radio" name="ans163" value="0" id="ans16304" />Not Attend</label></h3>
+
+
+
+ 
+
+
+
+<h2>164)Match the items given in Column I with those in' Column 11 and select the correct option given below :    
+
+                                  <h5>Column I<font color="White">------------------------------------</font>    Column II</h5>         
+                                <h5>(Function )<font color="White">-----------------------------</font> (part of Excretory ,System )</h5>
+                                <h5>A  Ultrafiltration<font color="White">--------------------------------</font>i HenIe’s Ioop</h5>  
+
+                                <h5>B Concentration of urine<font color="White">-----------------------</font>ii  Ureter</h5>
+                                <h5>C Transport OF urine<font color="White">---------------------------</font>iii. Urinarybladder</h5>
+                                <h5>d.Storage of urine<font color="White">------------------------------</font>iv. Malpighian corpuscle</h5>
+<h5><font color="White">-------------------------------------------------------</font>v Proximal . convoluted tubule</h5>
+
+              <h5><font color="White">--------</font>a<font color="White">----------</font>b<font color="White">--------</font>c<font color="White">-----------</font>d ?</h5>
+
+			  <h3><label for="ans164">A<input type="radio" name="ans164" value="-1" id="ans164" />v<font color="White">------</font>iv<font color="White">------</font>i<font color="White">------</font>ii   </label></h3>
+<h4><label for="ans16401">B<input type="radio" name="ans164" value="4" id="ans16401" />iv<font color="White">------</font>i<font color="White">------</font>ii<font color="White">------</font>iii </label></h4>
+<h3><label for="ans16402">C<input type="radio" name="ans164" value="-1" id="ans16402" />iv<font color="White">------</font>v<font color="White">-------</font>ii<font color="White">-----</font>iii </label></h3>
+<h3><label for="ans16403">D<input type="radio" name="ans164"  value="-1" id="ans16403" />v<font color="White">------</font>iv<font color="White">------</font>i<font color="White">------</font>iii </label></h3>
+<h3><label for="ans16404">E<input type="radio" name="ans164" value="0" id="ans16404" />Not Attend</label></h3>
+			  
+
+
+
+
+
+    
+
+
+
+
+<h2>165) Which of the following gastric cells<br>
+ indirectly Help in erythyropoiesis?</h2>
+<h3><label for="ans165">A<input type="radio" name="ans165" value="-1" id="ans165" />Goblet cells   </label></h3>
+<h3><label for="ans16501">B<input type="radio" name="ans165" value="-1" id="ans16501" />Mucous cells   </label></h3>
+<h3><label for="ans16502">C<input type="radio" name="ans165" value="-1" id="ans16502" />Chiefcells </label></h3>
+<h4><label for="ans16503">D<input type="radio" name="ans165" value="4" id="ans16503"/>Paneal cells </label></h4>
+<h3><label for="ans16504">E<input type="radio" name="ans165" value="0" id="ans16504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+ 
+<h2>166) Match the items given in Column I with those in Column II<br>
+ and select tJnLe conect option given below :<br>
+
+           <h5>Column I <font color="White">---------------------</font>Column II</h5><br>
+<h5>a. Fibrinogen <font color="White">---------------------</font>I  Osmotic balance</h5><br>
+<h5>b. Globu <font color="White">--------------------------</font>ii Blood clotting</h5><br>
+<h5>C Album <font color="White">-------------------------</font> iii Defence mechanism</h5><br>
+<h5><font color="White">--------</font>A<font color="White">----</font>b<font color="White">----</font>c</h5>   ?</h2>
+
+<h5><label for="ans166">A<input type="radio" name="ans166" value="-1" id="ans166"/>i<font color="White">----</font>iii<font color="White">----</font>ii </label></h5>
+<h5><label for="ans16601">B<input type="radio" name="ans166" value="-1" id="ans16601"/>i<font color="White">----</font>ii<font color="White">----</font>iii </label></h5>
+<h5><label for="ans16602">C<input type="radio" name="ans166" value="-1" id="ans16602" />iii<font color="White">----</font>ii<font color="White">----</font>i </label></h5>
+<h4><label for="ans16603">D<input type="radio" name="ans166" value="4" id="ans16603" />ii<font color="White">----</font>iii<font color="White">----</font>i </label></h4>
+<h5><label for="ans16604">E<input type="radio" name="ans166" value="0" id="ans16604" />Not Attend</label></h5>
+
+
+ 
+
+
+
+
+<h2>167)Which of the following respiratory disorder ?</h2>
+
+<h3><label for="ans167">A<input type="radio" name="ans167" value="-1" id="ans167"/>Botulism	  </label></h3>
+<h4><label for="ans16701">B<input type="radio" name="ans167" value="4" id="ans16701"/>silicosis </sub></label></h4>
+<h3><label for="ans16702">C<input type="radio" name="ans167" value="-1" id="ans16702" />  Anthracis </label></h3>
+<h3><label for="ans16703">D<input type="radio" name="ans167" value="-1" id="ans16703" />Emphysema</label></h3>
+<h3><label for="ans16704">E<input type="radio" name="ans167" value="0" id="ans16704" />Not Attend</label></h3>
+
+
+ 
+
+
+
+
+
+
+
+<h2>168)Calcium is important in skeletal muscle contraction because it  ?</h2>
+detaches the myosin head from the actin filament 
+ <h3><label for="ans168">A<input type="radio" name="ans168" value="-1" id="ans168"/> detaches the myosin head from the actin filament  </label></h3>
+<h3><label for="ans16801">B<input type="radio" name="ans168" value="-1" id="ans16801"/> activates the myosin ATpase by binding to  it. </label></h3>
+<h4><label for="ans16802">C<input type="radio" name="ans168" value="4" id="ans16802" />binds to troponin to remove the masking of active sites on actin for myosin </label></h4>
+<h3><label for="ans16803">D<input type="radio" name="ans168" value="-1" id="ans16803" />prevents the formation of bonds between the myosin cross bridges and the actin filament </label></h3>
+<h3><label for="ans16804">E<input type="radio" name="ans168" value="0" id="ans16804" />Not Attend</label></h3>
+
+
+
+
+
+
+<h2>169)Nissl bodies are mainly composed of  ?</h2>
+
+<h3><label for="ans169">A<input type="radio" name="ans169" value="-1" id="ans169"/>Nucleic acids and SER   </label></h3>
+<h3><label for="ans16901">B<input type="radio" name="ans169" value="-1" id="ans16901"/>DNA and RNA   </label></h3>
+<h3><label for="ans16902">C<input type="radio" name="ans169" value="-1" id="ans16902" />Proteins and lipids  </label></h3>
+<h4><label for="ans16903">D<input type="radio" name="ans169" value="4" id="ans16903" /> Free ribosomes and RER  </label></h4>
+<h3><label for="ans16904">E<input type="radio" name="ans169" value="0" id="ans16904" />Not Attend</label></h3>
+
+ 
+ 
+
+
+
+
+<h2>170) Which of these statements is incorrect ? </h2>
+<h3><label for="ans170">A<input type="radio" name="ans170" value="-1" id="ans170"/>Glycolysis operates as long as it is supplied <br>with NAD that can pick up hydrogen atoms   </label></h3>
+<h3><label for="ans17001">B<input type="radio" name="ans170" value="-1" id="ans17001"/>Glycolysis occurs in cytosol   </label></h3>
+<h3><label for="ans17002">C<input type="radio" name="ans170" value="-1" id="ans17002" />Enrymes .of TCA cycle are present in mitochondrial matrix   </label></h3>
+<h4><label for="ans17003">D<input type="radio" name="ans170" value="4" id="ans17003" />Oxidative phosphorylation takes place in outer mitochondrial membrane  </label></h4>
+<h3><label for="ans17004">E<input type="radio" name="ans170" value="0" id="ans17004" />Not Attend</label></h3>
+
+
+
+ 
+
+
+
+
+
+<h2>171)Select the incorrect match :   ?</h2>
+ <h3><label for="ans171">A<input type="radio" name="ans171" value="-1" id="ans171"/>Submetacentric<font color="White">---</font> L-shaped chromosomes chromosomes   . </label></h3>
+<h3><label for="ans17101">B<input type="radio" name="ans171" value="-1" id="ans17101"/>Allosomes<font color="White">-----------</font> Sex chromosomes  </label></h3>
+<h3><label for="ans17102">C<input type="radio" name="ans171" value="-1" id="ans17102" />Lampbrush <font color="White">-------</font> Diplotene bivalents chromosomes </label></h3>
+<h4><label for="ans17103">D<input type="radio" name="ans171" value="4" id="ans17103" /> Polytene<font color="White">-------------</font>Oocytes of amphibians  chromosomes </label></h4>
+<h3><label for="ans17104">E<input type="radio" name="ans171" value="0" id="ans17104" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+
+
+<h2>172)- Which of the following terms describe human dentition ?   ?</h2>
+
+<h3><label for="ans172">A<input type="radio" name="ans172" value="-1" id="ans172"/>Pleurodont,Monophyodont, Homodont </label></h3>
+<h4><label for="ans17201">B<input type="radio" name="ans172" value="4" id="ans17201"/>Tlhecodont, Diphyodont, Heterodont . </label></h4>
+<h3><label for="ans17202">C<input type="radio" name="ans172" value="-1" id="ans17202" />Thecodont,Diphyodont, Homodont. </label></h3>
+<h3><label for="ans17203">D<input type="radio" name="ans172" value="-1" id="ans17203" />Pleurodont, Diphyodont, Heterodont  </label></h3>
+<h3><label for="ans17204">E<input type="radio" name="ans172" value="0" id="ans17204" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>173)Which of the following events does not<br>
+ occur in rough endoplasmic reticulum ?  <h2>
+<h3><label for="ans173">A<input type="radio" name="ans173" value="-1" id="ans173"/>Cleavage of signal peptide  </label></h3>
+<h3><label for="ans17301">B<input type="radio" name="ans173" value="-1" id="ans17301"/>Protein glycosylation   </label></h3>
+<h3><label for="ans17302">C<input type="radio" name="ans173" value="-1" id="ans17302" />Protein folding  </label></h3>
+<h4><label for="ans17303">D<input type="radio" name="ans173" value="4" id="ans17303" />Phospholipid synthesis  </label></h4>
+<h3><label for="ans17304">E<input type="radio" name="ans173" value="0" id="ans17304" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+<h2>174)Many ribosomes may associate' with a single mRNA-to<br>
+ form multiple copies of a polypeptide simultaneously.<br>
+ Such strings of ribosomes are termed as ?</h2>
+<h3><label for="ans174">A<input type="radio" name="ans174" value="-1" id="ans174"/>Plastidome   </label></h3>
+<h3><label for="ans17401">B<input type="radio" name="ans174" value="-1" id="ans17401"/>Polyherdal bodies </label></h3>
+<h4><label for="ans17402">C<input type="radio" name="ans174" value="4" id="ans17402" />Polysome </label></h4>
+<h3><label for="ans17403">D<input type="radio" name="ans174" value="-1" id="ans17403" />  Nucleosome </label></h3>
+<h3><label for="ans17404">E<input type="radio" name="ans174" value="0" id="ans17404" />Not Attend</label></h3>
+
+
+
+
+
+
+
+<h2>175) In which disease does mosquito transmitted pathogen cause<br>
+ chronic inflammation of lymphatic-vessels? </h2>
+
+ <h3><label for="ans175">A<input type="radio" name="ans175" value="-1" id="ans175"/>Ringworm disease   </label></h3>
+<h3><label for="ans17501">B<input type="radio" name="ans175" value="-1" id="ans17501"/>Ascariasis    </label></h3>
+<h4><label for="ans17502">C<input type="radio" name="ans175" value="4" id="ans17502" />Elephantiasis   </label></h4>
+<h3><label for="ans17503">D<input type="radio" name="ans175" value="-1" id="ans17503" />Amoebiasis</label></h3>
+<h3><label for="ans17504">E<input type="radio" name="ans175" value="0" id="ans17504" />Not Attend</label></h3>
+
+
+
+
+
+
+
+<h2>176) Which of the following is not  an autoimmune Disease?</h2>
+ 
+ <h4><label for="ans176">A<input type="radio" name="ans176" value="4" id="ans176"/>Alzheimer's disease </label></h4>
+<h5><label for="ans17601">B<input type="radio" name="ans176" value="-1" id="ans17601"/>Rheumatoid arthritis </label></h5>
+<h5><label for="ans17602">C<input type="radio" name="ans176" value="-1" id="ans17602" />Psoriasis </label></h5>
+<h5><label for="ans17603">D<input type="radio" name="ans176" value="-1" id="ans17603" /> Vitiligo </label></h5>
+<h5><label for="ans17604">E<input type="radio" name="ans176" value="0" id="ans17604" />Not Attend</label></h5>
+ 
+  
+ 
+
+
+
+
+
+ 
+<h2>177)Among the following sets of examples for divergent<br>
+  evolution, select the incorrect option ?</h2>
+<h3><label for="ans177">A<input type="radio" name="ans177" value="-1" id="ans177"/> Brain of bat; man and cheetah  </label></h3>
+<h3><label for="ans17701">B<input type="radio" name="ans177" value="-1" id="ans17701"/>Heart of bat, man and cheetah   </label></h3>
+<h3><label for="ans17702">C<input type="radio" name="ans177" value="-1" id="ans17702" />Forelimbs of man, bat and cheetah  </label></h3>
+<h4><label for="ans17703">D<input type="radio" name="ans177" value="4" id="ans17703" />Eye of octopus, bat and man  </label></h4>
+<h3><label for="ans17704">E<input type="radio" name="ans177" value="0" id="ans17704" />Not Attend</label></h3>
+  
+   
+ 
+
+
+
+
+<h2>178)Conversion of milk  to curd improves its nutritional value<br>
+ by increasing the amount of  ? </h2>
+<h4><label for="ans178">A<input type="radio" name="ans178" value="4" id="ans178"/> Vitamin B<sub>12</sub>   </label></h4>
+<h3><label for="ans17801">B<input type="radio" name="ans178" value="-1" id="ans17801"/>Vitamin A   </label></h3>
+<h3><label for="ans17802">C<input type="radio" name="ans178" value="-1" id="ans17802" />Vitamin D  </label></h3>
+<h3><label for="ans17803">D<input type="radio" name="ans178" value="-1" id="ans17803" />Vitamin E  </label></h3>
+<h3><label for="ans17804">E<input type="radio" name="ans178" value="0" id="ans17804" />Not Attend</label></h3>
+
+ 
+
+
+
+
+
+
+<h2>179)The similarity of bone structure in the forelimbs<br>
+ of many vertebrates is an example of?<h2>
+
+ <h3><label for="ans179">A<input type="radio" name="ans179" value="-1" id="ans179"/>Convergent evolution  </label></h3>
+<h3><label for="ans17901">B<input type="radio" name="ans179" value="-1" id="ans17901"/>Analogy   </label></h3>
+<h4><label for="ans17902">C<input type="radio" name="ans179" value="4" id="ans17902" />Homology  </label></h4>
+<h3><label for="ans17903">D<input type="radio" name="ans179" value="-1" id="ans17903" /> Adaptive radiation </label></h3>
+<h3><label for="ans17904">E<input type="radio" name="ans179" value="0" id="ans17904" />Not Attend</label></h3>
+
+
+
+
+
+<h2>180)  
+ Which of the following characteristics  & represent<br>
+ 'Inheritance of  blood groups in humans ? <br>
+a) Dominance<br>
+b) Co-dominance<br>
+c) Multiple allets<br>
+d) Incomplete dominance<br>
+e)Polygenicinheritance<br>
+<h2>
+
+<h3><label for="ans180">A<input type="radio" name="ans180" value="-1" id="ans180"/>a,b and c   </label></h3>
+<h4><label for="ans18001">B<input type="radio" name="ans180" value="4" id="ans18001"/>b,d and e  </label></h4>
+<h3><label for="ans18002">C<input type="radio" name="ans180" value="-1" id="ans18002" />b, c and e </label></h3>
+<h3><label for="ans18003">D<input type="radio" name="ans180" value="-1" id="ans18003" />a,c and e  </label></h3>
+<h3><label for="ans18004">E<input type="radio" name="ans180" value="0" id="ans18004" />Not Attend</label></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button type="submit" value="Submit">Submit</button>
+</fieldset>
+</form>
+    
+<p>Your Score is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+
+
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+       ans1 = parseInt(document.querySelector('input[name = "ans1"]:checked').value);
+	   ans2 = parseInt(document.querySelector('input[name = "ans2"]:checked').value);
+	   ans3 = parseInt(document.querySelector('input[name = "ans3"]:checked').value);
+	   ans4 = parseInt(document.querySelector('input[name = "ans4"]:checked').value);
+	   ans5 = parseInt(document.querySelector('input[name = "ans5"]:checked').value);
+	   ans6 = parseInt(document.querySelector('input[name = "ans6"]:checked').value);
+	   ans7 = parseInt(document.querySelector('input[name = "ans7"]:checked').value);
+	   ans8 = parseInt(document.querySelector('input[name = "ans8"]:checked').value);
+	   ans9 = parseInt(document.querySelector('input[name = "ans9"]:checked').value);
+	   ans10 = parseInt(document.querySelector('input[name = "ans10"]:checked').value);
+	   ans11 = parseInt(document.querySelector('input[name = "ans11"]:checked').value);
+	   ans12 = parseInt(document.querySelector('input[name = "ans12"]:checked').value);
+	   ans13 = parseInt(document.querySelector('input[name = "ans13"]:checked').value);
+	   ans14 = parseInt(document.querySelector('input[name = "ans14"]:checked').value);
+	   ans15 = parseInt(document.querySelector('input[name = "ans15"]:checked').value);
+	   ans16 = parseInt(document.querySelector('input[name = "ans16"]:checked').value);
+	   ans17 = parseInt(document.querySelector('input[name = "ans17"]:checked').value);
+	   ans18 = parseInt(document.querySelector('input[name = "ans18"]:checked').value);
+	   ans19 = parseInt(document.querySelector('input[name = "ans19"]:checked').value);
+	   ans20 = parseInt(document.querySelector('input[name = "ans20"]:checked').value);
+	   ans21 = parseInt(document.querySelector('input[name = "ans21"]:checked').value);
+	   ans22 = parseInt(document.querySelector('input[name = "ans22"]:checked').value);
+	   ans23 = parseInt(document.querySelector('input[name = "ans23"]:checked').value);
+	   ans24 = parseInt(document.querySelector('input[name = "ans24"]:checked').value);
+	   ans25 = parseInt(document.querySelector('input[name = "ans25"]:checked').value);
+	   ans26 = parseInt(document.querySelector('input[name = "ans26"]:checked').value);
+	   ans27 = parseInt(document.querySelector('input[name = "ans27"]:checked').value);
+	   ans28 = parseInt(document.querySelector('input[name = "ans28"]:checked').value);
+	   ans29 = parseInt(document.querySelector('input[name = "ans29"]:checked').value);
+	   ans30 = parseInt(document.querySelector('input[name = "ans30"]:checked').value);
+	   ans31 = parseInt(document.querySelector('input[name = "ans31"]:checked').value);
+	   ans32 = parseInt(document.querySelector('input[name = "ans32"]:checked').value);
+	   ans33 = parseInt(document.querySelector('input[name = "ans33"]:checked').value);
+	   ans34 = parseInt(document.querySelector('input[name = "ans34"]:checked').value);
+	   ans35 = parseInt(document.querySelector('input[name = "ans35"]:checked').value);
+	   ans36 = parseInt(document.querySelector('input[name = "ans36"]:checked').value);
+	   ans37 = parseInt(document.querySelector('input[name = "ans37"]:checked').value);
+	   ans38 = parseInt(document.querySelector('input[name = "ans38"]:checked').value);
+	   ans39 = parseInt(document.querySelector('input[name = "ans39"]:checked').value);
+	   ans40 = parseInt(document.querySelector('input[name = "ans40"]:checked').value);
+	   ans41 = parseInt(document.querySelector('input[name = "ans41"]:checked').value);
+	   ans42 = parseInt(document.querySelector('input[name = "ans42"]:checked').value);
+	   ans43 = parseInt(document.querySelector('input[name = "ans43"]:checked').value);
+	   ans44 = parseInt(document.querySelector('input[name = "ans44"]:checked').value);
+	   ans45 = parseInt(document.querySelector('input[name = "ans45"]:checked').value);
+	   ans46 = parseInt(document.querySelector('input[name = "ans46"]:checked').value);
+	   ans47 = parseInt(document.querySelector('input[name = "ans47"]:checked').value);
+	   ans48 = parseInt(document.querySelector('input[name = "ans48"]:checked').value);
+	   ans49 = parseInt(document.querySelector('input[name = "ans49"]:checked').value);
+	   ans50 = parseInt(document.querySelector('input[name = "ans50"]:checked').value);
+	   ans51 = parseInt(document.querySelector('input[name = "ans51"]:checked').value);
+	   ans52 = parseInt(document.querySelector('input[name = "ans52"]:checked').value);
+	   ans53 = parseInt(document.querySelector('input[name = "ans53"]:checked').value);
+	   ans54 = parseInt(document.querySelector('input[name = "ans54"]:checked').value);
+	   ans55 = parseInt(document.querySelector('input[name = "ans55"]:checked').value);
+	   ans56 = parseInt(document.querySelector('input[name = "ans56"]:checked').value);
+	   ans57 = parseInt(document.querySelector('input[name = "ans57"]:checked').value);
+	   ans58 = parseInt(document.querySelector('input[name = "ans58"]:checked').value);
+	   ans59 = parseInt(document.querySelector('input[name = "ans59"]:checked').value);
+	   ans60 = parseInt(document.querySelector('input[name = "ans60"]:checked').value);
+	   ans61 = parseInt(document.querySelector('input[name = "ans61"]:checked').value);
+	   ans62 = parseInt(document.querySelector('input[name = "ans62"]:checked').value);
+	   ans63 = parseInt(document.querySelector('input[name = "ans63"]:checked').value);
+	   ans64 = parseInt(document.querySelector('input[name = "ans64"]:checked').value);
+	   ans65 = parseInt(document.querySelector('input[name = "ans65"]:checked').value);
+	   ans66 = parseInt(document.querySelector('input[name = "ans66"]:checked').value);
+	   ans67 = parseInt(document.querySelector('input[name = "ans67"]:checked').value);
+	   
+	   ans68 = parseInt(document.querySelector('input[name = "ans68"]:checked').value);
+	   ans69 = parseInt(document.querySelector('input[name = "ans69"]:checked').value);
+	   ans70 = parseInt(document.querySelector('input[name = "ans70"]:checked').value);
+	   ans71 = parseInt(document.querySelector('input[name = "ans71"]:checked').value);
+	   ans72 = parseInt(document.querySelector('input[name = "ans72"]:checked').value);
+	   ans73 = parseInt(document.querySelector('input[name = "ans73"]:checked').value);
+	   ans74 = parseInt(document.querySelector('input[name = "ans74"]:checked').value);
+	   ans75 = parseInt(document.querySelector('input[name = "ans75"]:checked').value);
+	   ans76 = parseInt(document.querySelector('input[name = "ans76"]:checked').value);
+	   ans77 = parseInt(document.querySelector('input[name = "ans77"]:checked').value);
+	   ans78 = parseInt(document.querySelector('input[name = "ans78"]:checked').value);
+	   ans79 = parseInt(document.querySelector('input[name = "ans79"]:checked').value);
+	   ans80 = parseInt(document.querySelector('input[name = "ans80"]:checked').value);
+	   ans81 = parseInt(document.querySelector('input[name = "ans81"]:checked').value);
+	   ans82 = parseInt(document.querySelector('input[name = "ans82"]:checked').value);
+	   ans83 = parseInt(document.querySelector('input[name = "ans83"]:checked').value);
+	   ans84 = parseInt(document.querySelector('input[name = "ans84"]:checked').value);
+	   ans85 = parseInt(document.querySelector('input[name = "ans85"]:checked').value);
+	   ans86 = parseInt(document.querySelector('input[name = "ans86"]:checked').value);
+	   ans87 = parseInt(document.querySelector('input[name = "ans87"]:checked').value);
+	   
+	   ans88 = parseInt(document.querySelector('input[name = "ans88"]:checked').value);
+	   ans89 = parseInt(document.querySelector('input[name = "ans89"]:checked').value);
+	   ans90 = parseInt(document.querySelector('input[name = "ans90"]:checked').value);
+	   ans91 = parseInt(document.querySelector('input[name = "ans91"]:checked').value);
+	   ans92 = parseInt(document.querySelector('input[name = "ans92"]:checked').value);
+	   ans93 = parseInt(document.querySelector('input[name = "ans93"]:checked').value);
+	   ans94 = parseInt(document.querySelector('input[name = "ans94"]:checked').value);
+	   ans95 = parseInt(document.querySelector('input[name = "ans95"]:checked').value);
+	   ans96 = parseInt(document.querySelector('input[name = "ans96"]:checked').value);
+	   ans97 = parseInt(document.querySelector('input[name = "ans97"]:checked').value);
+	   ans98 = parseInt(document.querySelector('input[name = "ans98"]:checked').value);
+	   ans99 = parseInt(document.querySelector('input[name = "ans99"]:checked').value);
+	   ans100 = parseInt(document.querySelector('input[name = "ans100"]:checked').value);
+	   
+	   
+	   
+	   
+	   
+	   ans101 = parseInt(document.querySelector('input[name = "ans101"]:checked').value);
+	   ans102 = parseInt(document.querySelector('input[name = "ans102"]:checked').value);
+	   ans103 = parseInt(document.querySelector('input[name = "ans103"]:checked').value);
+	   ans104 = parseInt(document.querySelector('input[name = "ans104"]:checked').value);
+	   ans105 = parseInt(document.querySelector('input[name = "ans105"]:checked').value);
+	   ans106 = parseInt(document.querySelector('input[name = "ans106"]:checked').value);
+	   ans107 = parseInt(document.querySelector('input[name = "ans107"]:checked').value);
+	   ans108 = parseInt(document.querySelector('input[name = "ans108"]:checked').value);
+	   ans109 = parseInt(document.querySelector('input[name = "ans109"]:checked').value);
+	   ans110 = parseInt(document.querySelector('input[name = "ans110"]:checked').value);
+	   
+	   ans111 = parseInt(document.querySelector('input[name = "ans111"]:checked').value);
+	   ans112 = parseInt(document.querySelector('input[name = "ans112"]:checked').value);
+	   ans113 = parseInt(document.querySelector('input[name = "ans113"]:checked').value);
+	   ans114 = parseInt(document.querySelector('input[name = "ans114"]:checked').value);
+	   ans115 = parseInt(document.querySelector('input[name = "ans115"]:checked').value);
+	   ans116 = parseInt(document.querySelector('input[name = "ans116"]:checked').value);
+	   ans117 = parseInt(document.querySelector('input[name = "ans117"]:checked').value);
+	   ans118 = parseInt(document.querySelector('input[name = "ans118"]:checked').value);
+	   ans119 = parseInt(document.querySelector('input[name = "ans119"]:checked').value);
+	   ans120 = parseInt(document.querySelector('input[name = "ans120"]:checked').value);
+	   
+	   
+	   ans121 = parseInt(document.querySelector('input[name = "ans121"]:checked').value);
+	   ans122 = parseInt(document.querySelector('input[name = "ans122"]:checked').value);
+	   ans123 = parseInt(document.querySelector('input[name = "ans123"]:checked').value);
+	   ans124 = parseInt(document.querySelector('input[name = "ans124"]:checked').value);
+	   ans125 = parseInt(document.querySelector('input[name = "ans125"]:checked').value);
+	   ans126 = parseInt(document.querySelector('input[name = "ans126"]:checked').value);
+	   ans127 = parseInt(document.querySelector('input[name = "ans127"]:checked').value);
+	   ans128 = parseInt(document.querySelector('input[name = "ans128"]:checked').value);
+	   ans129 = parseInt(document.querySelector('input[name = "ans129"]:checked').value);
+	   ans130 = parseInt(document.querySelector('input[name = "ans130"]:checked').value);
+	   
+	   
+	   ans131 = parseInt(document.querySelector('input[name = "ans131"]:checked').value);
+	   ans132 = parseInt(document.querySelector('input[name = "ans132"]:checked').value);
+	   ans133 = parseInt(document.querySelector('input[name = "ans133"]:checked').value);
+	   ans134 = parseInt(document.querySelector('input[name = "ans134"]:checked').value);
+	   ans135 = parseInt(document.querySelector('input[name = "ans135"]:checked').value);
+	   ans136 = parseInt(document.querySelector('input[name = "ans136"]:checked').value);
+	   ans137 = parseInt(document.querySelector('input[name = "ans137"]:checked').value);
+	   ans138 = parseInt(document.querySelector('input[name = "ans138"]:checked').value);
+	   ans139 = parseInt(document.querySelector('input[name = "ans139"]:checked').value);
+	   
+	   
+	   ans140 = parseInt(document.querySelector('input[name = "ans140"]:checked').value);
+	   ans141 = parseInt(document.querySelector('input[name = "ans141"]:checked').value);
+	   ans142 = parseInt(document.querySelector('input[name = "ans142"]:checked').value);
+	   ans143 = parseInt(document.querySelector('input[name = "ans143"]:checked').value);
+	   ans144 = parseInt(document.querySelector('input[name = "ans144"]:checked').value);
+	   ans145 = parseInt(document.querySelector('input[name = "ans145"]:checked').value);
+	   ans146 = parseInt(document.querySelector('input[name = "ans146"]:checked').value);
+	   ans147 = parseInt(document.querySelector('input[name = "ans147"]:checked').value);
+	   ans148 = parseInt(document.querySelector('input[name = "ans148"]:checked').value);
+	   ans149 = parseInt(document.querySelector('input[name = "ans149"]:checked').value);
+	   
+	   
+	   ans150 = parseInt(document.querySelector('input[name = "ans150"]:checked').value);
+	   ans151 = parseInt(document.querySelector('input[name = "ans151"]:checked').value);
+	   ans152 = parseInt(document.querySelector('input[name = "ans152"]:checked').value);
+	   ans153 = parseInt(document.querySelector('input[name = "ans153"]:checked').value);
+	   ans154 = parseInt(document.querySelector('input[name = "ans154"]:checked').value);
+	   ans155 = parseInt(document.querySelector('input[name = "ans155"]:checked').value);
+	   ans156 = parseInt(document.querySelector('input[name = "ans156"]:checked').value);
+	   ans157 = parseInt(document.querySelector('input[name = "ans157"]:checked').value);
+	   ans158 = parseInt(document.querySelector('input[name = "ans158"]:checked').value);
+	   ans159 = parseInt(document.querySelector('input[name = "ans159"]:checked').value);
+	   
+	   
+	   ans160 = parseInt(document.querySelector('input[name = "ans160"]:checked').value);
+	   ans161 = parseInt(document.querySelector('input[name = "ans161"]:checked').value);
+	   ans162 = parseInt(document.querySelector('input[name = "ans162"]:checked').value);
+	   ans163 = parseInt(document.querySelector('input[name = "ans163"]:checked').value);
+	   ans164 = parseInt(document.querySelector('input[name = "ans164"]:checked').value);
+	   ans165 = parseInt(document.querySelector('input[name = "ans165"]:checked').value);
+	   ans166 = parseInt(document.querySelector('input[name = "ans166"]:checked').value);
+	   ans167 = parseInt(document.querySelector('input[name = "ans167"]:checked').value);
+	   ans168 = parseInt(document.querySelector('input[name = "ans168"]:checked').value);
+	   ans169 = parseInt(document.querySelector('input[name = "ans169"]:checked').value);
+	   ans170 = parseInt(document.querySelector('input[name = "ans170"]:checked').value);
+	   
+	   ans171 = parseInt(document.querySelector('input[name = "ans171"]:checked').value);
+	   ans172 = parseInt(document.querySelector('input[name = "ans172"]:checked').value);
+	   ans173 = parseInt(document.querySelector('input[name = "ans173"]:checked').value);
+	   ans174 = parseInt(document.querySelector('input[name = "ans174"]:checked').value);
+	   ans175 = parseInt(document.querySelector('input[name = "ans175"]:checked').value);
+	   ans176 = parseInt(document.querySelector('input[name = "ans176"]:checked').value);
+	   ans177 = parseInt(document.querySelector('input[name = "ans177"]:checked').value);
+	   ans178 = parseInt(document.querySelector('input[name = "ans178"]:checked').value);
+	   ans179 = parseInt(document.querySelector('input[name = "ans179"]:checked').value);
+	   ans180 = parseInt(document.querySelector('input[name = "ans180"]:checked').value);
+	   
+	   
+	   
+	   
+	   
+	   result = ans1 + ans2 + ans3 + ans4+ ans5 + ans6 + ans7 + ans8 + ans9 + ans10 + ans11 + ans12 + ans13 +ans14+ ans15 + ans16 + ans17 + ans18 + ans19 + ans20 + ans21 + ans22  + ans23 + ans24 + ans25 + ans26 + ans27 + ans28 + ans29 + ans30 + ans31 + ans32 + ans33 + ans34 + ans35 + ans36 + ans37 + ans38 + ans39 + ans40 + ans41 + ans42 + ans43 + ans44 + ans45 + ans46 + ans47 + ans48 + ans49 + ans50 + ans51 + ans52 + ans53 + ans54 + ans55 + ans56 + ans57 + ans58 + ans59 + ans60  + ans61 + ans62 + ans63 + ans64 + ans65 + ans66 + ans67 + ans68 + ans69 + ans70 + ans71 + ans72 + ans73 + ans74 + ans75 + ans76  + ans77 + ans78 + ans79 + ans80+ ans81 + ans82 + ans83 + ans84 + ans85 + ans86 + ans87 + ans88 + ans89 + ans90 + ans91 + ans92 + ans93 + ans94 + ans95 + ans96  + ans97 + ans98 + ans99 + ans100 + ans101 + ans102 + ans103 + ans104+ ans105 + ans106 + ans107 + ans108 + ans109 + ans110 + ans111 + ans112 + ans113 +ans114+ ans115 + ans116 + ans117 + ans118 + ans119 + ans120 + ans121 + ans122  + ans123 + ans124 + ans125 + ans126 + ans127 + ans128 + ans129 + ans130 + ans131 + ans132 + ans133 + ans134 + ans135 + ans136 + ans137 + ans138 + ans139 + ans140 + ans141 + ans142 + ans143 + ans144 + ans145 + ans146 + ans147 + ans148 + ans149 + ans150 + ans151 + ans152 + ans153 + ans154 + ans155 + ans156 + ans157 + ans158 + ans159 + ans160  + ans161 + ans162 + ans163 + ans164 + ans165 + ans166 + ans167 + ans168 + ans169 + ans170 + ans171 + ans172 + ans173 + ans174 + ans175 + ans176  + ans177 + ans178 + ans179 + ans180;
+	   
+	   
+	   document.getElementById("grade").innerHTML = result;
+	   
+	   
+	     
+	  
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
+
+</div>
+
+</div>
+ 
+</div> 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Page Top</button>
+<script>
+
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'brown';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#FFFAF0');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#FFFAF0');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#FFD700';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

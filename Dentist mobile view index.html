@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>kolathur Dentist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-yellow.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;height:2000px;}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.whatsapp{
+ background: #7FFF00;
+  font-size:88px;
+  color:Lime"
+ }
+
+.content {
+ 
+  margin-left: 75px;
+  font-size: 30px;
+}
+
+
+</style>
+<body>
+
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+  <a href="https://web.whatsapp.com/send?text" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+</div>
+
+<body style="max-width:600px">
+<body bgcolor="Navy">
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d1">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="F:\photo\Dentist\D-18.jpg" alt="D-18" style="width:75%">
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="index.html">Home</a>
+<a class="w3-bar-item w3-button" href="Dentist-aboutus.html">About Us</a>
+<a class="w3-bar-item w3-button" href="Dentist-map.html">How to Reach</a>
+<a class="w3-bar-item w3-button" href="appontment.html">Appoinment</a>
+<a class="w3-bar-item w3-button" href="Treatment.html">Treatments</a>
+</nav>
+
+<header class="w3-bar w3-card w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <h1 class="w3-bar-item"> MULTISPECIALITY<BR> DENTAL CLINIC</h1>
+</header>
+
+<div class="w3-container">
+<hr>
+<center><div class="wrap">
+	<div class="cube">
+		<div class="front"><font color ="Red" style = "Font-size:70"><img src="D:\photo\Dentist\T-3.jpg"  alt="T-3" width="200" height="310"></div>
+		<div class="back"><a href="http://wwari.tk"><img src="F:\photo\Dentist\T-13.jpg" alt="T-13" width="200" height="310"></a></div>
+		<div class="top"><img src="F:\photo\Dentist\T-8.jpg" alt="T-8" width="200" height="310"></div>
+		<div class="bottom"><img src="F:\photo\Dentist\T-22.jpg" alt="T-22" width="200" height="310"></div>
+		<div class="left"><a href="http://wparameshwari.tk"><img src="F:\photo\Dentist\T-12.jpg" alt="T-12" width="200" height="310"></a></div>
+		<div class="right"><a href="http://meshwari.tk"><img src="F:\photo\Dentist\T-27.jpg" alt="T-27" width="200" height="310"></a></div>
+	</div>
+</div>
+<style>
+.wrap {
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+}
+.cube {
+	position: relative;
+	width: 200px;
+	transform-style: preserve-3d;
+}
+.cube div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+}
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+}
+.left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+}
+.top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+}
+.bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+}
+.front {
+	transform: translateZ(100px);
+}
+@keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
+}
+
+.cube {
+	animation: spin 5s infinite linear;
+}
+@keyframes spin-vertical {
+	from { transform: rotateX(0); }
+	to { transform: rotateX(-360deg); }
+}
+
+.cube-wrap.vertical .cube {
+	margin: 0 auto; /* keeps the cube centered */
+
+	transform-origin: 0 100px;
+	animation: spin-vertical 5s infinite linear;
+}
+
+.cube-wrap.vertical .top {
+	transform: rotateX(-270deg) translateY(-100px);
+}
+
+.cube-wrap.vertical .back {
+	transform: translateZ(-100px) rotateX(180deg);
+}
+
+.cube-wrap.vertical .bottom {
+	transform: rotateX(-90deg) translateY(100px);
+}
+
+</style>
+
+
+ 
+
+  </div>
+</div>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="Photos\Dentist\D-11.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3><font color="white">Floss your teeth daily. Use a slow and gentle sawing motion</h3>
+   
+<marquee width="40%" direction="up" height="30%">
+Floss your teeth daily. Use a slow and gentle sawing motion
+</marquee>
+   <p>Dr ARAVINTH KOLATHUR DENTIST</font></p>
+  </div>
+</div>  
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="Photos\Dentist\D-21.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>VG MULTISPECIALITY DENTAL CLINIC</h3>
+	
+	<marquee width="40%" direction="down" height="30%">
+<center><div class="wrap">
+	<div class="cube">
+		<div class="front"><font color ="Red" style = "Font-size:70"><img src="F:\photo\Dentist\T-3.jpg"  alt="T-3" width="200" height="310"></div>
+		<div class="back"><a href="http://wwari.tk"><img src="F:\photo\Dentist\T-13.jpg" alt="T-13" width="200" height="310"></a></div>
+		<div class="top"><img src="F:\photo\Dentist\T-8.jpg" alt="T-8" width="200" height="310"></div>
+		<div class="bottom"><img src="F:\photo\Dentist\T-22.jpg" alt="T-22" width="200" height="310"></div>
+		<div class="left"><a href="http://wparameshwari.tk"><img src="F:\photo\Dentist\T-12.jpg" alt="T-12" width="200" height="310"></a></div>
+		<div class="right"><a href="http://meshwari.tk"><img src="F:\photo\Dentist\T-27.jpg" alt="T-27" width="200" height="310"></a></div>
+	</div>
+</div>
+</marquee>
+    <p></p>
+  </div>
+</div>
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="Photos\Dentist\T-17.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>
+	<marquee width="40%" direction="up" height="30%">
+<font color="White">See your dentist for regular check-ups.
+	You should also visit your dentist if you have a dental problem such as a toothache or bleeding gums.
+C</font>
+</marquee>
+	<font color="White">See your dentist for regular check-ups.
+	You should also visit your dentist if you have a dental problem such as a toothache or bleeding gums.
+C</font></h3>
+    <p>Dr ARAVINTH KOLATHUR DENTIST</p>
+  </div>
+</div>
+<hr>
+</div>
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="Photos\Dentist\D-11.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3><marquee width="40%" direction="up" height="30%"><font color="SkyBlue">Try to save a knocked out tooth. If possible, hold the tooth back in place while you 
+	seek immediate dental advice. If this is not possible, 
+	wrap the tooth in plastic or place it in milk and seek dental advice immediately.</font></h3></marquee>
+    <p>Dr ARAVINTH KOLATHUR DENTIST</p>
+  </div>
+</div>  
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="Photos\Dentist\D-21.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>VG MULTISPECIALITY DENTAL CLINIC</h3>
+    <p><font color="SpringGreen">Brush thoroughly. Tooth brushing should take between two and three minutes.</font></p>
+  </div>
+</div>
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="Photos\Dentist\T-17.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>VG MULTISPECIALITY DENTAL CLINIC</h3>
+    <p>Dr ARAVINTH KOLATHUR DENTIST</p>
+  </div>
+</div>
+<hr>
+</div>
+
+<footer class="w3-container w3-theme w3-margin-top">
+  <h3>VG MULTISPECIALITY DENTAL CLINIC</h3>
+</footer>
+
+<script>
+closeSidebar();
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script language="JavaScript" Type="text/javascript">
+
+function popupMsg(theMsg) {
+alert('RIGHT CLICK NOT ALLOWED HERE');
+}
+
+</script>
+
+ 
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+
+</script>
+</body>

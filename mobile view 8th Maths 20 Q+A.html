@@ -1,0 +1,773 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Web Design</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Mobile Site</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+   
+<head>
+<title>8th One Mark Maths Q+A</title>
+<style>
+body {
+background-color: Darkblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px White solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid white;
+padding: 5px;
+height: 150px;
+background: beige;
+background-image: url("/Photos/Ramanujar-26.jpg");
+color: white;
+}
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+</style>
+<style>
+h1 {
+    text-shadow: 2px 2px red;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<div ng-app="myApp" ng-controller="datCtrl">
+
+<font color="Limegreen"><center><p>Date : {{ today | date : "dd.MM.y" }}</p>
+
+</div>
+<script>
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+  </script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('datCtrl', function($scope) {
+    $scope.today = new Date();
+});
+</script>
+
+<p align="center"><canvas id="canvas" width="105" height="105" align="left"
+style="background-color:#00008B">
+</canvas>
+</head>
+<body>
+
+
+<br>
+<br>
+<br>
+<body onload="myFunction()">
+<script>
+function myFunction() {
+    
+    setTimeout(function(){ alert("1 minutes  over");}, 60000);
+	setTimeout(function(){ alert("5 minute over balance 2 hour and 55 minutes"); }, 300000);
+	setTimeout(function(){ alert("10 minute over balance 2hour and 50 minutes"); }, 600000);
+	setTimeout(function(){ alert("15 minute over balance 2 hour and 45 minutes"); }, 900000);
+    setTimeout(function(){ alert("20 minute over 2 hour and 40 minutes in hand"); }, 1200000);
+	setTimeout(function(){ alert("25 minute over 2 hour's and 35 minutes only  in hand"); }, 1500000);
+    
+	setTimeout(function(){ alert("30 minute over "); }, 1800000);
+	setTimeout(function(){ alert("45 minute over "); }, 2700000);
+	setTimeout(function(){ alert("60 minute over "); }, 3600000);
+	
+	
+	
+}
+</script>
+
+
+
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+
+</script>
+
+
+<style>
+ h4:hover {
+    background-color: Green;
+}
+</style>
+<style>
+div.a {
+    text-align: justify;
+}
+</style>
+<style>
+
+p {
+     
+   color:Gold;
+   font-size: 25px;
+   text-shadow: 2px 2px Brown;
+}
+h1 {
+    
+   
+    color:red;	
+	font-size: 25px;
+    text-shadow: 2px 2px gold;
+}
+
+h2 {
+    color:red;	
+	font-size: 25px;
+    text-shadow: 2px 2px Gray;
+}
+
+h3 {
+    color:blue;	
+	 
+	font-size: 15px;
+    }
+h4 {
+    color:blue;	
+	 
+	font-size: 15px;
+    
+}
+
+
+h5 {
+    color:blue;	
+	font-size: 25px;
+	
+	}
+h6 {
+    color:White;	
+	 
+	
+}
+
+p1 {
+  color:White;
+  }
+</style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+<style> 
+#rcorners1 {
+    border-radius: 25px;
+    background:#8B0000;
+    padding: 15px; 
+    width: 135px;
+    height: 35px;    
+}
+</style>
+
+
+
+
+<style>
+.button {
+    background-color: #FF1493; /* Green */
+    border: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+
+.button1 {border-radius: 50%;}
+</style>
+</head>
+<body>
+
+
+<center><a href ="index.html"><button class="button button1"><font color="Black">Go to<br>Home</font></button></a></center>
+</head>
+<body>
+
+
+<div id="main">
+<div id="header">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><h1>8th Std Maths</h1>
+
+<h1>Standard   </h1>
+<h1>Time 20 Mintues <center>Total Marks 20 </h1>
+
+<h1>Standard   </h1>
+</div>
+<form id="form1">
+
+<fieldset>
+
+<p align="left">
+<font color="yellow">
+<br>
+<br>
+<br>
+<marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start();">
+<font color="Red">Class VIII public exam 2020 <br>
+                      <br>
+                       <br>
+                        <br>
+30.03.2020.....  Monday......   Tamil........        10.15 a.m. to   12.15 p.m. <br>  
+                            
+                          <br>
+
+02.04.2020...... Thursday  .....English .......      10.15 a.m. to   12.15 p.m.<br>    
+                          <br>  
+						
+08.04.2020...... Wednesday ......Mathematics.........    10.15 a.m. to   12.15 p.m.<br> 
+                            
+						<br>
+15.04.2020..... Wednesday ......Science ........         10.15 a.m. to   12.15 p.m.<br>
+                                <br>
+17.04.2020..... Friday.......   Social Science........     10.15 a.m. to   12.15 p.m.<br>
+                        
+
+ 
+</font>
+</marquee>
+
+<br>
+<br>
+<br>
+
+<font color="White">
+<p align="left">
+
+<h2>1)  12% of 250 litres is the <br>
+same as ________of 150 litres.
+?</h2>
+<h4><label for="ans1">A<input type="radio" name="ans1" value="1" id="ans1" />20%</label></h4>
+<h3><label for="ans0101">B<input type="radio" name="ans1" value="0" id="ans0101" />15%</label></h3>
+<h3><label for="ans0102">C<input type="radio" name="ans1" value="0" id="ans0102" /> 10%</label></h3>
+<h3><label for="ans0103">D<input type="radio" name="ans1" value="0" id="ans0103"/>30%</label></h3>
+
+
+
+<h2>2)If three candidates A, B and C is a 3 school election got 153,<br>
+ 245 and 102 votes respectively, the percentage of votes for the winner is___________.
+ ?<h2>
+<h4><label for="ans2">A<input type="radio" name="ans2" value="1" id="ans2"/> 49% </label></h4>
+<h3><label for="ans0201">B<input type="radio" name="ans2" value="0" id="ans0201"/>48% </label></h3>
+<h3><label for="ans0202">C<input type="radio" name="ans2" value="0" id="ans0202" />50%</label></h3>
+<h3><label for="ans0203">D<input type="radio" name="ans2" value="0" id="ans0203" /> 45%  </label></h3>
+
+
+
+<h2>3) 15% of 25% of 10000 =___________.
+ ?</h2>
+<h4><label for="ans3">A<input type="radio" name="ans3" value="1" id="ans3" />375   </label></h4>
+<h3><label for="ans0301">B<input type="radio" name="ans3" value="0" id="ans0301" />400 </label></h3>
+<h3><label for="ans0302">C<input type="radio" name="ans3" value="0" id="ans0302" />425 </label></h3>
+<h3><label for="ans0303">D<input type="radio" name="ans3" value="0" id="ans0303" />475  </label></h3>
+
+
+<h2>4)When 60 is subtracted from 60% of a number to give 60, the number is
+  ? </h2>
+<h3><label for="ans4">A<input type="radio" name="ans4" value="0" id="ans4" /> 60   </label></h3>
+<h4><label for="ans0401">B<input type="radio" name="ans4" value="1" id="ans0401" />200  </label></h4>
+<h3><label for="ans0402">C<input type="radio" name="ans4" value="0" id="ans0402" /> 150 </label></h3>
+<h3><label for="ans0403">D<input type="radio" name="ans4"  value="0" id="ans0403" /> 220	   </label></h3>
+
+
+
+<h2>5)If 48%of 48 = 64% of x , then x =
+(a) (b) (c) (d)
+ ?<br>
+
+ ?</h2>
+
+<h3><label for="ans5">A<input type="radio" name="ans5" value="0" id="ans5" /> 64 </label></h3>
+<h3><label for="ans0501">B<input type="radio" name="ans5" value="0" id="ans0501" />  56   </label></h3>
+<h3><label for="ans0502">C<input type="radio" name="ans5" value="0" id="ans0502" /> 42  </label></h3>
+<h4><label for="ans0503">D<input type="radio" name="ans5" value="1" id="ans0503"/>  36   </label></h4>
+
+
+
+<h2>6)A fruit vendor sells fruits for Rs200 gaining Rs40. His gain percentage is
+  ?</h2>
+
+<h3><label for="ans6">A<input type="radio" name="ans6" value="0" id="ans6"/>  20%    </label></h3>
+<h3><label for="ans0601">B<input type="radio" name="ans6" value="0" id="ans0601"/> 22% </label></h3>
+<h4><label for="ans0602">C<input type="radio" name="ans6" value="1" id="ans0602" />25%   </label></h4>
+<h3><label for="ans0603">D<input type="radio" name="ans6" value="0" id="ans0603" />16%  </label></h3>
+
+<br>
+<br>
+<br>
+<marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start();">
+<font color="Red">Class VIII public exam 2020 <br>
+                      <br>
+                       <br>
+                        <br>
+30.03.2020.....  Monday......   Tamil........        10.15 a.m. to   12.15 p.m. <br>  
+                            
+                          <br>
+
+02.04.2020...... Thursday  .....English .......      10.15 a.m. to   12.15 p.m.<br>    
+                          <br>  
+						
+08.04.2020...... Wednesday ......Mathematics.........    10.15 a.m. to   12.15 p.m.<br> 
+                            
+						<br>
+15.04.2020..... Wednesday ......Science ........         10.15 a.m. to   12.15 p.m.<br>
+                                <br>
+17.04.2020..... Friday.......   Social Science........     10.15 a.m. to   12.15 p.m.<br>
+                        
+
+ 
+</font>
+</marquee>
+
+<br>
+<br>
+<br>
+
+
+<h2>7) By selling a flower pot for Rs528, a woman gains 20%. At what price should she sell it to gain 25%? ?</h2>
+<h3><label for="ans7">A<input type="radio" name="ans7" value="0" id="ans7"/> Rs500 </label></h3>
+<h3><label for="ans0701">B<input type="radio" name="ans7" value="0" id="ans0701"/>Rs.555  </label></h3>
+<h4><label for="ans0702">C<input type="radio" name="ans7" value="1" id="ans0702" />Rs.550</label></h4>
+<h3><label for="ans0703">D<input type="radio" name="ans7" value="0" id="ans0703" /> Rs.573</label></h3>
+
+
+
+
+  
+<h2>8)A man buys an article for Rs150 and makes overhead expenses which are 12% of the cost price. At what price must he sell it to gain 5%?
+    ?</h2>
+
+<h3><label for="ans8">A<input type="radio" name="ans8" value="0" id="ans8"/>Rs.180 </label></h3>
+<h4><label for="ans0801">B<input type="radio" name="ans8" value="1" id="ans0801"/>Rs.168</label></h4>
+<h3><label for="ans0802">C<input type="radio" name="ans8" value="0" id="ans0802" />Rs.176.40 </label></h3>
+<h3><label for="ans0803">D<input type="radio" name="ans8" value="0" id="ans0803" />Rs.85 </label></h3>
+
+
+ <h2>9) The price of a hat is Rs210. What is the marked price of the hat if it is bought at 16% discount?
+ ?</h2>
+<h3><label for="ans9">A<input type="radio" name="ans9" value="0" id="ans9"/>Rs.243</label></h3>
+<h3><label for="ans0901">B<input type="radio" name="ans9" value="0" id="ans0901"/>Rs.176  </label></h3>
+<h3><label for="ans0902">C<input type="radio" name="ans9" value="0" id="ans0902" />Rs.230 </label></h3>
+<h4><label for="ans0903">D<input type="radio" name="ans9" value="1" id="ans0903" />Rs.250  </h4>
+
+
+
+
+<h2>10)The single discount which is equivalent to two successive discount of 20%and 25% is
+  ?</h2>
+<h4><label for="ans10">A<input type="radio" name="ans10" value="1" id="ans10"/> 40%  </label></h4>
+<h3><label for="ans1001">B<input type="radio" name="ans10" value="0" id="ans1001"/>45%   </label></h3>
+<h3><label for="ans1002">C<input type="radio" name="ans10" value="0" id="ans1002" />5%</label></h3>
+<h3><label for="ans1003">D<input type="radio" name="ans10" value="0" id="ans1003" />22.5% </label></h3>
+
+
+
+<h2>11) The number of conversion periods, if the interest on a<br>
+ principal is compounded every two months is___________.
+ ?</h2>
+
+<h3><label for="ans11">A<input type="radio" name="ans11" value="0" id="ans11"/>2 </label></h3>
+<h3><label for="ans1101">B<input type="radio" name="ans11" value="0" id="ans1101"/>4 </label></h3>
+<h4><label for="ans1102">C<input type="radio" name="ans11" value="1" id="ans1102" />6   </label></h4>
+<h3><label for="ans1103">D<input type="radio" name="ans11" value="0" id="ans1103" />12   </label></h3>
+
+
+
+
+<h2>12)The time taken for Rs.4400 to become Rs.4851 at 10%,<br>
+ compounded half yearly is _______.
+)  ?</h2>
+<h3><label for="ans12">A<input type="radio" name="ans12" value="0" id="ans12"/> 6 months </label></h3>
+<h3><label for="ans1201">B<input type="radio" name="ans12" value="0" id="ans1201"/>2 year  </label></h3>
+<h3><label for="ans1202">C<input type="radio" name="ans12" value="0" id="ans1202" />112years </label></h3>
+<h4><label for="ans1203">D<input type="radio" name="ans12" value="1" id="ans1203" />1 years  </label></h4>
+
+
+
+<h2>13)The cost of a machine is Rs.18000 and it depreciates at 16  % annually.<br>
+ Its value after 2 years will be___________.  ?</h2>
+<h3><label for="ans13">A<input type="radio" name="ans13" value="0" id="ans13"/> Rs.12000</label></h3>
+<h3><label for="ans1301">B<input type="radio" name="ans13" value="0" id="ans1301"/> Rs.10500</label></h3>
+<h4><label for="ans1302">C<input type="radio" name="ans13" value="1" id="ans1302" />  Rs.12500  </label></h4>
+<h3><label for="ans1303">D<input type="radio" name="ans13" value="0" id="ans1303" /> Rs.16500  </label></h3>
+
+
+
+<h2>14)The sum which amounts to Rs.2662 at 10% p.a in 3 years compounded yearly is_______. ?</h2>
+
+<h4><label for="ans14">A<input type="radio" name="ans14" value="1" id="ans14"/>Rs.2000  </label></h4>
+<h3><label for="ans1401">B<input type="radio" name="ans14" value="0" id="ans1401"/>  Rs.1800 </label></h3>
+<h3><label for="ans1402">C<input type="radio" name="ans14" value="0" id="ans1402" />Rs.1500 </label></h3>
+<h3><label for="ans1403">D<input type="radio" name="ans14" value="0" id="ans1403" /> Rs.2500 </label></h3>
+
+
+<br>
+<br>
+<br>
+<marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start();">
+<font color="Red">Class VIII public exam 2020 <br>
+                      <br>
+                       <br>
+                        <br>
+30.03.2020.....  Monday......   Tamil........        10.15 a.m. to   12.15 p.m. <br>  
+                            
+                          <br>
+
+02.04.2020...... Thursday  .....English .......      10.15 a.m. to   12.15 p.m.<br>    
+                          <br>  
+						
+08.04.2020...... Wednesday ......Mathematics.........    10.15 a.m. to   12.15 p.m.<br> 
+                            
+						<br>
+15.04.2020..... Wednesday ......Science ........         10.15 a.m. to   12.15 p.m.<br>
+                                <br>
+17.04.2020..... Friday.......   Social Science........     10.15 a.m. to   12.15 p.m.<br>
+                        
+
+ 
+</font>
+</marquee>
+
+<br>
+<br>
+<br>
+
+<h2>15) The cost of a machine is Rs.18000 and it depreciates at 16 % annually.<br>
+ Its value after 2 years will be___________ ?</h2>
+<h3><label for="ans15">A<input type="radio" name="ans15" value="0" id="ans15"/>Rs.3000  </label></h3>
+<h3><label for="ans1501">B<input type="radio" name="ans15" value="0" id="ans1501"/>Rs.1500   </label></h3>
+<h4><label for="ans1502">C<input type="radio" name="ans15" value="1" id="ans1502" />Rs.2000   </label></h4>
+<h3><label for="ans1503">D<input type="radio" name="ans15" value="0" id="ans1503" />Rs.2500  </sub> </label></h3>
+
+
+
+<h2>16)If 30%of x is 150, then x is _________.?</h2>
+
+<h3><label for="ans16">A<input type="radio" name="ans16" value="0" id="ans16" />x = 600   </label></h3>
+<h4><label for="ans1601">B<input type="radio" name="ans16" value="1" id="ans1601" />x = 500  </label></h4>
+<h3><label for="ans1602">C<input type="radio" name="ans16" value="0" id="ans1602" />x = 700 </label></h3>
+<h3><label for="ans1603">D<input type="radio" name="ans16" value="0" id="ans1603"/>x = 800 </label></h3>
+
+
+<h2>17) 2 minutes is _________% to an hour. ?</h2>
+<h3><label for="ans17">A<input type="radio" name="ans17" value="0" id="ans17"/> 13 % </label></h3>
+<h3><label for="ans1701">B<input type="radio" name="ans17" value="0" id="ans1701"/>31 % </label></h3>
+<h3><label for="ans1702">C<input type="radio" name="ans17" value="0" id="ans1702" />313 %  </label></h3>
+<h4><label for="ans1703">D<input type="radio" name="ans17" value="1" id="ans1703" />3,1/3 %</label></h4>
+
+
+<h2>18)If x % of x = 25, then x = ________.  ?</h2>
+<h3><label for="ans18">A<input type="radio" name="ans18" value="0" id="ans18" />x = 505 </label></h3>
+
+<h3><label for="ans1801">B<input type="radio" name="ans18" value="0" id="ans1801" />x = 5</label></h3>
+<h3><label for="ans1802">C<input type="radio" name="ans18" value="0" id="ans1802" />x = 50</label></h3>
+<h4><label for="ans1803">D<input type="radio" name="ans18" value="1" id="ans1803" />x = 501</label></h4>
+
+
+
+  
+<h2>19) In a school of 1400 students, there are 420 girls. The percentage of boys in the school is ________. ? </h2>
+<h3><label for="ans19">A<input type="radio" name="ans19" value="0" id="ans19" /> 60%</label></h3>
+<h3><label for="ans1901">B<input type="radio" name="ans19" value="0" id="ans1901" />50%    </label></h3>
+<h4><label for="ans1902">C<input type="radio" name="ans19" value="1" id="ans1902" /> 70 %   </label></h4>
+<h3><label for="ans1903">D<input type="radio" name="ans19"  value="0" id="ans1903" /> 30%  </label></h3>
+
+
+
+<h2>20)0.5252 is ________%.  ?</h2>
+<h3><label for="ans20">A<input type="radio" name="ans20" value="0" id="ans20" />2.52% </label></h3>  
+<h3><label for="ans2001">B<input type="radio" name="ans20" value="0" id="ans2001" />52.5% </label></h3> 
+<h3><label for="ans2002">C<input type="radio" name="ans20" value="0" id="ans2002" />52.2%  </label></h3>
+<h4><label for="ans2003">D<input type="radio" name="ans20" value="1" id="ans2003"/>52.52%  </label></h4>
+
+
+
+<button type="submit" value="Submit">Submit</button>
+</fieldset>
+</form>
+    
+<p>Your Score is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+
+
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+       ans1 = parseInt(document.querySelector('input[name = "ans1"]:checked').value);
+	   ans2 = parseInt(document.querySelector('input[name = "ans2"]:checked').value);
+	   ans3 = parseInt(document.querySelector('input[name = "ans3"]:checked').value);
+	   ans4 = parseInt(document.querySelector('input[name = "ans4"]:checked').value);
+	   ans5 = parseInt(document.querySelector('input[name = "ans5"]:checked').value);
+	   ans6 = parseInt(document.querySelector('input[name = "ans6"]:checked').value);
+	   ans7 = parseInt(document.querySelector('input[name = "ans7"]:checked').value);
+	   ans8 = parseInt(document.querySelector('input[name = "ans8"]:checked').value);
+	   ans9 = parseInt(document.querySelector('input[name = "ans9"]:checked').value);
+	   ans10 = parseInt(document.querySelector('input[name = "ans10"]:checked').value);
+	   ans11 = parseInt(document.querySelector('input[name = "ans11"]:checked').value);
+	   ans12 = parseInt(document.querySelector('input[name = "ans12"]:checked').value);
+	   ans13 = parseInt(document.querySelector('input[name = "ans13"]:checked').value);
+	   ans14 = parseInt(document.querySelector('input[name = "ans14"]:checked').value);
+	   ans15 = parseInt(document.querySelector('input[name = "ans15"]:checked').value);
+	   ans16 = parseInt(document.querySelector('input[name = "ans16"]:checked').value);
+	   ans17 = parseInt(document.querySelector('input[name = "ans17"]:checked').value);
+	   ans18 = parseInt(document.querySelector('input[name = "ans18"]:checked').value);
+	   ans19 = parseInt(document.querySelector('input[name = "ans19"]:checked').value);
+	   ans20 = parseInt(document.querySelector('input[name = "ans20"]:checked').value);
+	   
+	   
+	  
+	   
+	   
+	   
+	   
+	   
+	   result = ans1+ans2+ans3+ans4+ans5+ans6+ans7+ans8+ans9+ans10+ans11+ans12+ans13+ans14+ans15+ans16+ans17+ans18+ans19+ans20;   
+	   document.getElementById("grade").innerHTML = result;
+	   
+	   
+	     
+	  
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
+
+</div>
+
+</div>
+ 
+</div> 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Page Top</button>
+
+<script>
+
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'brown';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#FFFAF0');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#FFFAF0');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#FFD700';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+</body>
+</html>
